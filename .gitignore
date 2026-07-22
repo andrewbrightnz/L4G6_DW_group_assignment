@@ -1,0 +1,18 @@
+# Virtual environments
+.venv/
+venv/
+env/
+L4G6_DW_env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Environment variables (API keys, passwords, etc.)
+.env
+
+# macOS
+.DS_Store
+
+# VS Code settings (optional)
+.vscode/
