@@ -1,6 +1,8 @@
 Project intro:
-xxx
-l4g6_env
+
+
+Our virtual environment is called: l4g6_env
+
 Acknowledge AI use here:
 
 Andrew
