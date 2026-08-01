@@ -80,4 +80,5 @@ AI USE:
 Acknowledge AI use here:
 
 Andrew
-- Got help setting up the virtual environment and gitignore file
+- 25/07/2026: Got help setting up the virtual environment and gitignore file
+- 01/08/2026: Got some help finding correct nodes to use in the flow, and how to set them up properly
