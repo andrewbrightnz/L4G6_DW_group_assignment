@@ -1,22 +1,6 @@
 {
   "version" : "5.12.0.v202606180846",
   "projects" : [ {
-    "name" : "Building a Simple Classifier",
-    "active" : false,
-    "origin" : {
-      "providerId" : "local",
-      "spaceId" : "local",
-      "relativePath" : "Example Workflows/Basic Examples/Building a Simple Classifier"
-    }
-  }, {
-    "name" : "Group assignment",
-    "active" : false,
-    "origin" : {
-      "providerId" : "local",
-      "spaceId" : "local",
-      "relativePath" : "Group assignment"
-    }
-  }, {
     "name" : "listings_assignment_clean1",
     "active" : true,
     "origin" : {

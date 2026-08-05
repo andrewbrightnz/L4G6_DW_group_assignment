@@ -51,7 +51,7 @@ listings_assignment_clean.knwf
 
 The workflow performs the following tasks:
 
-1. Reads the locally stored `listings.csv`.
+1. Reads `listings.csv` from the provided URL (this means each user doesn't need to adjust the filepath when they use the shared file).
 2. Examines the dataset using a Statistics View.
 3. Selects the columns required for the analysis.
 4. Handles invalid text values and converts `last_review` to a Date value.
@@ -72,11 +72,8 @@ The workflow performs the following tasks:
 
 ## Running the KNIME Workflow
 
-1. Download the New Zealand `listings.csv` file using the link above.
-2. Store the file locally and do not add it to GitHub.
-3. Import `listings_assignment_clean.knwf` into KNIME Analytics Platform.
-4. Open the CSV Reader node and update its source path to the local location of `listings.csv`.
-5. Execute the complete workflow.
+1. Import `listings_assignment_clean.knwf` into KNIME Analytics Platform.
+2. Execute the complete workflow.
 
 ## Python Environment
 
