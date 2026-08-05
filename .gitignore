@@ -19,3 +19,7 @@ __pycache__/
 
 # PyCharm
 .idea/
+
+listings.csv
+data/listings.csv
+l4g6_env/

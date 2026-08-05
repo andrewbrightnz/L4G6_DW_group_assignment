@@ -1,84 +1,99 @@
-PROJECT INTRO:
+# L4G6 Data Wrangling Group Assignment
 
+## Project Introduction
 
-VIRTUAL ENVIRONMENT:
-Our virtual environment is called: l4g6_env
-Set this up using the requirements.txt file
+This repository contains the work completed by Group L4G6 for the DATA201/422 group assignment. The project focuses on collaborative data wrangling, reproducible analysis, workflow modularity, and version control using Python, GitHub, and KNIME Analytics Platform.
 
+For Deliverable 2, we created a KNIME workflow to explore and analyse Airbnb listings across New Zealand. The workflow includes data selection and cleaning, date conversion, filtering, aggregation, and visualisation.
 
-LISTINGS.CSV COLUMN DEFINITIONS
-From https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit?usp=sharing
-id
+## Dataset
 
-- name
-Airbnb's unique identifier for the listing
+The dataset used is `listings.csv` for New Zealand, dated **19 June 2026**, from [Inside Airbnb – Get the Data](https://insideairbnb.com/get-the-data/).
 
-- host_id
-Airbnb's unique identifier for the host/user (the host may have many listings)
+Direct dataset link:
 
-- host_name
-The Airbnb page for the host
+[New Zealand listings.csv – 19 June 2026](https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv)
 
-- neighbourhood_group
-The neighbourhood group as geocoded using the latitude and longitude against neighborhoods as defined by open or public digital shapefiles.
+Inside Airbnb describes `listings.csv` as summary information and metrics for listings that are suitable for visualisation. The dataset is not stored in this repository because of its size. Each team member must download it and store it locally.
 
-- neighbourhood
-Undefined by airbnb, but seems to show the local area/suburb the listing is in
+## Dataset Columns
 
-- latitude
-Uses the World Geodetic System (WGS84) projection for latitude and longitude.
+| Column | Meaning |
+|---|---|
+| `id` | Airbnb's unique identifier for the listing. |
+| `name` | Name or title of the listing. |
+| `host_id` | Airbnb's unique identifier for the host or user. A host may have multiple listings. |
+| `host_name` | Display name of the host. |
+| `neighbourhood_group` | Broader geographic area containing the listing, based on public geographic data. |
+| `neighbourhood` | More specific neighbourhood, suburb, or local area associated with the listing. |
+| `latitude` | Approximate latitude of the listing using the World Geodetic System (WGS84). |
+| `longitude` | Approximate longitude of the listing using the World Geodetic System (WGS84). |
+| `room_type` | Type of accommodation offered, such as an entire home or apartment, private room, shared room, or hotel room. |
+| `price` | Daily listing price in local currency. |
+| `minimum_nights` | Minimum number of nights required for a booking. Calendar rules may differ. |
+| `number_of_reviews` | Total number of reviews received by the listing. |
+| `last_review` | Date of the most recent review. |
+| `reviews_per_month` | Average number of reviews received per month over the lifetime of the listing. |
+| `calculated_host_listings_count` | Number of listings associated with the host in the current scrape and geographic area. |
+| `availability_365` | Number of days the listing is shown as available during the next 365 days. A listing may be unavailable because it is booked or blocked by the host. |
+| `number_of_reviews_ltm` | Number of reviews received during the last twelve months. |
+| `license` | Licence, permit, or registration number where available. |
 
-- longitude
-Uses the World Geodetic System (WGS84) projection for latitude and longitude.
+Further details are available in the [Inside Airbnb Data Dictionary](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit?usp=sharing).
 
-- room_type
-[Entire home/apt|Private room|Shared room|Hotel]
+## KNIME Workflow
 
-All homes are grouped into the following three room types:
+The KNIME workflow is stored as:
 
--- Entire place
--- Private room
--- Shared room
+```text
+listings_assignment_clean.knwf
+```
 
--- Entire place
-Entire places are best if you're seeking a home away from home. With an entire place, you'll have the whole space to yourself. This usually includes a bedroom, a bathroom, a kitchen, and a separate, dedicated entrance. Hosts should note in the description if they'll be on the property or not (ex: "Host occupies first floor of the home"), and provide further details on the listing.
+The workflow performs the following tasks:
 
--- Private rooms
-Private rooms are great for when you prefer a little privacy, and still value a local connection. When you book a private room, you'll have your own private room for sleeping and may share some spaces with others. You might need to walk through indoor spaces that another host or guest may occupy to get to your room.
+1. Reads the locally stored `listings.csv`.
+2. Examines the dataset using a Statistics View.
+3. Selects the columns required for the analysis.
+4. Handles invalid text values and converts `last_review` to a Date value.
+5. Calculates the number of days between the dataset date, 19 June 2026, and each listing's most recent review.
+6. Plots the distribution of days since the last review.
+7. Plots the price distribution for all New Zealand listings.
+8. Filters listings to Christchurch City and plots its price distribution.
+9. Selects the top 10% of listings based on `number_of_reviews`.
+10. Counts how many of the top-reviewed listings are located in Christchurch City.
 
--- Shared rooms
-Shared rooms are for when you don't mind sharing a space with others. When you book a shared room, you'll be sleeping in a space that is shared with others and share the entire space with other people. Shared rooms are popular among flexible travelers looking for new friends and budget-friendly stays.
-price
+## Main Results
 
-- minimum_nights
-minimum number of night stay for the listing (calendar rules may be different)
+- Listing prices in both New Zealand and Christchurch City are strongly right-skewed. Most listings are concentrated in the lower price range, while a small number have much higher prices.
+- The distribution of days since the last review is also right-skewed.
+- The dataset contains 50,932 listings. Therefore, the strict top 10% was defined as the first 5,094 listings after sorting `number_of_reviews` in descending order.
+- Under this strict top-10% method, **342 listings are located in Christchurch City**.
+- The boundary value is 185 reviews. If every listing tied at this boundary is included, the selection contains 5,130 listings, including 343 in Christchurch City. The workflow uses the strict 5,094-row interpretation.
 
-- number_of_reviews
-The number of reviews the listing has
+## Running the KNIME Workflow
 
-- last_review
-The date of the last/newest review
+1. Download the New Zealand `listings.csv` file using the link above.
+2. Store the file locally and do not add it to GitHub.
+3. Import `listings_assignment_clean.knwf` into KNIME Analytics Platform.
+4. Open the CSV Reader node and update its source path to the local location of `listings.csv`.
+5. Execute the complete workflow.
 
-- reviews_per_month
-The average number of reviews per month the listing has over the lifetime of the listing.
+## Python Environment
 
-- calculated_host_listings_count
-The number of listings the host has in the current scrape, in the city/region geography.
+The shared virtual environment is called:
 
-- availability_365
-The availability of the listing x days in the future as determined by the calendar. Note a listing may not be available because it has been booked by a guest or blocked by the host.
+```text
+l4g6_env
+```
 
-- number_of_reviews_ltm
-The number of reviews the listing has (in the last 12 months)
+Set up the environment using the dependencies listed in `requirements.txt`.
 
-- license
-The licence/permit/registration number
+## AI Use Acknowledgement
 
+### Andrew
 
+- Used AI assistance to help set up the Python virtual environment and `.gitignore` file.
 
-AI USE:
-Acknowledge AI use here:
+### Jinhang
 
-Andrew
-- 25/07/2026: Got help setting up the virtual environment and gitignore file
-- 01/08/2026: Got some help finding correct nodes to use in the flow, and how to set them up properly
+- Used OpenAI Codex to help understand the task requirements, provide guidance on using KNIME, and assist with formatting the README. The workflow and analysis were completed by Jinhang with support from other team members.
