@@ -3,28 +3,6 @@
     "created": "2026-07-30 01:29",
     "nodestats": {
         "nodes": [
-            {
-                "id": "org.knime.base.views.node.histogram.HistogramNodeFactory",
-                "nodename": "Histogram",
-                "nrexecs": 2,
-                "nrfails": 5,
-                "exectime": 269,
-                "nrcreated": 0,
-                "nrsettingsChanged": 5,
-                "successor": "n/a",
-                "successornodename": "n/a"
-            },
-            {
-                "id": "org.knime.time.node.calculate.datetimedifference.DateTimeDifferenceNodeFactory2",
-                "nodename": "Date&Time Difference",
-                "nrexecs": 0,
-                "nrfails": 0,
-                "exectime": 0,
-                "nrcreated": 0,
-                "nrsettingsChanged": 1,
-                "successor": "n/a",
-                "successornodename": "n/a"
-            }
         ],
         "metaNodes": {
         },
@@ -33,8 +11,8 @@
         "createdVia": {
         }
     },
-    "uptime": 18157500,
-    "workflowsOpened": 1,
+    "uptime": 18180825,
+    "workflowsOpened": 0,
     "remoteWorkflowsOpened": 0,
     "workflowsCreated": 0,
     "remoteWorkflowsCreated": 0,
@@ -43,10 +21,10 @@
     "workflowsExported": 0,
     "webUIPerspectiveSwitches": 0,
     "javaUIPerspectiveSwitches": 0,
-    "lastUsedPerspective": "none",
+    "lastUsedPerspective": "none (classic)",
     "launches": 9,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 1815172,
+    "timeSinceLastStart": 2025095,
     "crashes": 0,
-    "properlyShutDown": false
+    "properlyShutDown": true
 }

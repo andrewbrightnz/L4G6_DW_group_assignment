@@ -3,7 +3,7 @@
     <entry key="spec_name" type="xstring" value="default"/>
     <entry key="number_columns" type="xint" value="1"/>
     <config key="column_spec_0">
-        <entry key="column_name" type="xstring" value="keys"/>
+        <entry key="column_name" type="xstring" value="missingValues"/>
         <config key="element_names">
             <entry key="array-size" type="xint" value="0"/>
         </config>
@@ -12,13 +12,7 @@
         </config>
         <config key="column_domain">
             <config key="possible_values">
-                <entry key="array-size" type="xint" value="1"/>
-                <config key="0">
-                    <entry key="datacell" type="xstring" value="org.knime.core.data.def.StringCell"/>
-                    <config key="org.knime.core.data.def.StringCell">
-                        <entry key="StringCell" type="xstring" value="32448173"/>
-                    </config>
-                </config>
+                <entry key="array-size" type="xint" value="0"/>
             </config>
         </config>
         <config key="column_properties"/>
