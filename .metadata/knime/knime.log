@@ -1,0 +1,1087 @@
+2026-07-30 13:29:36,443 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:29:36,443 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Jul 30 13:29:36 NZST 2026
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-07-30 13:29:36,456 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-07-30 13:29:36,458 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-07-30 13:29:36,458 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-07-30 13:29:36,458 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-07-30 13:29:36,463 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-07-30 13:29:36,463 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:29:35,858 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-07-30 13:29:38,550 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-07-30 13:29:38,567 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:29:39,510 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-07-30 13:29:39,510 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-07-30 13:29:40,144 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:29:40,750 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-07-30 13:29:40,750 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-07-30 13:29:40,913 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:29:40,922 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-07-30 13:29:41,073 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:29:41,818 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:29:41,853 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:29:41,866 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:29:41,872 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:29:41,883 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:29:41,883 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:29:41,903 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:29:41,906 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:29:41,906 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:29:41,930 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-07-30 13:29:42,292 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-07-30 13:31:16,511 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:31:16,511 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Jul 30 13:31:16 NZST 2026
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-07-30 13:31:16,523 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-07-30 13:31:16,525 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-07-30 13:31:16,525 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-07-30 13:31:16,526 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-07-30 13:31:16,531 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-07-30 13:31:16,531 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:31:15,921 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-07-30 13:31:18,526 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-07-30 13:31:18,536 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:31:19,455 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-07-30 13:31:19,455 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-07-30 13:31:20,169 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:31:20,242 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:31:20,606 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-07-30 13:31:20,652 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:31:21,029 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-07-30 13:31:21,029 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-07-30 13:31:21,109 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:31:21,123 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:31:21,129 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:31:21,139 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:31:21,139 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:31:21,160 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:31:21,168 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:31:21,168 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:31:21,169 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:31:22,067 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-07-30 13:31:22,379 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-07-30 13:34:18,374 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Jul 30 13:34:18 NZST 2026
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-07-30 13:34:18,387 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-07-30 13:34:18,388 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-07-30 13:34:18,388 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-07-30 13:34:18,388 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-07-30 13:34:18,393 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-07-30 13:34:18,393 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:34:17,794 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-07-30 13:34:20,282 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:34:20,306 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-07-30 13:34:21,259 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-07-30 13:34:21,259 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-07-30 13:34:21,428 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-07-30 13:34:21,455 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:34:22,329 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:34:22,381 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:34:22,434 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-07-30 13:34:22,434 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-07-30 13:34:22,978 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:34:23,014 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:34:23,027 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:34:23,032 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:34:23,037 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:34:23,037 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:34:23,064 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:34:23,068 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:34:23,068 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:34:23,515 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-07-30 13:34:23,798 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-07-30 13:35:17,479 : INFO  : Thread-1340 :  : Server :  :  : jetty-12.0.21; built: 2025-05-09T00:32:00.688Z; git: 1c4719601e31b05b7d68910d2edd980259f1f53c; jvm 21.0.9+10-LTS
+2026-07-30 13:35:17,498 : INFO  : Thread-1340 :  : AbstractConnector :  :  : Started ServerConnector@27ac51ea{HTTP/1.1, (http/1.1)}{0.0.0.0:57937}
+2026-07-30 13:35:17,498 : INFO  : Thread-1340 :  : Server :  :  : Started oejs.Server@14907c83{STARTING}[12.0.21,sto=0] @60495ms
+2026-07-30 13:35:17,498 : INFO  : Thread-1340 :  : OAuthAuthenticator :  :  : Opening browser to perform authentication for 'https://api.hub.knime.com'.
+2026-07-30 13:35:25,025 : INFO  : Thread-1351 :  : Server :  :  : Stopped oejs.Server@14907c83{STOPPING}[12.0.21,sto=0]
+2026-07-30 13:35:25,042 : INFO  : Thread-1351 :  : AbstractConnector :  :  : Stopped ServerConnector@27ac51ea{HTTP/1.1, (http/1.1)}{0.0.0.0:57937}
+2026-07-30 13:38:09,808 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x000000b80142cf08 :  : FileUtil :  :  : Deleting 1 temporary files.
+2026-07-30 14:25:20,291 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Jul 30 14:25:20 NZST 2026
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-07-30 14:25:20,306 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-07-30 14:25:20,312 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-07-30 14:25:20,312 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-07-30 14:25:20,312 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-07-30 14:25:20,317 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-07-30 14:25:20,317 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:19,369 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-07-30 14:25:22,184 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-07-30 14:25:22,194 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:23,133 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-07-30 14:25:23,133 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-07-30 14:25:23,281 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:23,448 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-07-30 14:25:23,490 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:24,014 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:24,612 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:24,642 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:24,652 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:24,664 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:24,673 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:24,673 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:24,680 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:24,682 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:24,682 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:27,282 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-07-30 14:25:27,282 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-07-30 14:25:29,039 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-07-30 14:25:29,580 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-07-30 14:25:36,379 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x0000007801434ab0 :  : FileUtil :  :  : Deleting 1 temporary files.
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Jul 30 14:25:42 NZST 2026
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-07-30 14:25:42,673 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-07-30 14:25:42,674 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-07-30 14:25:42,675 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-07-30 14:25:42,675 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-07-30 14:25:42,680 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-07-30 14:25:42,680 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:42,014 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-07-30 14:25:44,585 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:44,593 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-07-30 14:25:45,411 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-07-30 14:25:45,411 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-07-30 14:25:46,113 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:46,323 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:46,547 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-07-30 14:25:46,558 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:47,061 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:47,071 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:47,076 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:47,091 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:47,091 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:47,094 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:47,102 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:47,104 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:47,104 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:47,484 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-07-30 14:25:47,484 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-07-30 14:25:48,445 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-07-30 14:25:48,784 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-08-01 09:14:43,467 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x000000700143bc60 :  : FileUtil :  :  : Deleting 1 temporary files.
+2026-08-03 08:57:47,702 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # logging date=Mon Aug 03 08:57:47 NZST 2026
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-08-03 08:57:47,713 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-08-03 08:57:47,713 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-08-03 08:57:47,719 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-08-03 08:57:47,721 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-08-03 08:57:47,721 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-08-03 08:57:47,722 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-08-03 08:57:47,727 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-08-03 08:57:47,727 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 08:57:46,827 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-08-03 08:57:49,619 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-08-03 08:57:49,643 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 08:57:50,611 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-08-03 08:57:50,611 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-08-03 08:57:50,626 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 08:57:50,996 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 08:57:51,075 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-08-03 08:57:51,195 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 08:57:52,067 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 08:57:52,099 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 08:57:52,109 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 08:57:52,123 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 08:57:52,123 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 08:57:52,127 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 08:57:52,136 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 08:57:52,137 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 08:57:52,137 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 08:57:53,335 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-08-03 08:57:53,336 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-08-03 08:57:55,133 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-08-03 08:57:55,700 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-08-03 08:58:11,645 : INFO  : Thread-1245 :  : Server :  :  : jetty-12.0.21; built: 2025-05-09T00:32:00.688Z; git: 1c4719601e31b05b7d68910d2edd980259f1f53c; jvm 21.0.9+10-LTS
+2026-08-03 08:58:11,664 : INFO  : Thread-1245 :  : AbstractConnector :  :  : Started ServerConnector@55dd8b4{HTTP/1.1, (http/1.1)}{0.0.0.0:63847}
+2026-08-03 08:58:11,664 : INFO  : Thread-1245 :  : Server :  :  : Started oejs.Server@4bf4ad9f{STARTING}[12.0.21,sto=0] @25921ms
+2026-08-03 08:58:11,665 : INFO  : Thread-1245 :  : OAuthAuthenticator :  :  : Opening browser to perform authentication for 'https://api.hub.knime.com'.
+2026-08-03 08:58:53,928 : INFO  : Thread-1280 :  : Server :  :  : Stopped oejs.Server@4bf4ad9f{STOPPING}[12.0.21,sto=0]
+2026-08-03 08:58:53,945 : INFO  : Thread-1280 :  : AbstractConnector :  :  : Stopped ServerConnector@55dd8b4{HTTP/1.1, (http/1.1)}{0.0.0.0:63847}
+2026-08-03 09:00:58,873 : INFO  : ModalContext :  : LoadWorkflowRunnable :  :  : New workflow created.
+2026-08-03 09:01:50,722 : INFO  : ModalContext :  : StringHistory : String to Date&Time : 3:24 : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string_to_date_formats.txt' does not exist.
+2026-08-03 10:23:08,432 : INFO  : KNIME-Worker-2-File Reader (Complex Format) 3:19 :  : FileReaderNodeModel : File Reader (Complex Format) : 3:19 : Preparing to read from 'https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv'.
+2026-08-03 10:23:10,225 : INFO  : KNIME-Worker-2-File Reader (Complex Format) 3:19 :  : LocalNodeExecutionJob : File Reader (Complex Format) : 3:19 : File Reader (Complex Format) 3:19 End execute (2 secs)
+2026-08-03 10:23:10,243 : INFO  : KNIME-Worker-3-Column Filter 3:20 :  : LocalNodeExecutionJob : Column Filter : 3:20 : Column Filter 3:20 End execute (0 secs)
+2026-08-03 10:23:10,394 : INFO  : KNIME-Worker-2-Row Filter 3:26 :  : LocalNodeExecutionJob : Row Filter : 3:26 : Row Filter 3:26 End execute (0 secs)
+2026-08-03 10:23:10,504 : INFO  : KNIME-Worker-3-String to Date&Time 3:24 :  : LocalNodeExecutionJob : String to Date&Time : 3:24 : String to Date&Time 3:24 End execute (0 secs)
+2026-08-03 10:23:10,543 : INFO  : KNIME-Worker-2-Date&Time Difference 3:27 :  : LocalNodeExecutionJob : Date&Time Difference : 3:27 : Date&Time Difference 3:27 End execute (0 secs)
+2026-08-03 10:23:10,685 : INFO  : KNIME-Worker-3-Sorter 3:33 :  : LocalNodeExecutionJob : Sorter : 3:33 : Sorter 3:33 End execute (0 secs)
+2026-08-03 10:23:10,820 : INFO  : KNIME-Worker-2-Bar Chart 3:31 :  : LocalNodeExecutionJob : Bar Chart : 3:31 : Bar Chart 3:31 End execute (0 secs)
+2026-08-03 10:23:32,869 : INFO  : KNIME-Worker-3-Column Filter 3:3 :  : LocalNodeExecutionJob : Column Filter : 3:3 : Column Filter 3:3 End execute (0 secs)
+2026-08-03 10:23:32,902 : INFO  : KNIME-Worker-2-Row Filter 3:9 :  : LocalNodeExecutionJob : Row Filter : 3:9 : Row Filter 3:9 End execute (0 secs)
+2026-08-03 10:23:33,091 : INFO  : KNIME-Worker-3-Histogram 3:10 :  : LocalNodeExecutionJob : Histogram : 3:10 : Histogram 3:10 End execute (0 secs)
+2026-08-03 10:23:36,173 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-03 10:23:48,006 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-03 10:23:53,969 : ERROR : Thread-12257 :  : KnimeBrowserView :  :  : Problem loading UI resources at 'https://org.knime.ui.java/videos/5-4-Build-Mode-Small-Workflow.webm'. See log for details.
+java.lang.NullPointerException: Cannot invoke "java.net.URL.openStream()" because the return value of "org.eclipse.core.runtime.FileLocator.toFileURL(java.net.URL)" is null
+	at org.knime.ui.java.browser.lifecycle.Create.lambda$4(Create.java:187)
+	at org.knime.js.cef.middleware.CEFMiddlewareService.lambda$1(CEFMiddlewareService.java:180)
+	at com.equo.middleware.ee.provider.handler.DelegatingSchemeHandler.getResponseData(DelegatingSchemeHandler.java:61)
+	at com.equo.chromium.swt.internal.spi.DelegatingCefResourceHandler.getResponseHeaders(DelegatingCefResourceHandler.java:57)
+2026-08-03 10:23:55,448 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-03 10:23:56,702 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object PromiseRejectionEvent] (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-08-03 10:23:56,702 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22 (source: https://org.knime.ui.java/editor/index.html#/workflow/listings_assignment_clean_b2e09b93-1d92-4621-bccd-780a419253d3/root?version; line: 0)
+2026-08-03 10:23:59,738 : INFO  : KNIME-Worker-2-Row Filter 3:11 :  : LocalNodeExecutionJob : Row Filter : 3:11 : Row Filter 3:11 End execute (0 secs)
+2026-08-03 10:23:59,768 : INFO  : KNIME-Worker-3-Histogram 3:12 :  : LocalNodeExecutionJob : Histogram : 3:12 : Histogram 3:12 End execute (0 secs)
+2026-08-03 10:23:59,868 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-03 10:24:27,593 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-03 10:26:01,179 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-03 10:28:47,860 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x00000070014331c8 :  : FileUtil :  :  : Deleting 84 temporary files.
+2026-08-03 10:28:52,088 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 10:28:52,088 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # logging date=Mon Aug 03 10:28:52 NZST 2026
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-08-03 10:28:52,102 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-08-03 10:28:52,103 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-08-03 10:28:52,103 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-08-03 10:28:52,103 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-08-03 10:28:52,108 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-08-03 10:28:52,108 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 10:28:51,410 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-08-03 10:28:54,097 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 10:28:54,101 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-08-03 10:28:54,978 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-08-03 10:28:54,978 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-08-03 10:28:56,007 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 10:28:56,252 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 10:28:56,271 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 10:28:56,273 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-08-03 10:28:56,702 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 10:28:56,733 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 10:28:56,744 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 10:28:56,754 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 10:28:56,764 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 10:28:56,764 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 10:28:56,771 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 10:28:56,771 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 10:28:56,772 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 10:28:57,330 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-08-03 10:28:57,331 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-08-03 10:28:58,236 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-08-03 10:28:58,551 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-08-03 10:29:46,833 : INFO  : ModalContext :  : LoadWorkflowRunnable :  :  : New workflow created.
+2026-08-03 10:43:34,936 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x000000a001437be0 :  : FileUtil :  :  : Deleting 1 temporary files.
+2026-08-06 09:43:58,135 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-08-06 09:43:58,136 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-08-06 09:43:58,145 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Aug 06 09:43:58 NZST 2026
+2026-08-06 09:43:58,145 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-08-06 09:43:58,145 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-08-06 09:43:58,145 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-08-06 09:43:58,145 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-08-06 09:43:58,145 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-08-06 09:43:58,146 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-08-06 09:43:58,146 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-08-06 09:43:58,152 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-08-06 09:43:58,156 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-08-06 09:43:58,157 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-08-06 09:43:58,157 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-08-06 09:43:58,162 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-08-06 09:43:58,162 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 09:43:57,158 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-08-06 09:44:00,215 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-08-06 09:44:00,224 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 09:44:01,047 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-08-06 09:44:01,047 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-08-06 09:44:01,378 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 09:44:01,731 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-08-06 09:44:01,935 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 09:44:02,414 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 09:44:02,842 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-06 09:44:02,853 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-06 09:44:02,858 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-06 09:44:02,871 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-06 09:44:02,871 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-06 09:44:02,877 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-06 09:44:02,882 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-06 09:44:02,882 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-06 09:44:02,883 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-06 09:44:05,985 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-08-06 09:44:05,985 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-08-06 09:44:07,694 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-08-06 09:44:08,202 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-08-06 09:44:16,842 : ERROR : Thread-1782 :  : KnimeBrowserView :  :  : Problem loading UI resources at 'https://org.knime.ui.java/images/Versioning-history-illustration-product-hint.png'. See log for details.
+java.lang.NullPointerException: Cannot invoke "java.net.URL.openStream()" because the return value of "org.eclipse.core.runtime.FileLocator.toFileURL(java.net.URL)" is null
+	at org.knime.ui.java.browser.lifecycle.Create.lambda$4(Create.java:187)
+	at org.knime.js.cef.middleware.CEFMiddlewareService.lambda$1(CEFMiddlewareService.java:180)
+	at com.equo.middleware.ee.provider.handler.DelegatingSchemeHandler.getResponseData(DelegatingSchemeHandler.java:61)
+	at com.equo.chromium.swt.internal.spi.DelegatingCefResourceHandler.getResponseHeaders(DelegatingCefResourceHandler.java:57)
+2026-08-06 09:44:33,182 : INFO  : KNIME-Worker-0-File Reader (Complex Format) 3:19 :  : FileReaderNodeModel : File Reader (Complex Format) : 3:19 : Preparing to read from 'https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv'.
+2026-08-06 09:44:35,058 : INFO  : KNIME-Worker-0-File Reader (Complex Format) 3:19 :  : LocalNodeExecutionJob : File Reader (Complex Format) : 3:19 : File Reader (Complex Format) 3:19 End execute (2 secs)
+2026-08-06 09:44:35,074 : INFO  : KNIME-Worker-1-Column Filter 3:20 :  : LocalNodeExecutionJob : Column Filter : 3:20 : Column Filter 3:20 End execute (0 secs)
+2026-08-06 09:44:35,227 : INFO  : KNIME-Worker-0-Row Filter 3:26 :  : LocalNodeExecutionJob : Row Filter : 3:26 : Row Filter 3:26 End execute (0 secs)
+2026-08-06 09:44:35,348 : INFO  : KNIME-Worker-1-String to Date&Time 3:24 :  : LocalNodeExecutionJob : String to Date&Time : 3:24 : String to Date&Time 3:24 End execute (0 secs)
+2026-08-06 09:44:35,388 : INFO  : KNIME-Worker-0-Date&Time Difference 3:27 :  : LocalNodeExecutionJob : Date&Time Difference : 3:27 : Date&Time Difference 3:27 End execute (0 secs)
+2026-08-06 09:44:35,507 : INFO  : KNIME-Worker-1-Sorter 3:33 :  : LocalNodeExecutionJob : Sorter : 3:33 : Sorter 3:33 End execute (0 secs)
+2026-08-06 09:44:35,679 : INFO  : KNIME-Worker-0-Bar Chart 3:31 :  : LocalNodeExecutionJob : Bar Chart : 3:31 : Bar Chart 3:31 End execute (0 secs)
+2026-08-06 09:44:35,752 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-06 09:44:44,907 : INFO  : KNIME-Worker-1-Column Filter 3:3 :  : LocalNodeExecutionJob : Column Filter : 3:3 : Column Filter 3:3 End execute (0 secs)
+2026-08-06 09:44:44,936 : INFO  : KNIME-Worker-0-Row Filter 3:9 :  : LocalNodeExecutionJob : Row Filter : 3:9 : Row Filter 3:9 End execute (0 secs)
+2026-08-06 09:44:45,167 : INFO  : KNIME-Worker-1-Histogram 3:10 :  : LocalNodeExecutionJob : Histogram : 3:10 : Histogram 3:10 End execute (0 secs)
+2026-08-06 09:44:45,263 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-06 09:44:55,240 : INFO  : KNIME-Worker-0-Row Filter 3:11 :  : LocalNodeExecutionJob : Row Filter : 3:11 : Row Filter 3:11 End execute (0 secs)
+2026-08-06 09:44:55,276 : INFO  : KNIME-Worker-1-Histogram 3:12 :  : LocalNodeExecutionJob : Histogram : 3:12 : Histogram 3:12 End execute (0 secs)
+2026-08-06 09:44:55,384 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-06 09:44:59,888 : INFO  : KNIME-Worker-0-Column Filter 3:13 :  : LocalNodeExecutionJob : Column Filter : 3:13 : Column Filter 3:13 End execute (0 secs)
+2026-08-06 09:44:59,997 : INFO  : KNIME-Worker-1-Top k Row Filter 3:14 :  : LocalNodeExecutionJob : Top k Row Filter : 3:14 : Top k Row Filter 3:14 End execute (0 secs)
+2026-08-06 09:45:00,001 : INFO  : KNIME-Worker-0-Table View 3:34 :  : LocalNodeExecutionJob : Table View : 3:34 : Table View 3:34 End execute (0 secs)
+2026-08-06 09:45:09,116 : INFO  : KNIME-Worker-1-GroupBy 3:16 :  : LocalNodeExecutionJob : GroupBy : 3:16 : GroupBy 3:16 End execute (0 secs)
+2026-08-06 09:45:09,120 : INFO  : KNIME-Worker-0-Column Renamer 3:17 :  : LocalNodeExecutionJob : Column Renamer : 3:17 : Column Renamer 3:17 End execute (0 secs)
+2026-08-06 09:45:09,123 : INFO  : KNIME-Worker-1-Sorter 3:38 :  : LocalNodeExecutionJob : Sorter : 3:38 : Sorter 3:38 End execute (0 secs)
+2026-08-06 09:45:09,126 : INFO  : KNIME-Worker-0-Bar Chart 3:39 :  : LocalNodeExecutionJob : Bar Chart : 3:39 : Bar Chart 3:39 End execute (0 secs)
+2026-08-06 09:45:09,230 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-06 09:56:18,895 : INFO  : KNIME-Worker-3-Statistics View 3:2 :  : LocalNodeExecutionJob : Statistics View : 3:2 : Statistics View 3:2 End execute (1 sec)
+2026-08-06 09:56:42,910 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x000000700143d698 :  : FileUtil :  :  : Deleting 135 temporary files.
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 09:56:57,281 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-08-06 09:56:57,282 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-08-06 09:56:57,282 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-08-06 09:56:57,289 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Aug 06 09:56:57 NZST 2026
+2026-08-06 09:56:57,289 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-08-06 09:56:57,289 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-08-06 09:56:57,289 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-08-06 09:56:57,289 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-08-06 09:56:57,289 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-08-06 09:56:57,289 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-08-06 09:56:57,289 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-08-06 09:56:57,295 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-08-06 09:56:57,296 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-08-06 09:56:57,297 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-08-06 09:56:57,297 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-08-06 09:56:57,302 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-08-06 09:56:57,302 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 09:56:56,588 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-08-06 09:56:59,275 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-08-06 09:56:59,294 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 09:57:00,141 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-08-06 09:57:00,141 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-08-06 09:57:00,636 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 09:57:00,965 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-08-06 09:57:01,117 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 09:57:01,122 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 09:57:01,808 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-06 09:57:01,838 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-06 09:57:01,849 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-06 09:57:01,861 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-06 09:57:01,874 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-06 09:57:01,874 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-06 09:57:01,875 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-06 09:57:01,878 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-06 09:57:01,878 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-06 09:57:02,343 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-08-06 09:57:02,343 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-08-06 09:57:03,238 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-08-06 09:57:03,573 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-08-06 09:57:52,981 : INFO  : comm-pool-thread-3 :  : NodeRecommendationManager :  :  : Loading node recommendations from <org.knime.core.ui.workflowcoach.data.PrefsTripleProvider>
+2026-08-06 09:57:52,981 : INFO  : comm-pool-thread-3 :  : NodeRecommendationManager :  :  : Loading node recommendations from <org.knime.workbench.workflowcoach.data.CommunityTripleProvider>
+2026-08-06 09:57:53,132 : INFO  : comm-pool-thread-3 :  : NodeRecommendationManager :  :  : Loading node recommendations from <org.knime.workbench.workflowcoach.local.data.WorkspaceTripleProvider>
+2026-08-06 09:57:53,132 : INFO  : comm-pool-thread-3 :  : NodeRecommendationManager :  :  : Successfully (re-)loaded all node recommendations available
+2026-08-06 10:07:52,178 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-06 10:15:14,951 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-06 10:18:09,908 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-06 10:18:23,733 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-06 10:18:29,321 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-06 10:18:45,077 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-06 10:20:13,340 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-06 10:20:53,522 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-06 10:21:39,552 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-06 10:24:52,183 : INFO  : KNIME-Worker-2-Histogram 3:10 :  : LocalNodeExecutionJob : Histogram : 3:10 : Histogram 3:10 End execute (0 secs)
+2026-08-06 10:24:52,229 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-06 10:25:05,965 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-06 10:25:16,822 : INFO  : KNIME-Worker-2-Histogram 3:12 :  : LocalNodeExecutionJob : Histogram : 3:12 : Histogram 3:12 End execute (0 secs)
+2026-08-06 10:25:16,947 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-06 10:25:28,087 : ERROR : KNIME-Worker-2-Histogram 3:12 :  : Node : Histogram : 3:12 : Execute failed: Invalid format on custom bin cutoffs
+org.knime.core.webui.data.DataServiceException: Invalid format on custom bin cutoffs
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.getCustomCutoffs(HistogramNodeFactory.java:290)
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.createViewData(HistogramNodeFactory.java:217)
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.lambda$1(HistogramNodeFactory.java:177)
+	at org.knime.base.views.node.BaseViewsNodeModel.lambda$6(BaseViewsNodeModel.java:187)
+	at org.knime.base.views.node.BaseViewsNodeModel.execute(BaseViewsNodeModel.java:235)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1341)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:618)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:202)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:121)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:143)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:277)
+2026-08-06 10:25:29,466 : ERROR : KNIME-Worker-2-Histogram 3:12 :  : Node : Histogram : 3:12 : Execute failed: Invalid format on custom bin cutoffs
+org.knime.core.webui.data.DataServiceException: Invalid format on custom bin cutoffs
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.getCustomCutoffs(HistogramNodeFactory.java:290)
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.createViewData(HistogramNodeFactory.java:217)
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.lambda$1(HistogramNodeFactory.java:177)
+	at org.knime.base.views.node.BaseViewsNodeModel.lambda$6(BaseViewsNodeModel.java:187)
+	at org.knime.base.views.node.BaseViewsNodeModel.execute(BaseViewsNodeModel.java:235)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1341)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:618)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:202)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:121)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:143)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:277)
+2026-08-06 10:25:35,318 : ERROR : KNIME-Worker-2-Histogram 3:12 :  : Node : Histogram : 3:12 : Execute failed: Invalid format on custom bin cutoffs
+org.knime.core.webui.data.DataServiceException: Invalid format on custom bin cutoffs
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.getCustomCutoffs(HistogramNodeFactory.java:290)
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.createViewData(HistogramNodeFactory.java:217)
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.lambda$1(HistogramNodeFactory.java:177)
+	at org.knime.base.views.node.BaseViewsNodeModel.lambda$6(BaseViewsNodeModel.java:187)
+	at org.knime.base.views.node.BaseViewsNodeModel.execute(BaseViewsNodeModel.java:235)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1341)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:618)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:202)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:121)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:143)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:277)
+2026-08-06 10:25:36,300 : ERROR : KNIME-Worker-2-Histogram 3:12 :  : Node : Histogram : 3:12 : Execute failed: Invalid format on custom bin cutoffs
+org.knime.core.webui.data.DataServiceException: Invalid format on custom bin cutoffs
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.getCustomCutoffs(HistogramNodeFactory.java:290)
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.createViewData(HistogramNodeFactory.java:217)
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.lambda$1(HistogramNodeFactory.java:177)
+	at org.knime.base.views.node.BaseViewsNodeModel.lambda$6(BaseViewsNodeModel.java:187)
+	at org.knime.base.views.node.BaseViewsNodeModel.execute(BaseViewsNodeModel.java:235)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1341)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:618)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:202)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:121)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:143)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:277)
+2026-08-06 10:25:44,960 : ERROR : KNIME-Worker-2-Histogram 3:12 :  : Node : Histogram : 3:12 : Execute failed: Invalid format on custom bin cutoffs
+org.knime.core.webui.data.DataServiceException: Invalid format on custom bin cutoffs
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.getCustomCutoffs(HistogramNodeFactory.java:290)
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.createViewData(HistogramNodeFactory.java:217)
+	at org.knime.base.views.node.histogram.HistogramNodeFactory.lambda$1(HistogramNodeFactory.java:177)
+	at org.knime.base.views.node.BaseViewsNodeModel.lambda$6(BaseViewsNodeModel.java:187)
+	at org.knime.base.views.node.BaseViewsNodeModel.execute(BaseViewsNodeModel.java:235)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:605)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1341)
+	at org.knime.core.node.Node.execute(Node.java:1039)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:618)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:202)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:121)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:369)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:223)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:143)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:277)
+2026-08-06 10:27:17,590 : INFO  : KNIME-Worker-3-Date&Time Difference 3:27 :  : LocalNodeExecutionJob : Date&Time Difference : 3:27 : Date&Time Difference 3:27 End execute (0 secs)
+2026-08-06 10:30:47,579 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x000000d801438440 :  : FileUtil :  :  : Deleting 48 temporary files.
+2026-08-06 10:33:13,203 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-08-06 10:33:13,204 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-08-06 10:33:13,210 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Aug 06 10:33:13 NZST 2026
+2026-08-06 10:33:13,210 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-08-06 10:33:13,210 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-08-06 10:33:13,210 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-08-06 10:33:13,210 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-08-06 10:33:13,211 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-08-06 10:33:13,211 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-08-06 10:33:13,211 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-08-06 10:33:13,216 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-08-06 10:33:13,218 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-08-06 10:33:13,218 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-08-06 10:33:13,218 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-08-06 10:33:13,223 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-08-06 10:33:13,223 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-06 10:33:12,540 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-08-06 10:33:15,194 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-08-06 10:33:15,225 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 10:33:15,771 : ERROR : main :  : runtime :  :  : Command 'org.eclipse.ui.file.exit' failed
+org.eclipse.core.commands.ExecutionException: Error executing 'org.eclipse.ui.file.exit': java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.workbench.IPresentationEngine.stop()" because "engine" is null
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:179)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:488)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:485)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:204)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:186)
+	at org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler.runCommand(CocoaUIHandler.java:421)
+	at org.eclipse.e4.ui.workbench.renderers.swt.cocoa.CocoaUIHandler$1.widgetSelected(CocoaUIHandler.java:281)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:286)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4660)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1657)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1680)
+	at org.eclipse.swt.widgets.Widget.sendSelectionEvent(Widget.java:1730)
+	at org.eclipse.swt.widgets.MenuItem.sendSelection(MenuItem.java:585)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:6097)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5705)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5845)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:117)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:4000)
+	at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:768)
+	at org.eclipse.ui.internal.Workbench$20.runWithException(Workbench.java:1813)
+	at org.eclipse.ui.internal.StartupThreading$StartupRunnable.run(StartupThreading.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.syncExec(Synchronizer.java:183)
+	at org.eclipse.ui.internal.UISynchronizer.syncExec(UISynchronizer.java:133)
+	at org.eclipse.swt.widgets.Display.syncExec(Display.java:5264)
+	at org.eclipse.ui.internal.StartupThreading.runWithoutExceptions(StartupThreading.java:93)
+	at org.eclipse.ui.internal.Workbench.init(Workbench.java:1805)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2877)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:671)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:212)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+Caused by: org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.workbench.IPresentationEngine.stop()" because "engine" is null
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:66)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:299)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:233)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:174)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:165)
+	... 44 more
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.e4.ui.workbench.IPresentationEngine.stop()" because "engine" is null
+	at org.eclipse.ui.internal.Workbench.busyClose(Workbench.java:1196)
+	at org.eclipse.ui.internal.Workbench.lambda$5(Workbench.java:1466)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1466)
+	at org.eclipse.ui.internal.Workbench.close(Workbench.java:1437)
+	at org.eclipse.ui.internal.Workbench.lambda$17(Workbench.java:2862)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:91)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4660)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4649)
+	at org.eclipse.swt.widgets.Display.close(Display.java:881)
+	at org.eclipse.ui.internal.handlers.QuitHandler.execute(QuitHandler.java:42)
+	at org.eclipse.ui.internal.handlers.HandlerProxy.execute(HandlerProxy.java:277)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:98)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	... 48 more
+2026-08-06 10:33:16,254 : ERROR : main :  : runtime :  :  : Unable to create class 'org.knime.ui.java.browser.KnimeBrowserView' from bundle '619'
+org.eclipse.e4.core.di.InjectionException: java.lang.IllegalStateException: Life cycle state transition 'CREATE' failed; wrong life cycle state transition. Last state transition: 'SHUTDOWN'. Expected last state transition(s): [STARTUP]
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:66)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:90)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:42)
+	at org.eclipse.ui.internal.WorkbenchContributionFactory.create(WorkbenchContributionFactory.java:46)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ContributedPartRenderer.createWidget(ContributedPartRenderer.java:134)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveRenderer.processContents(PerspectiveRenderer.java:48)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.showTab(PerspectiveStackRenderer.java:79)
+	at org.eclipse.e4.ui.workbench.renderers.swt.LazyStackRenderer.postProcess(LazyStackRenderer.java:114)
+	at org.eclipse.e4.ui.workbench.renderers.swt.PerspectiveStackRenderer.postProcess(PerspectiveStackRenderer.java:61)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:676)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SashRenderer.processContents(SashRenderer.java:147)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:662)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1079)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:212)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+Caused by: java.lang.IllegalStateException: Life cycle state transition 'CREATE' failed; wrong life cycle state transition. Last state transition: 'SHUTDOWN'. Expected last state transition(s): [STARTUP]
+	at org.knime.core.node.util.CheckUtils.checkState(CheckUtils.java:267)
+	at org.knime.core.node.util.CheckUtils.checkState(CheckUtils.java:166)
+	at org.knime.ui.java.browser.lifecycle.LifeCycle.checkExpectedLastStateTransition(LifeCycle.java:258)
+	at org.knime.ui.java.browser.lifecycle.LifeCycle.doStateTransition(LifeCycle.java:240)
+	at org.knime.ui.java.browser.lifecycle.LifeCycle.create(LifeCycle.java:145)
+	at org.knime.ui.java.browser.KnimeBrowserView.createPartControl(KnimeBrowserView.java:179)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	... 64 more
+2026-08-06 10:33:16,310 : ERROR : main :  : runtime :  :  : Unable to create class 'org.eclipse.ui.internal.StandardTrim' from bundle '306'
+org.eclipse.e4.core.di.InjectionException: org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.internal.services.IServiceLocatorCreator.createServiceLocator(org.eclipse.ui.services.IServiceLocator, org.eclipse.ui.services.AbstractServiceFactory, org.eclipse.ui.services.IDisposable, org.eclipse.e4.core.contexts.IEclipseContext)" because "slc" is null
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:66)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:326)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:228)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:93)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.ui.internal.WorkbenchContributionFactory.create(WorkbenchContributionFactory.java:51)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:106)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:684)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1079)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:212)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+Caused by: org.eclipse.e4.core.di.InjectionException: java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.internal.services.IServiceLocatorCreator.createServiceLocator(org.eclipse.ui.services.IServiceLocator, org.eclipse.ui.services.AbstractServiceFactory, org.eclipse.ui.services.IDisposable, org.eclipse.e4.core.contexts.IEclipseContext)" because "slc" is null
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:66)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.inject(InjectorImpl.java:95)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.inject(ContextInjectionFactory.java:84)
+	at org.eclipse.ui.internal.Workbench.createWorkbenchWindow(Workbench.java:1554)
+	at org.eclipse.ui.internal.StandardTrim.createStatusLine(StandardTrim.java:106)
+	at org.eclipse.ui.internal.StandardTrim.createWidget(StandardTrim.java:47)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	... 47 more
+Caused by: java.lang.NullPointerException: Cannot invoke "org.eclipse.ui.internal.services.IServiceLocatorCreator.createServiceLocator(org.eclipse.ui.services.IServiceLocator, org.eclipse.ui.services.AbstractServiceFactory, org.eclipse.ui.services.IDisposable, org.eclipse.e4.core.contexts.IEclipseContext)" because "slc" is null
+	at org.eclipse.ui.internal.WorkbenchWindow.setup(WorkbenchWindow.java:487)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	... 57 more
+2026-08-06 10:33:16,314 : ERROR : main :  : runtime :  :  : Unable to create class 'org.eclipse.ui.internal.StandardTrim' from bundle '306'
+org.eclipse.e4.core.di.InjectionException: org.eclipse.e4.core.di.InjectionException: Unable to process "ProgressRegion.workbenchWindow": no actual value was found for the argument "IWorkbenchWindow".
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:66)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.processAnnotated(InjectorImpl.java:977)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:139)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:326)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:228)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:93)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:59)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:37)
+	at org.eclipse.ui.internal.WorkbenchContributionFactory.create(WorkbenchContributionFactory.java:51)
+	at org.eclipse.e4.ui.workbench.renderers.swt.ToolControlRenderer.createWidget(ToolControlRenderer.java:129)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createWidget(PartRenderingEngine.java:991)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:658)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.workbench.renderers.swt.SWTPartRenderer.processContents(SWTPartRenderer.java:72)
+	at org.eclipse.e4.ui.workbench.renderers.swt.TrimBarRenderer.processContents(TrimBarRenderer.java:106)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$1.run(PartRenderingEngine.java:543)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:527)
+	at org.eclipse.e4.ui.workbench.renderers.swt.WBWRenderer.processContents(WBWRenderer.java:684)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:672)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.safeCreateGui(PartRenderingEngine.java:762)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$2.run(PartRenderingEngine.java:727)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.createGui(PartRenderingEngine.java:711)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1079)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:153)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:678)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:583)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.knime.product.rcp.KNIMEApplication.start(KNIMEApplication.java:212)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:219)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:149)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:115)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:467)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:298)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:627)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:575)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1431)
+Caused by: org.eclipse.e4.core.di.InjectionException: Unable to process "ProgressRegion.workbenchWindow": no actual value was found for the argument "IWorkbenchWindow".
+	at org.eclipse.e4.core.internal.di.InjectorImpl.reportUnresolvedArgument(InjectorImpl.java:462)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.resolveRequestorArgs(InjectorImpl.java:453)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalInject(InjectorImpl.java:128)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.internalMake(InjectorImpl.java:386)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.make(InjectorImpl.java:312)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.make(ContextInjectionFactory.java:203)
+	at org.eclipse.ui.internal.StandardTrim.createProgressBar(StandardTrim.java:69)
+	at org.eclipse.ui.internal.StandardTrim.createWidget(StandardTrim.java:51)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	... 47 more
+2026-08-06 10:33:16,331 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-08-06 10:33:16,331 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-08-06 10:33:16,497 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 10:33:16,808 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 10:33:17,091 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-08-06 10:33:17,140 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-06 10:33:17,780 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-06 10:33:17,814 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-06 10:33:17,825 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-06 10:33:17,833 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-06 10:33:17,843 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-06 10:33:17,843 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-06 10:33:17,855 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-06 10:33:17,855 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-06 10:33:17,856 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)

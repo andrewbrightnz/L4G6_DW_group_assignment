@@ -11,7 +11,7 @@ print ("Hello World")
 # I am Kavya
 print("Good")
 print("bye")
-Print("hello world")
+print("hello world")
 print("Done")
 print("Hello")
 

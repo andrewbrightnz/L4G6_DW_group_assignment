@@ -1,0 +1,58 @@
+{
+  "version" : "5.12.0.v202606180846",
+  "projects" : [ {
+    "name" : "listings_assignment_clean1",
+    "active" : true,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "listings_assignment_clean1"
+    }
+  } ],
+  "mostRecentlyUsedProjects" : [ {
+    "name" : "KNIME_project",
+    "timeUsed" : "2026-08-03T09:00:59.053982+12:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "KNIME_project"
+    }
+  }, {
+    "name" : "listings_assignment_clean",
+    "timeUsed" : "2026-08-03T09:01:50.884142+12:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "listings_assignment_clean"
+    }
+  }, {
+    "name" : "Building a Simple Classifier",
+    "timeUsed" : "2026-08-03T10:29:23.075517+12:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "Example Workflows/Basic Examples/Building a Simple Classifier"
+    }
+  }, {
+    "name" : "Group assignment",
+    "timeUsed" : "2026-08-03T10:29:46.994664+12:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "Group assignment"
+    }
+  }, {
+    "name" : "listings_assignment_clean1",
+    "timeUsed" : "2026-08-03T10:30:33.128334+12:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "listings_assignment_clean1"
+    }
+  } ]
+}
