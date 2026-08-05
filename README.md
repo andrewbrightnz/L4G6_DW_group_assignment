@@ -92,7 +92,11 @@ Set up the environment using the dependencies listed in `requirements.txt`.
 
 ### Andrew
 
-- Used AI assistance to help set up the Python virtual environment and `.gitignore` file.
+Deliverable 1 (Setup project structure and GitHub):
+- Used ChatGPT to help set up the Python virtual environment and `.gitignore` file.
+
+Deliverable 2 (AirBnb data analysis):
+- Used Claude for advice on which node to chose for a specific outcome and how to modify some plots (variable order etc)
 
 ### Jinhang
 
