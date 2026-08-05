@@ -1,0 +1,480 @@
+2026-07-30 13:29:36,443 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:29:36,443 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-07-30 13:29:36,444 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Jul 30 13:29:36 NZST 2026
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-07-30 13:29:36,450 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-07-30 13:29:36,456 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-07-30 13:29:36,458 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-07-30 13:29:36,458 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-07-30 13:29:36,458 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-07-30 13:29:36,463 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-07-30 13:29:36,463 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:29:35,858 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-07-30 13:29:38,550 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-07-30 13:29:38,567 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:29:39,510 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-07-30 13:29:39,510 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-07-30 13:29:40,144 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:29:40,750 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-07-30 13:29:40,750 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-07-30 13:29:40,913 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:29:40,922 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-07-30 13:29:41,073 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:29:41,818 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:29:41,853 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:29:41,866 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:29:41,872 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:29:41,883 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:29:41,883 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:29:41,903 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:29:41,906 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:29:41,906 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:29:41,930 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-07-30 13:29:42,292 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-07-30 13:31:16,511 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:31:16,511 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-07-30 13:31:16,512 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Jul 30 13:31:16 NZST 2026
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-07-30 13:31:16,518 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-07-30 13:31:16,523 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-07-30 13:31:16,525 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-07-30 13:31:16,525 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-07-30 13:31:16,526 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-07-30 13:31:16,531 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-07-30 13:31:16,531 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:31:15,921 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-07-30 13:31:18,526 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-07-30 13:31:18,536 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:31:19,455 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-07-30 13:31:19,455 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-07-30 13:31:20,169 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:31:20,242 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:31:20,606 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-07-30 13:31:20,652 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:31:21,029 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-07-30 13:31:21,029 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-07-30 13:31:21,109 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:31:21,123 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:31:21,129 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:31:21,139 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:31:21,139 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:31:21,160 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:31:21,168 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:31:21,168 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:31:21,169 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:31:22,067 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-07-30 13:31:22,379 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-07-30 13:34:18,374 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-07-30 13:34:18,375 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Jul 30 13:34:18 NZST 2026
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-07-30 13:34:18,381 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-07-30 13:34:18,387 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-07-30 13:34:18,388 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-07-30 13:34:18,388 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-07-30 13:34:18,388 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-07-30 13:34:18,393 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-07-30 13:34:18,393 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 13:34:17,794 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-07-30 13:34:20,282 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:34:20,306 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-07-30 13:34:21,259 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-07-30 13:34:21,259 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-07-30 13:34:21,428 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-07-30 13:34:21,455 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:34:22,329 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:34:22,381 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 13:34:22,434 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-07-30 13:34:22,434 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-07-30 13:34:22,978 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:34:23,014 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:34:23,027 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 13:34:23,032 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:34:23,037 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:34:23,037 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 13:34:23,064 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:34:23,068 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:34:23,068 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 13:34:23,515 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-07-30 13:34:23,798 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-07-30 13:35:17,479 : INFO  : Thread-1340 :  : Server :  :  : jetty-12.0.21; built: 2025-05-09T00:32:00.688Z; git: 1c4719601e31b05b7d68910d2edd980259f1f53c; jvm 21.0.9+10-LTS
+2026-07-30 13:35:17,498 : INFO  : Thread-1340 :  : AbstractConnector :  :  : Started ServerConnector@27ac51ea{HTTP/1.1, (http/1.1)}{0.0.0.0:57937}
+2026-07-30 13:35:17,498 : INFO  : Thread-1340 :  : Server :  :  : Started oejs.Server@14907c83{STARTING}[12.0.21,sto=0] @60495ms
+2026-07-30 13:35:17,498 : INFO  : Thread-1340 :  : OAuthAuthenticator :  :  : Opening browser to perform authentication for 'https://api.hub.knime.com'.
+2026-07-30 13:35:25,025 : INFO  : Thread-1351 :  : Server :  :  : Stopped oejs.Server@14907c83{STOPPING}[12.0.21,sto=0]
+2026-07-30 13:35:25,042 : INFO  : Thread-1351 :  : AbstractConnector :  :  : Stopped ServerConnector@27ac51ea{HTTP/1.1, (http/1.1)}{0.0.0.0:57937}
+2026-07-30 13:38:09,808 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x000000b80142cf08 :  : FileUtil :  :  : Deleting 1 temporary files.
+2026-07-30 14:25:20,291 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-07-30 14:25:20,292 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Jul 30 14:25:20 NZST 2026
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-07-30 14:25:20,301 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-07-30 14:25:20,306 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-07-30 14:25:20,312 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-07-30 14:25:20,312 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-07-30 14:25:20,312 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-07-30 14:25:20,317 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-07-30 14:25:20,317 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:19,369 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-07-30 14:25:22,184 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-07-30 14:25:22,194 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:23,133 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-07-30 14:25:23,133 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-07-30 14:25:23,281 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:23,448 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-07-30 14:25:23,490 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:24,014 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:24,612 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:24,642 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:24,652 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:24,664 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:24,673 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:24,673 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:24,680 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:24,682 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:24,682 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:27,282 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-07-30 14:25:27,282 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-07-30 14:25:29,039 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-07-30 14:25:29,580 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-07-30 14:25:36,379 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x0000007801434ab0 :  : FileUtil :  :  : Deleting 1 temporary files.
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-07-30 14:25:42,661 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Jul 30 14:25:42 NZST 2026
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-07-30 14:25:42,668 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-07-30 14:25:42,673 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-07-30 14:25:42,674 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-07-30 14:25:42,675 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-07-30 14:25:42,675 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-07-30 14:25:42,680 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-07-30 14:25:42,680 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-07-30 14:25:42,014 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-07-30 14:25:44,585 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:44,593 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-07-30 14:25:45,411 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-07-30 14:25:45,411 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-07-30 14:25:46,113 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:46,323 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:46,547 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-07-30 14:25:46,558 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-07-30 14:25:47,061 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:47,071 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:47,076 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-07-30 14:25:47,091 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:47,091 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:47,094 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-07-30 14:25:47,102 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:47,104 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:47,104 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-07-30 14:25:47,484 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-07-30 14:25:47,484 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-07-30 14:25:48,445 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-07-30 14:25:48,784 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-08-01 09:14:43,467 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x000000700143bc60 :  : FileUtil :  :  : Deleting 1 temporary files.
+2026-08-03 08:57:47,702 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 08:57:47,703 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-08-03 08:57:47,704 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # logging date=Mon Aug 03 08:57:47 NZST 2026
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-08-03 08:57:47,712 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-08-03 08:57:47,713 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-08-03 08:57:47,713 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-08-03 08:57:47,719 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-08-03 08:57:47,721 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-08-03 08:57:47,721 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-08-03 08:57:47,722 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-08-03 08:57:47,727 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-08-03 08:57:47,727 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 08:57:46,827 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-08-03 08:57:49,619 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-08-03 08:57:49,643 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 08:57:50,611 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-08-03 08:57:50,611 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-08-03 08:57:50,626 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 08:57:50,996 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 08:57:51,075 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-08-03 08:57:51,195 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 08:57:52,067 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 08:57:52,099 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 08:57:52,109 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 08:57:52,123 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 08:57:52,123 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 08:57:52,127 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 08:57:52,136 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 08:57:52,137 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 08:57:52,137 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 08:57:53,335 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-08-03 08:57:53,336 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-08-03 08:57:55,133 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-08-03 08:57:55,700 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-08-03 08:58:11,645 : INFO  : Thread-1245 :  : Server :  :  : jetty-12.0.21; built: 2025-05-09T00:32:00.688Z; git: 1c4719601e31b05b7d68910d2edd980259f1f53c; jvm 21.0.9+10-LTS
+2026-08-03 08:58:11,664 : INFO  : Thread-1245 :  : AbstractConnector :  :  : Started ServerConnector@55dd8b4{HTTP/1.1, (http/1.1)}{0.0.0.0:63847}
+2026-08-03 08:58:11,664 : INFO  : Thread-1245 :  : Server :  :  : Started oejs.Server@4bf4ad9f{STARTING}[12.0.21,sto=0] @25921ms
+2026-08-03 08:58:11,665 : INFO  : Thread-1245 :  : OAuthAuthenticator :  :  : Opening browser to perform authentication for 'https://api.hub.knime.com'.
+2026-08-03 08:58:53,928 : INFO  : Thread-1280 :  : Server :  :  : Stopped oejs.Server@4bf4ad9f{STOPPING}[12.0.21,sto=0]
+2026-08-03 08:58:53,945 : INFO  : Thread-1280 :  : AbstractConnector :  :  : Stopped ServerConnector@55dd8b4{HTTP/1.1, (http/1.1)}{0.0.0.0:63847}
+2026-08-03 09:00:58,873 : INFO  : ModalContext :  : LoadWorkflowRunnable :  :  : New workflow created.
+2026-08-03 09:01:50,722 : INFO  : ModalContext :  : StringHistory : String to Date&Time : 3:24 : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string_to_date_formats.txt' does not exist.
+2026-08-03 10:23:08,432 : INFO  : KNIME-Worker-2-File Reader (Complex Format) 3:19 :  : FileReaderNodeModel : File Reader (Complex Format) : 3:19 : Preparing to read from 'https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv'.
+2026-08-03 10:23:10,225 : INFO  : KNIME-Worker-2-File Reader (Complex Format) 3:19 :  : LocalNodeExecutionJob : File Reader (Complex Format) : 3:19 : File Reader (Complex Format) 3:19 End execute (2 secs)
+2026-08-03 10:23:10,243 : INFO  : KNIME-Worker-3-Column Filter 3:20 :  : LocalNodeExecutionJob : Column Filter : 3:20 : Column Filter 3:20 End execute (0 secs)
+2026-08-03 10:23:10,394 : INFO  : KNIME-Worker-2-Row Filter 3:26 :  : LocalNodeExecutionJob : Row Filter : 3:26 : Row Filter 3:26 End execute (0 secs)
+2026-08-03 10:23:10,504 : INFO  : KNIME-Worker-3-String to Date&Time 3:24 :  : LocalNodeExecutionJob : String to Date&Time : 3:24 : String to Date&Time 3:24 End execute (0 secs)
+2026-08-03 10:23:10,543 : INFO  : KNIME-Worker-2-Date&Time Difference 3:27 :  : LocalNodeExecutionJob : Date&Time Difference : 3:27 : Date&Time Difference 3:27 End execute (0 secs)
+2026-08-03 10:23:10,685 : INFO  : KNIME-Worker-3-Sorter 3:33 :  : LocalNodeExecutionJob : Sorter : 3:33 : Sorter 3:33 End execute (0 secs)
+2026-08-03 10:23:10,820 : INFO  : KNIME-Worker-2-Bar Chart 3:31 :  : LocalNodeExecutionJob : Bar Chart : 3:31 : Bar Chart 3:31 End execute (0 secs)
+2026-08-03 10:23:32,869 : INFO  : KNIME-Worker-3-Column Filter 3:3 :  : LocalNodeExecutionJob : Column Filter : 3:3 : Column Filter 3:3 End execute (0 secs)
+2026-08-03 10:23:32,902 : INFO  : KNIME-Worker-2-Row Filter 3:9 :  : LocalNodeExecutionJob : Row Filter : 3:9 : Row Filter 3:9 End execute (0 secs)
+2026-08-03 10:23:33,091 : INFO  : KNIME-Worker-3-Histogram 3:10 :  : LocalNodeExecutionJob : Histogram : 3:10 : Histogram 3:10 End execute (0 secs)
+2026-08-03 10:23:36,173 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-03 10:23:48,006 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-03 10:23:53,969 : ERROR : Thread-12257 :  : KnimeBrowserView :  :  : Problem loading UI resources at 'https://org.knime.ui.java/videos/5-4-Build-Mode-Small-Workflow.webm'. See log for details.
+java.lang.NullPointerException: Cannot invoke "java.net.URL.openStream()" because the return value of "org.eclipse.core.runtime.FileLocator.toFileURL(java.net.URL)" is null
+	at org.knime.ui.java.browser.lifecycle.Create.lambda$4(Create.java:187)
+	at org.knime.js.cef.middleware.CEFMiddlewareService.lambda$1(CEFMiddlewareService.java:180)
+	at com.equo.middleware.ee.provider.handler.DelegatingSchemeHandler.getResponseData(DelegatingSchemeHandler.java:61)
+	at com.equo.chromium.swt.internal.spi.DelegatingCefResourceHandler.getResponseHeaders(DelegatingCefResourceHandler.java:57)
+2026-08-03 10:23:55,448 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-03 10:23:56,702 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Unhandled rejection:: 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      [object PromiseRejectionEvent] (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-08-03 10:23:56,702 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) AbortError: The play() request was interrupted because the media was removed from the document. https://goo.gl/LdLk22 (source: https://org.knime.ui.java/editor/index.html#/workflow/listings_assignment_clean_b2e09b93-1d92-4621-bccd-780a419253d3/root?version; line: 0)
+2026-08-03 10:23:59,738 : INFO  : KNIME-Worker-2-Row Filter 3:11 :  : LocalNodeExecutionJob : Row Filter : 3:11 : Row Filter 3:11 End execute (0 secs)
+2026-08-03 10:23:59,768 : INFO  : KNIME-Worker-3-Histogram 3:12 :  : LocalNodeExecutionJob : Histogram : 3:12 : Histogram 3:12 End execute (0 secs)
+2026-08-03 10:23:59,868 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.histogram.HistogramNodeFactory/Histogram.html; line: 0)
+2026-08-03 10:24:27,593 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-03 10:26:01,179 : WARN  : main :  : KnimeBrowserView :  :  : An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. (source: https://org.knime.core.ui.view/uiext-view/org.knime.base.views.node.barchart.BarChartNodeFactory/BarChart.html; line: 0)
+2026-08-03 10:28:47,860 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x00000070014331c8 :  : FileUtil :  :  : Deleting 84 temporary files.
+2026-08-03 10:28:52,088 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 10:28:52,088 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.12.0.v202606180846 (Build June 15, 2026)       #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : # /Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/knime.log
+2026-08-03 10:28:52,089 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # logging date=Mon Aug 03 10:28:52 NZST 2026
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-08-03 10:28:52,095 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-08-03 10:28:52,102 : INFO  : main :  : NodeLogger :  :  : # host=MacBook-Air-73.local
+2026-08-03 10:28:52,103 : INFO  : main :  : NodeLogger :  :  : # username=andrewbright
+2026-08-03 10:28:52,103 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-08-03 10:28:52,103 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-08-03 10:28:52,108 : INFO  : main :  : NodeLogger :  :  : # KNID=11-1169033e0eebee34-01-d468a50a28f57721
+2026-08-03 10:28:52,108 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-08-03 10:28:51,410 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-08-03 10:28:54,097 : INFO  : Node Repository Initializer :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 10:28:54,101 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-08-03 10:28:54,978 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-08-03 10:28:54,978 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_database_urls.txt' does not exist.
+2026-08-03 10:28:56,007 : INFO  : Node Repository Initializer :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 10:28:56,252 : INFO  : Node Repository Initializer :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 10:28:56,271 : INFO  : Node Repository Initializer :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-08-03 10:28:56,273 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-08-03 10:28:56,702 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 10:28:56,733 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 10:28:56,744 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=vertica, name=Vertica, description=Vertica Analytics Platform)
+2026-08-03 10:28:56,754 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 10:28:56,764 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 10:28:56,764 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=mssqlserver, name=Microsoft SQL Server, description=null)
+2026-08-03 10:28:56,771 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 10:28:56,771 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 10:28:56,772 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=oracle, name=Oracle, description=null)
+2026-08-03 10:28:57,330 : INFO  : main :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-08-03 10:28:57,331 : INFO  : main :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-08-03 10:28:58,236 : INFO  : main :  : StringHistory :  :  : History file '/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-08-03 10:28:58,551 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/editor/assets/editor-CIijjzSo.js; line: 55)
+2026-08-03 10:29:46,833 : INFO  : ModalContext :  : LoadWorkflowRunnable :  :  : New workflow created.
+2026-08-03 10:43:34,936 : INFO  : KNIME shutdown hooks - org.knime.core.util.FileUtil$$Lambda/0x000000a001437be0 :  : FileUtil :  :  : Deleting 1 temporary files.
