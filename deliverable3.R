@@ -56,4 +56,15 @@ chch_oct <- Oct2025_data |>
   filter(neighbourhood_group == "Christchurch City") |>
   mutate(MonthYear = "Oct 2025")
 
+chch_all <- bind_rows(
+  chch_oct, chch_nov, chch_dec,
+  chch_jan, chch_feb, chch_march,
+  chch_april, chch_may, chch_june
+)
 
+chch_all <- chch_all |>
+  mutate(MonthYear = factor(MonthYear, levels = c(
+    "Oct 2025", "Nov 2025", "Dec 2025",
+    "Jan 2026", "Feb 2026", "March 2026",
+    "April 2026", "May 2026", "June 2026"
+  )))
