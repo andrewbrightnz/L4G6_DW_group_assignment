@@ -95,6 +95,9 @@ Deliverable 1 (Setup project structure and GitHub):
 Deliverable 2 (AirBnb data analysis):
 - Used Claude for advice on which node to chose for a specific outcome and how to modify some plots (variable order etc)
 
+R revision
+- Used Claude to put together a collection of Jupyter notebooks covering material in the R documentation to make revision of these methods easier.
+
 ### Jinhang
 
 - Used OpenAI Codex to help understand the task requirements, provide guidance on using KNIME, and assist with formatting the README. The workflow and analysis were completed by Jinhang with support from other team members.
