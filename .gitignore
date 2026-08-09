@@ -23,3 +23,4 @@ __pycache__/
 listings.csv
 data/listings.csv
 l4g6_env/
+.Rproj.user
