@@ -90,5 +90,18 @@ task_3 <- function(chch_Oct25_to_Jun26) {
   
   print(p)
   
+  dir.create(
+    "Plots",
+    showWarnings = FALSE
+  )
+  
+  ggsave(
+    filename = "Plots/Task 3 - Distribution of price.png",
+    plot = p,
+    width = 8,
+    height = 6,
+    dpi = 300
+  )
+  
   invisible(p)
 }
