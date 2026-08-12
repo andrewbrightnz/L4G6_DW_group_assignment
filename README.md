@@ -98,6 +98,10 @@ Deliverable 2 (AirBnb data analysis):
 R revision
 - Used Claude to put together a collection of Jupyter notebooks covering material in the R documentation to make revision of these methods easier.
 
+Deliverable 3 (reproduce KNIME workflow and plots using R)
+- Used Claude for general repo housekeeping advice (how to load and run task files from main, how to save datasets and plots)
+- Used Claude to tidy Task_4
+
 ### Jinhang
 
 - Used OpenAI Codex to help understand the task requirements, provide guidance on using KNIME, and assist with formatting the README. The workflow and analysis were completed by Jinhang with support from other team members.
