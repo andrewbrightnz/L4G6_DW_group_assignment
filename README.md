@@ -101,6 +101,7 @@ R revision
 Deliverable 3 (reproduce KNIME workflow and plots using R)
 - Used Claude for general repo housekeeping advice (how to load and run task files from main, how to save datasets and plots)
 - Used Claude to tidy Task_4
+- Used too much Claude to create task_5 due to time constraints, but I've commented most lines to show understanding
 
 ### Jinhang
 

@@ -1,7 +1,7 @@
 # Plot the distribution of price as a histogram for all New Zealand
 # and Christchurch City. Both distributions are shown in the same plot.
 
-task_3 <- function(chch_june) {
+task_3 <- function(dataset) {
 
   nz_listings <- read_csv(
     "https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv",
@@ -16,7 +16,7 @@ task_3 <- function(chch_june) {
       price > 0
     )
 
-  chch_listings <- chch_june |>
+  chch_listings <- dataset |>
     filter(
       as.character(MonthYear) == "June 2026"
     ) |>
@@ -88,12 +88,14 @@ task_3 <- function(chch_june) {
       panel.grid.minor = element_blank()
     )
   
-  print(p)
-  
-  dir.create(
-    "Plots",
-    showWarnings = FALSE
-  )
+  # Plot is saved to plots; no need to print it
+  # print(p)
+
+  # Plots folder is already created  
+  # dir.create(
+  #   "Plots",
+  #   showWarnings = FALSE
+  # )
   
   ggsave(
     filename = "Plots/Task 3 - Distribution of price.png",
@@ -106,5 +108,5 @@ task_3 <- function(chch_june) {
   invisible(p)
 }
 
-task_3(chch_june)
-
+# Uncomment the line below to run this file from this window instead of from main.R
+# task_3(chch_june)
