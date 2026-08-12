@@ -24,8 +24,8 @@ task_4 <- function(chch_june) {
   p <- chch_june |>
     filter(!is.na(DaysSinceLastReview)) |>
     ggplot(aes(x = DaysSinceLastReview)) +
-    geom_histogram(binwidth = 300, fill = "steelblue", color = "white") + 
-    coord_cartesian(xlim = c(0, 2500)) +
+    geom_histogram(binwidth = 30, fill = "steelblue", color = "white") + 
+    coord_cartesian(xlim = c(0, 1000)) +
     labs(
       title = "Distribution of Days Since Last Review",
       x = "Days since last review",
