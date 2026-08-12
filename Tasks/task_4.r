@@ -50,7 +50,7 @@ task_4 <- function(chch_june) {
     height = 6, 
     dpi = 300
   )
-  print(p)
+  # Plot saves to Plots folder; no need to print it
+  # print(p)
   
 }
-task_4(chch_june)
