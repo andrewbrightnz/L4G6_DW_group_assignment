@@ -6364,8 +6364,8 @@ room_type,character,Entire home/apt,22765,,,,,0
 room_type,character,Private room,5744,,,,,0
 room_type,character,Hotel room,251,,,,,0
 room_type,character,Shared room,35,,,,,0
-price,numeric,,,27,43654,260.1996359223311,943.7215006477727,10667
-minimum_nights,numeric,,,1,365,1.7875373809027104,5.50947128681028,37
+price,numeric,,,27,43654,260.1996359223311,943.7215006477728,10667
+minimum_nights,numeric,,,1,365,1.7875373809027104,5.509471286810282,37
 number_of_reviews,numeric,,,0,1584,70.39169994790751,120.51351210201697,0
 last_review,Date,,,2014-04-14,2026-06-21,,,2627
 reviews_per_month,numeric,,,0.01,16.57,2.350719199021706,2.1855657895231095,2627
