@@ -1,43 +1,41 @@
 # Plot the distribution of price as a histogram for all New Zealand
 # and Christchurch City. Both distributions are shown in the same plot.
 
-library(tidyverse)
+task_3 <- function(chch_Oct25_to_Jun26) {
 
-# Read the complete New Zealand listings dataset
-june2026_data <- read_csv(
-  "https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv"
-)
-
-task_3 <- function(nz_data) {
-  
-  # Clean the price column and remove invalid prices
-  nz_listings <- nz_data |>
+  nz_listings <- read_csv(
+    "https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv",
+    show_col_types = FALSE
+  ) |>
     mutate(
-      price = parse_number(as.character(price))
+      price = parse_number(as.character(price)),
+      area = "New Zealand"
     ) |>
     filter(
       !is.na(price),
       price > 0
-    ) |>
-    mutate(
-      area = "New Zealand"
     )
-  
-  chch_listings <- nz_listings |>
+
+  chch_listings <- chch_Oct25_to_Jun26 |>
     filter(
-      neighbourhood_group == "Christchurch City"
+      as.character(MonthYear) == "June 2026"
     ) |>
     mutate(
+      price = parse_number(as.character(price)),
       area = "Christchurch City"
+    ) |>
+    filter(
+      !is.na(price),
+      price > 0
     )
-  
+
   plot_data <- bind_rows(
     nz_listings |>
       select(price, area),
     chch_listings |>
       select(price, area)
   )
-  
+
   x_max <- quantile(
     nz_listings$price,
     0.99,
@@ -45,8 +43,8 @@ task_3 <- function(nz_data) {
   )
   
   bin_width <- x_max / 40
-  
-  price_plot <- ggplot(
+
+  p <- ggplot(
     plot_data,
     aes(
       x = price,
@@ -78,7 +76,7 @@ task_3 <- function(nz_data) {
     ) +
     labs(
       title = "Distribution of Airbnb Listing Prices",
-      subtitle = "New Zealand compared with Christchurch City",
+      subtitle = "New Zealand compared with Christchurch City, June 2026",
       x = "Price per night (NZD)",
       y = "Density",
       fill = NULL,
@@ -90,7 +88,7 @@ task_3 <- function(nz_data) {
       panel.grid.minor = element_blank()
     )
   
-  return(price_plot)
+  print(p)
+  
+  invisible(p)
 }
-
-task_3(june2026_data)
