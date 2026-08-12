@@ -106,3 +106,10 @@ Deliverable 3 (reproduce KNIME workflow and plots using R)
 ### Jinhang
 
 - Used OpenAI Codex to help understand the task requirements, provide guidance on using KNIME, and assist with formatting the README. The workflow and analysis were completed by Jinhang with support from other team members.
+
+
+### Ruby
+
+Deliverable 3 
+- Used Claude to show me how to concatenate each months dataset together
+
