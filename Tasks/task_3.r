@@ -1,7 +1,7 @@
 # Plot the distribution of price as a histogram for all New Zealand
 # and Christchurch City. Both distributions are shown in the same plot.
 
-task_3 <- function(chch_Oct25_to_Jun26) {
+task_3 <- function(chch_june) {
 
   nz_listings <- read_csv(
     "https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv",
@@ -16,7 +16,7 @@ task_3 <- function(chch_Oct25_to_Jun26) {
       price > 0
     )
 
-  chch_listings <- chch_Oct25_to_Jun26 |>
+  chch_listings <- chch_june |>
     filter(
       as.character(MonthYear) == "June 2026"
     ) |>
@@ -105,3 +105,6 @@ task_3 <- function(chch_Oct25_to_Jun26) {
   
   invisible(p)
 }
+
+task_3(chch_june)
+

@@ -1,9 +1,10 @@
 # Download all listings.csv datasets from Oct 2025 to June 2026 for all team members.
 # Load one dataset into Python or R
 # Filter on Christchurch data only. Use only this filtered dataset from now on.
-
+library(tidyverse)
 
 task_1 <- function() {
+
   june2026_data <- read_csv("https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv")
 
   chch_june <- june2026_data |>
@@ -76,5 +77,10 @@ task_1 <- function() {
   # Save the dataset as a CSV file
   write_csv(chch_Oct25_to_Jun26, "Data/chch_Oct25_to_Jun26.csv")
   
+  write_csv(chch_june, "Data/chch_june.csv")
+  
+  return(chch_Oct25_to_Jun26)
+  
   # R returns chch_all_listings automatically; no need to call it here.
 }
+

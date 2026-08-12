@@ -2,8 +2,8 @@
 # Plot the distribution of this new feature.
 
 
-task_4 <- function(chch_Oct25_to_Jun26) {
-  chch_Oct25_to_Jun26 <- chch_Oct25_to_Jun26 |>
+task_4 <- function(chch_june) {
+  chch_june <- chch_june |>
     mutate(
       last_review = as.Date(last_review),
       DataDate = case_when( 
@@ -21,7 +21,7 @@ task_4 <- function(chch_Oct25_to_Jun26) {
     )
 
   # 1. Assign the plot to a variable (p)
-  p <- chch_Oct25_to_Jun26 |>
+  p <- chch_june |>
     filter(!is.na(DaysSinceLastReview)) |>
     ggplot(aes(x = DaysSinceLastReview)) +
     geom_histogram(binwidth = 300, fill = "steelblue", color = "white") + 
@@ -50,4 +50,7 @@ task_4 <- function(chch_Oct25_to_Jun26) {
     height = 6, 
     dpi = 300
   )
+  print(p)
+  
 }
+task_4(chch_june)
