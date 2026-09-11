@@ -1,53 +1,8 @@
-column,data_type,category,category_count,minimum,maximum,mean,standard_deviation,missing_count
-id,numeric,,,204050,1709885808209520384,9.0306268651730394e+17,594529721388448100,0
-name,character,Room in Christchurch,23,,,,,0
-name,character,Waterfront 2-Bedroom Harbour View Apartment,20,,,,,0
-name,character,Home away from home.,19,,,,,0
-name,character,Compact Studio with free Parking,18,,,,,0
-name,character,Hagley Park Townhouse,18,,,,,0
-name,character,"Modern King Studio | Netflix, Disney+ & Parking",18,,,,,0
-name,character,Spacious stylish home - 7 Night special deals,18,,,,,0
-name,character,The City Sanctuary,18,,,,,0
-name,character,cozycozy guest house,18,,,,,0
-name,character,Deluxe King Room,17,,,,,0
-name,character,Diamond Harbour Hideaway,17,,,,,0
-name,character,Home away from home,17,,,,,0
-name,character,Quite and Cozy Double Bedroom,16,,,,,0
-name,character,City Townhouse,15,,,,,0
-name,character,Brand-New 1BR Apartment Near Upcoming Te Kaha,14,,,,,0
-name,character,Spacious studio,13,,,,,0
-name,character,The Hut,11,,,,,0
-name,character,Cozy room,10,,,,,0
-name,character,Discover a Brand New Apartment in Vibrant CHCH,10,,,,,0
-name,character,roXztr Retreat,10,,,,,0
-name,character,"""Cloud Nine"" Your Elegant Escape Awaits",9,,,,,0
-name,character,"""Home away from Home"" - warm, sunny, welcoming.",9,,,,,0
-name,character,"""Urban Oasis on Riccarton Road""",9,,,,,0
-name,character,#1 The Wharf Seaview Apartments by AVI,9,,,,,0
-name,character,#2 The Wharf Seaview Apartments by AVI,9,,,,,0
-name,character,#25 The Bruce Waterfront Apartments by AVI,9,,,,,0
-name,character,#3 - The Wharf Seaview Apartments by AVI,9,,,,,0
-name,character,#4 The Wharf Seaview  Apartments by AVI,9,,,,,0
-name,character,#55 The Captains Cottage Waterview Apt by AVI,9,,,,,0
-name,character,#56 Le Petite Palais - La Voyageur Waterfront Apts,9,,,,,0
-name,character,#60 La Voyageur Waterfront Apts by AVI,9,,,,,0
-name,character,#62 The Turret - La Voyageur Waterfront Apts,9,,,,,0
-name,character,#63 La Voyageur Waterfront Apts by AVI,9,,,,,0
-name,character,#64 La Voyageur Waterfront Apts by AVI,9,,,,,0
-name,character,#65 La Voyageur Waterfront Apts by AVI,9,,,,,0
-name,character,#67 La Voyageur Waterfront Apts by AVI,9,,,,,0
-name,character,#69 Romantic Waterfront Apt  4-Poster Bed & Spa,9,,,,,0
-name,character,#70 The Penthouse Suite,9,,,,,0
-name,character,#71 The Penthouse Suite,9,,,,,0
-name,character,#72 3 Bedroom Apt with partial Water Views,9,,,,,0
-name,character,'Kanuka cottage',9,,,,,0
-name,character,'The Tug Watch' private home with beautiful views.,9,,,,,0
-name,character,* CBD Charm – 5BR Heritage Stay + Free Parking,9,,,,,0
-name,character,"* Rest Easy in CBD – 2 BRM, Free Park, Fast WiFi",9,,,,,0
-name,character,* Steps from the Arena – Modern Addington Stay,9,,,,,0
-name,character,*1 min walk to TownHall Te Pae - FREE Carpark,9,,,,,0
-name,character,"*NEW in Central CBD*
+"column","summary","standard_deviation","missing_count"
+"id","Min.: 204050 | 1st Qu.: 52371093 | Median: 1089973018895629312 | Mean: 903062686517303936 | 3rd Qu.: 1393915756805131776 | Max.: 1709885808209520384",594529721388448128,0
+"name","Room in Christchurch: 23 | Waterfront 2-Bedroom Harbour View Apartment: 20 | Home away from home.: 19 | Compact Studio with free Parking: 18 | cozycozy guest house: 18 | Hagley Park Townhouse: 18 | Modern King Studio | Netflix, Disney+ & Parking: 18 | Spacious stylish home - 7 Night special deals: 18 | The City Sanctuary: 18 | Deluxe King Room: 17 | Diamond Harbour Hideaway: 17 | Home away from home: 17 | Quite and Cozy Double Bedroom: 16 | City Townhouse: 15 | Brand-New 1BR Apartment Near Upcoming Te Kaha: 14 | Spacious studio: 13 | The Hut: 11 | Cozy room: 10 | Discover a Brand New Apartment in Vibrant CHCH: 10 | roXztr Retreat: 10 | ‘Home away from Home’ - Yaldhurst: 9 | 'Kanuka cottage': 9 | 'The Tug Watch' private home with beautiful views.: 9 | ""Cloud Nine"" Your Elegant Escape Awaits: 9 | ""Home away from Home"" - warm, sunny, welcoming.: 9 | ""Urban Oasis on Riccarton Road"": 9 | * CBD Charm – 5BR Heritage Stay + Free Parking: 9 | * Rest Easy in CBD – 2 BRM, Free Park, Fast WiFi: 9 | * Steps from the Arena – Modern Addington Stay: 9 | *1 min walk to TownHall Te Pae - FREE Carpark: 9 | *NEW in Central CBD*
   2 bed/2 bath
+<<<<<<< HEAD
 *Free Parking*",9,,,,,0
 name,character,1 Bed Central City Fringe Deluxe w/Carpark,9,,,,,0
 name,character,1 Bedroom Apartment,9,,,,,0
@@ -6382,3 +6337,23 @@ MonthYear,character,Dec 2025,3180,,,,,0
 MonthYear,character,Jan 2026,3057,,,,,0
 MonthYear,character,Nov 2025,3047,,,,,0
 MonthYear,character,Oct 2025,2991,,,,,0
+=======
+*Free Parking*: 9 | #1 The Wharf Seaview Apartments by AVI: 9 | #2 The Wharf Seaview Apartments by AVI: 9 | #25 The Bruce Waterfront Apartments by AVI: 9 | #3 - The Wharf Seaview Apartments by AVI: 9 | #4 The Wharf Seaview  Apartments by AVI: 9 | #55 The Captains Cottage Waterview Apt by AVI: 9 | #56 Le Petite Palais - La Voyageur Waterfront Apts: 9 | #60 La Voyageur Waterfront Apts by AVI: 9 | #62 The Turret - La Voyageur Waterfront Apts: 9 | #63 La Voyageur Waterfront Apts by AVI: 9 | #64 La Voyageur Waterfront Apts by AVI: 9 | #65 La Voyageur Waterfront Apts by AVI: 9 | #67 La Voyageur Waterfront Apts by AVI: 9 | #69 Romantic Waterfront Apt  4-Poster Bed & Spa: 9 | #70 The Penthouse Suite: 9 | #71 The Penthouse Suite: 9 | #72 3 Bedroom Apt with partial Water Views: 9 | ★ ★ Gorgeous Hideout | Close to Everything ★ ★: 9 | ★ Beautiful New Home | Close to Airport & City ★: 9 | 1 Bed Central City Fringe Deluxe w/Carpark: 9 | 1 Bedroom Apartment: 9 | 1 Bedroom Apartment Pool Car Park Cathedral Square: 9 | 1 Bedroom Central City Escape: 9 | 1 Bedroom Gem with Hagley Park at your Doorstep: 9 | 1 Super king-sized bed 1bath New Brighton Beach: 9 | 1-Bedroom Retreat with Spa Bath & Harbour Outlook: 9 | 1910 Shepherd's cottage: 9 | 1km away from Hagley Park Riccarton RM03: 9 | 2 bed 2 bath with Carpark near Canterbury Uni: 9 | 2 bed house near Beach + Cycleway 15min to CBD: 9 | 2 Bed, 2 Bath w Sofa Bed - Great Cafes Nearby: 9 | 2 Bedroom Apartment: 9 | 2 Bedroom Central Christchurch Hub: 9 | 2 Bedroom fully self-contained Apartment: 9 | 2 Bedroom House: 9 | 2 Bedroom House, Amazing Location + 2 Carparks: 9 | 2 Bedroom Inner City Comfort and Style: 9 | 2 Bedroom Rose Cottage Farmhouse Free Parking: 9 | 2 bedroom self contained unit: 9 | 2 Bedroom Unit: 9 | 2 Bedroom, 2 Bathroom + Carpark. Central City: 9 | 2 Bedrooms apprtmt.+Underground Parking in CBD: 9 | 2 Bedrooms Overlooking Park - Exquisite Views: 9 | 2 Private bedrooms sleeps4, Queen, King/or 2single: 9 | 2BR City Townhouse walk to the Convention Centre: 9 | 2BR Getaway | BBQ & Game Room | Sleeps 5: 9 | 2BR Movie-Themed Retreat | Sleeps 5: 9 | 2BR Stay in the City, Gloucester: 9 | 2BR Townhouse, Riccarton Mall, Hagley Park: 9 | 2BR Townhouse: Cosy, Close to City, Car Park: 9 | 3 Bedroom 2 Bathroom Hagley Parkside Perch: 9 | 3 Bedroom Home - Central Location: 9 | 3 Bedroom Home With Garage & Extra Car Park: 9 | 3 Bedroom House: 9 | 3 Bedroom House - NEW: 9 | 3 Bedroom house in quiet street: 9 | 3 bedroom townhouse Opposite Hagley Park: 9 | 3 Minutes walk to Riverside Market 4bed4bath: 9 | 3 private rooms up to 6 guests, spacious modern.: 9 | 3-Bedrooms Home near CBD: 9 | 3bed w Garage Minutes from the Action and Sleeps 8: 9 | 3Bedroom Family House Close Airport: 9 | 3min walk to shops &10min drive to city +FreePark: 9 | 4 Bedroom 1960s Simple Town House: 9 | 4 Bedroom Home near Christchurch Airport: 9 | 4 Bedrooms in the Heart of Christchurch CBD: 9 | 4 Minutes walk to Riverside Market!4bed 4 bath: 9 | 4B on Rearsby: 9 | (Other): 27764",,0
+"host_id","Min.: 57382 | 1st Qu.: 63955373 | Median: 172147331 | Mean: 1988281224095721 | 3rd Qu.: 447145180 | Max.: 1704736854722721792",57829989306664512,0
+"host_name","Paula Kat Charlotte: 1561 | Care Property Stays: 914 | Managed By Williams: 838 | Ohana: 744 | Lily-SimplyHost: 549 | Bachcare: 492 | Mayie, Judi And Karen At Bookahome: 393 | Hasslefree Accommodation: 387 | Paula Corinne: 377 | Min: 345 | Sharon: 317 | Benjamin Dearden: 286 | Xihang: 258 | Maggie: 227 | Darren: 213 | Adam: 199 | Karen Louise: 190 | Jenny: 189 | Lexia Margaret: 184 | Perfect Stays: 181 | Peng: 176 | North South Holiday Park: 172 | Sarah: 163 | Devon: 155 | Kate: 154 | Andrew: 152 | Jo: 148 | Michael: 142 | Samuel William: 126 | Karen: 121 | Katie: 121 | Yaoyao: 115 | John: 110 | Drifter: 104 | Chao: 101 | Helen: 100 | Hotel: 99 | Jason: 98 | Michelle: 97 | Anna: 96 | Rachel: 94 | Tracey: 94 | Alison: 93 | David: 91 | Ashton: 89 | Lucy: 88 | Angela: 86 | Emma: 86 | Bruce: 85 | Alicia: 84 | Lisa: 84 | Rebecca: 84 | Wendy: 83 | Peter: 82 | Breidi: 81 | Kelly: 81 | Paul: 81 | The MAC Property Team: 78 | Stay At Christchurch Ltd: 76 | Catherine: 75 | Kathryn: 74 | Wayne: 74 | Jane: 73 | Cheryl: 72 | Tracy: 70 | Judith: 68 | Stephanie: 68 | Shannon: 65 | Amy: 64 | Tony: 64 | Stephen: 63 | Jay: 62 | Mary: 61 | Haka House Hostel Christchurch: 60 | Simon: 60 | Janine: 59 | Jill: 57 | Laura: 55 | Anita Marie: 54 | Jessica: 54 | Megan: 54 | Philip: 53 | Tania: 53 | Rob: 52 | Kim: 51 | Liz: 51 | Victoria: 51 | William: 51 | Shelley: 50 | Claire: 49 | Ben: 48 | Nick: 48 | Daniel: 47 | Chris: 46 | Louise: 46 | Rod: 46 | Tina: 46 | City Centre: 45 | (Other): 13541 | NA's: 1",,1
+"neighbourhood_group","Christchurch City: 28795",,0
+"neighbourhood","Banks Peninsula Ward: 3548 | Burwood Ward: 372 | Cashmere Ward: 1009 | Central Ward: 10554 | Coastal Ward: 891 | Fendalton Ward: 1605 | Halswell Ward: 1081 | Harewood Ward: 909 | Heathcote Ward: 2074 | Hornby Ward: 594 | Innes Ward: 1027 | Linwood Ward: 659 | Papanui Ward: 648 | Riccarton Ward: 1885 | Spreydon Ward: 1056 | Waimairi Ward: 883",,0
+"latitude","Min.: -43.86751 | 1st Qu.: -43.5561883 | Median: -43.53241 | Mean: -43.5554932632903 | 3rd Qu.: -43.5217061 | Max.: -43.41634",0.076280461726062,0
+"longitude","Min.: 172.433375009751 | 1st Qu.: 172.61691 | Median: 172.63958 | Mean: 172.661295303044 | 3rd Qu.: 172.65997 | Max.: 173.097001139568",0.0966655897446508,0
+"room_type","Entire home/apt: 22765 | Hotel room: 251 | Private room: 5744 | Shared room: 35",,0
+"price","Min.: 27 | 1st Qu.: 140 | Median: 205 | Mean: 260.199635922331 | 3rd Qu.: 284 | Max.: 43654 | NA's: 10667",943.721500647773,10667
+"minimum_nights","Min.: 1 | 1st Qu.: 1 | Median: 1 | Mean: 1.78753738090271 | 3rd Qu.: 2 | Max.: 365 | NA's: 37",5.50947128681028,37
+"number_of_reviews","Min.: 0 | 1st Qu.: 5 | Median: 26 | Mean: 70.3916999479075 | 3rd Qu.: 85 | Max.: 1584",120.513512102017,0
+"last_review","Min.: 2014-04-14 | 1st Qu.: 2025-10-05 | Median: 2026-01-13 | Mean: 2025-11-05 | 3rd Qu.: 2026-03-20 | Max.: 2026-06-21",,2627
+"reviews_per_month","Min.: 0.01 | 1st Qu.: 0.76 | Median: 1.7 | Mean: 2.35071919902171 | 3rd Qu.: 3.33 | Max.: 16.57 | NA's: 2627",2.18556578952311,2627
+"calculated_host_listings_count","Min.: 1 | 1st Qu.: 1 | Median: 3 | Mean: 58.2970307345027 | 3rd Qu.: 47 | Max.: 1586",188.532709547038,0
+"availability_365","Min.: 0 | 1st Qu.: 109 | Median: 225 | Mean: 203.804792498697 | 3rd Qu.: 302 | Max.: 365",112.28297346304,0
+"number_of_reviews_ltm","Min.: 0 | 1st Qu.: 2 | Median: 10 | Mean: 18.9969091856225 | 3rd Qu.: 27 | Max.: 185",23.502197625283,0
+"license","Mode: logical | NA's: 28795",,28795
+"MonthYear","April 2026: 3273 | Dec 2025: 3180 | Feb 2026: 3190 | Jan 2026: 3057 | June 2026: 3469 | March 2026: 3227 | May 2026: 3361 | Nov 2025: 3047 | Oct 2025: 2991",,0
+>>>>>>> 8c7943fe25f81839703081e058133f706ef685c4
