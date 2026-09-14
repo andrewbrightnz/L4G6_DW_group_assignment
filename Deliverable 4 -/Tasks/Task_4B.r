@@ -2,6 +2,25 @@
 # Airbnb snapshots cover October 2025 through June 2026 (inclusive).
 # This filters the existing quarterly labels; it does not create monthly data.
 
+library(tidyverse)
+
+# Keep location IDs and bedroom categories (including literal NA) as text.
+bond_data <- read_csv(
+  "Deliverable 4 -/Data/bond_data.csv",
+  col_types = cols(
+    TimeFrame = col_character(),
+    `Location Id` = col_character(),
+    `Dwelling Type` = col_character(),
+    `Number Of Beds` = col_character(),
+    .default = col_double()
+  ),
+  na = c("", "NULL"),
+  show_col_types = FALSE
+)
+if (nrow(problems(bond_data)) > 0) {
+  stop("The bond CSV has parsing problems; inspect problems(bond_data).")
+}
+
 task_4B <- function(bond_data) {
   required_columns <- c("TimeFrame", "Location Id")
   if (!all(required_columns %in% names(bond_data))) {
@@ -37,34 +56,11 @@ task_4B <- function(bond_data) {
 
 # Run from the repository root:
 # source("Deliverable 4 -/Tasks/Task_4B.r")
-# If bond_data is already loaded, use it. Otherwise read the local download.
-# Required packages: readr and dplyr; install them once if needed.
-if (!exists("bond_data", inherits = FALSE)) {
-  bond_file <- "Deliverable 4 -/Data/Detailed-Quarterly-Tenancy-Q1-2020-Q3-2026.csv"
-  if (!file.exists(bond_file)) {
-    stop("Place the downloaded bond CSV in Deliverable 4 -/Data/ or load bond_data first.")
-  }
-
-  # Keep location IDs and bedroom categories (including literal NA) as text.
-  bond_data <- readr::read_csv(
-    bond_file,
-    col_types = readr::cols(
-      TimeFrame = readr::col_character(),
-      `Location Id` = readr::col_character(),
-      `Dwelling Type` = readr::col_character(),
-      `Number Of Beds` = readr::col_character(),
-      .default = readr::col_double()
-    ),
-    na = c("", "NULL"),
-    show_col_types = FALSE
-  )
-  if (nrow(readr::problems(bond_data)) > 0) {
-    stop("The bond CSV has parsing problems; inspect readr::problems(bond_data).")
-  }
-}
 
 # Andrew's Task_4C.r expects this object as its input.
 bond_data_Oct25_to_Jun26 <- task_4B(bond_data)
 # Expected raw-file result: 226080 -> 27212 rows; 198868 excluded.
 # Retained quarterly labels: 2025-10-01, 2026-01-01, 2026-04-01.
 # Confirm the reporting interval of these labels before later comparisons.
+
+write_csv(bond_data_Oct25_to_Jun26, "Deliverable 4 -/Data/bond_data_Oct25_to_Jun26.csv")
