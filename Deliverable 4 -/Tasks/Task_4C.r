@@ -6,21 +6,32 @@
 
 library(tidyverse)
 
-# Read the bond data that Task_4B filtered and saved to disk
-bond_data_Oct25_to_Jun26 <- read_csv(
-  "Deliverable 4 -/Data/bond_data_Oct25_to_Jun26.csv",
-  # Force these ID/category columns to stay as text instead of being guessed
-  col_types = cols(
-    TimeFrame = col_character(),
-    `Location Id` = col_character(),
-    `Dwelling Type` = col_character(),
-    `Number Of Beds` = col_character(),
-    .default = col_double()
-  ),
-  # write_csv() wrote missing values as "NA"; source data also used "NULL"
-  na = c("", "NA", "NULL"),
-  show_col_types = FALSE
-)
+task_4C <- function() {
+  # Read the bond data that Task_4B filtered and saved to disk
+  bond_data_Oct25_to_Jun26 <- read_csv(
+    "Deliverable 4 -/Data/bond_data_Oct25_to_Jun26.csv",
+    # Force these ID/category columns to stay as text instead of being guessed
+    col_types = cols(
+      TimeFrame = col_character(),
+      `Location Id` = col_character(),
+      `Dwelling Type` = col_character(),
+      `Number Of Beds` = col_character(),
+      .default = col_double()
+    ),
+    # write_csv() wrote missing values as "NA"; source data also used "NULL"
+    na = c("", "NA", "NULL"),
+    show_col_types = FALSE
+  )
 
+  # This file not finished yet....
+  bond_data_Oct25_to_Jun26_cleaned <- bond_data_Oct25_to_Jun26
 
-# This file not finished yet....
+  # Save cleaned table to local Data folder
+  write_csv(bond_data_Oct25_to_Jun26_cleaned, "Deliverable 4 -/Data/bond_data_Oct25_to_Jun26_cleaned.csv")
+
+  return(bond_data_Oct25_to_Jun26_cleaned)
+}
+
+# Run from the repository root:
+# source("Deliverable 4 -/Tasks/Task_4C.r")
+# bond_data_Oct25_to_Jun26_cleaned <- task_4C()

@@ -4,24 +4,24 @@
 
 library(tidyverse)
 
-# Keep location IDs and bedroom categories (including literal NA) as text.
-bond_data <- read_csv(
-  "Deliverable 4 -/Data/bond_data.csv",
-  col_types = cols(
-    TimeFrame = col_character(),
-    `Location Id` = col_character(),
-    `Dwelling Type` = col_character(),
-    `Number Of Beds` = col_character(),
-    .default = col_double()
-  ),
-  na = c("", "NULL"),
-  show_col_types = FALSE
-)
-if (nrow(problems(bond_data)) > 0) {
-  stop("The bond CSV has parsing problems; inspect problems(bond_data).")
-}
+task_4B <- function() {
+  # Keep location IDs and bedroom categories (including literal NA) as text.
+  bond_data <- read_csv(
+    "Deliverable 4 -/Data/bond_data.csv",
+    col_types = cols(
+      TimeFrame = col_character(),
+      `Location Id` = col_character(),
+      `Dwelling Type` = col_character(),
+      `Number Of Beds` = col_character(),
+      .default = col_double()
+    ),
+    na = c("", "NULL"),
+    show_col_types = FALSE
+  )
+  if (nrow(problems(bond_data)) > 0) {
+    stop("The bond CSV has parsing problems; inspect problems(bond_data).")
+  }
 
-task_4B <- function(bond_data) {
   required_columns <- c("TimeFrame", "Location Id")
   if (!all(required_columns %in% names(bond_data))) {
     stop("Bond data must contain TimeFrame and Location Id.")
@@ -51,16 +51,14 @@ task_4B <- function(bond_data) {
   message("Retained TimeFrame values: ",
           paste(sort(unique(filtered_bonds$TimeFrame)), collapse = ", "))
 
+  write_csv(filtered_bonds, "Deliverable 4 -/Data/bond_data_Oct25_to_Jun26.csv")
+
   return(filtered_bonds)
 }
 
 # Run from the repository root:
 # source("Deliverable 4 -/Tasks/Task_4B.r")
-
-# Andrew's Task_4C.r expects this object as its input.
-bond_data_Oct25_to_Jun26 <- task_4B(bond_data)
+# bond_data_Oct25_to_Jun26 <- task_4B()
 # Expected raw-file result: 226080 -> 27212 rows; 198868 excluded.
 # Retained quarterly labels: 2025-10-01, 2026-01-01, 2026-04-01.
 # Confirm the reporting interval of these labels before later comparisons.
-
-write_csv(bond_data_Oct25_to_Jun26, "Deliverable 4 -/Data/bond_data_Oct25_to_Jun26.csv")
