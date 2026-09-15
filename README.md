@@ -4,6 +4,7 @@
 
 This repository contains the work completed by Group L4G6 for the DATA201/422 group assignment. The project focuses on collaborative data wrangling, reproducible analysis, workflow modularity, and version control using Python, GitHub, and KNIME Analytics Platform.
 
+## Notes for each deliverable
 Deliverable 2:
 We created a KNIME workflow to explore and analyse Airbnb listings across New Zealand. The workflow includes data selection and cleaning, date conversion, filtering, aggregation, and visualisation.
 
@@ -38,11 +39,11 @@ Keep these fields:
 - Upper Quartile Rent	
 - Lower Quartile Rent
 
-## Dataset
-
+## Datasets
 For deliverable 2 we used the dataset [New Zealand listings.csv – 19 June 2026](https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv)
 
 Inside Airbnb describes `listings.csv` as summary information and metrics for listings that are suitable for visualisation.
+
 
 For deliverable 5, we used the dataset [Detailed quarterly report, 2020-2026](https://www.tenancy.govt.nz/assets/Uploads/Tenancy/Rental-bond-data/Detailed-Quarterly-Tenancy-Q1-2020-Q3-2026.csv?m=5766222a0dc2d94c11545872be77333e32f7c999)
 
@@ -79,10 +80,9 @@ Detailed quarterly report, 2020-2026
 | Column | Meaning |
 |---|---|
 | `field name` | Field explanation |
+
 ## KNIME Workflow
-
 The KNIME workflow is stored as:
-
 ```text
 listings_assignment_clean.knwf
 ```
@@ -130,7 +130,8 @@ Deliverable 3 (reproduce KNIME workflow and plots using R)
 - Used too much Claude to create task_5 due to time constraints, but I've commented most lines to show understanding
 
 Deliverable 4 (clean bond data)
-- Used Claude to refactor task_4A/B/C so that the code becomes a function. Get main_4.r to call of the task files in order, like we did in deliverable 3. 
+- Used Claude to refactor task_4A/B/C so that the code in each task files becomes a function. Then, get main_4.r to call of the task files in order, like we did in deliverable 3 so the user only has to run one file.
+- Used Claude to generate code that drops/keeps coloumns and assigns a data type 
 
 ### Jinhang
 
