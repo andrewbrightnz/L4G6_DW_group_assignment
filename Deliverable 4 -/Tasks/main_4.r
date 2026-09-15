@@ -14,6 +14,15 @@ source("Deliverable 4 -/Tasks/Task_4B.r")
 source("Deliverable 4 -/Tasks/Task_4C.r")
 
 # Run the tasks in order
+cat(rep("\n", 20), sep = "")                     # 20 empty lines for clarity
+message(strrep("-", 100))
+message("Task 4A")
 airbnb_chch_Oct25_to_Jun26_cleaned <- task_4A()
+message()
+message(strrep("-", 100))
+message("Task 4B")
 bond_data_Oct25_to_Jun26 <- task_4B()
+message()
+message(strrep("-", 100))
+message("Task 4C")
 bond_data_Oct25_to_Jun26_cleaned <- task_4C()
