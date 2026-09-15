@@ -4,20 +4,53 @@
 
 This repository contains the work completed by Group L4G6 for the DATA201/422 group assignment. The project focuses on collaborative data wrangling, reproducible analysis, workflow modularity, and version control using Python, GitHub, and KNIME Analytics Platform.
 
-For Deliverable 2, we created a KNIME workflow to explore and analyse Airbnb listings across New Zealand. The workflow includes data selection and cleaning, date conversion, filtering, aggregation, and visualisation.
+Deliverable 2:
+We created a KNIME workflow to explore and analyse Airbnb listings across New Zealand. The workflow includes data selection and cleaning, date conversion, filtering, aggregation, and visualisation.
+
+Deliverable 3:
+We repeated the deliverable 2 workflow in R
+
+Deliverable 4: 
+We cleaned the air_bnb and bond_data tables ready to compare and analyse them in Deliverable 5.
+
+The brief didnn't tell us how we would process the datasets in deliverable 5, so we made decisions on which fields to keep/discard based on common sense. We knew that if our decisions here turned out to be unsuitable, we could come back and edit this code to suit deliverable 5 better.
+
+
+air_bnb_chch_Oct25_to_jun_26_cleaned.csv
+Keep these fields:
+- id
+- name
+- host_id
+- neighbourhood
+- latitude
+- longitude
+- room_type
+- price
+- MonthYear
+
+Bond_data.csv
+Keep these fields:
+- Timeframe
+- Location id
+- Dwelling type
+- Median Rent	
+- Geometric Mean Rent	
+- Upper Quartile Rent	
+- Lower Quartile Rent
 
 ## Dataset
 
-The dataset used is `listings.csv` for New Zealand, dated **19 June 2026**, from [Inside Airbnb – Get the Data](https://insideairbnb.com/get-the-data/).
+For deliverable 2 we used the dataset [New Zealand listings.csv – 19 June 2026](https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv)
 
-Direct dataset link:
+Inside Airbnb describes `listings.csv` as summary information and metrics for listings that are suitable for visualisation.
 
-[New Zealand listings.csv – 19 June 2026](https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv)
+For deliverable 5, we used the dataset [Detailed quarterly report, 2020-2026](https://www.tenancy.govt.nz/assets/Uploads/Tenancy/Rental-bond-data/Detailed-Quarterly-Tenancy-Q1-2020-Q3-2026.csv?m=5766222a0dc2d94c11545872be77333e32f7c999)
 
-Inside Airbnb describes `listings.csv` as summary information and metrics for listings that are suitable for visualisation. The dataset is not stored in this repository because of its size. Each team member must download it and store it locally.
+tenancy.govt.nz describes the dataset as "information about the activity level in the housing rental market since January 1993."
 
 ## Dataset Columns
 
+listings.csv
 | Column | Meaning |
 |---|---|
 | `id` | Airbnb's unique identifier for the listing. |
@@ -41,6 +74,11 @@ Inside Airbnb describes `listings.csv` as summary information and metrics for li
 
 Further details are available in the [Inside Airbnb Data Dictionary](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit?usp=sharing).
 
+
+Detailed quarterly report, 2020-2026
+| Column | Meaning |
+|---|---|
+| `field name` | Field explanation |
 ## KNIME Workflow
 
 The KNIME workflow is stored as:
@@ -62,18 +100,6 @@ The workflow performs the following tasks:
 9. Selects the top 10% of listings based on `number_of_reviews`.
 10. Counts how many of the top-reviewed listings are located in Christchurch City.
 
-## Main Results
-
-- Listing prices in both New Zealand and Christchurch City are strongly right-skewed. Most listings are concentrated in the lower price range, while a small number have much higher prices.
-- The distribution of days since the last review is also right-skewed.
-- The dataset contains 50,932 listings. Therefore, the strict top 10% was defined as the first 5,094 listings after sorting `number_of_reviews` in descending order.
-- Under this strict top-10% method, **342 listings are located in Christchurch City**.
-- The boundary value is 185 reviews. If every listing tied at this boundary is included, the selection contains 5,130 listings, including 343 in Christchurch City. The workflow uses the strict 5,094-row interpretation.
-
-## Running the KNIME Workflow
-
-1. Import `listings_assignment_clean.knwf` into KNIME Analytics Platform.
-2. Execute the complete workflow.
 
 ## Python Environment
 
@@ -102,6 +128,9 @@ Deliverable 3 (reproduce KNIME workflow and plots using R)
 - Used Claude for general repo housekeeping advice (how to load and run task files from main, how to save datasets and plots)
 - Used Claude to tidy Task_4
 - Used too much Claude to create task_5 due to time constraints, but I've commented most lines to show understanding
+
+Deliverable 4 (clean bond data)
+- Used Claude to refactor task_4A/B/C so that the code becomes a function. Get main_4.r to call of the task files in order, like we did in deliverable 3. 
 
 ### Jinhang
 

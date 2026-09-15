@@ -24,6 +24,17 @@ task_4C <- function() {
   )
 
   # This file not finished yet....
+  # Using Ruby's code to drop columns from bond_data_Oct25_to_Jun26
+
+    # selecting the rows we want to keep
+  airbnb_chch_Oct25_Jun26 <- airbnb_chch_Oct25_Jun26 |>
+    select(id, name, host_id, neighbourhood, latitude, longitude, room_type, price, MonthYear)
+
+  # number of rows = 28795
+  message("Task 4A: ", nrow(airbnb_chch_Oct25_Jun26), " rows after selecting columns.")
+
+
+
   bond_data_Oct25_to_Jun26_cleaned <- bond_data_Oct25_to_Jun26
 
   # Save cleaned table to local Data folder
@@ -31,7 +42,3 @@ task_4C <- function() {
 
   return(bond_data_Oct25_to_Jun26_cleaned)
 }
-
-# Run from the repository root:
-# source("Deliverable 4 -/Tasks/Task_4C.r")
-# bond_data_Oct25_to_Jun26_cleaned <- task_4C()
