@@ -41,7 +41,7 @@ Another outlier was a single airbnb with a cost of $22971 per night in May 2026.
 
 The highest price left in the dataset is $6277 per night. Although, this is still very high, we decided to leave it in as it is plausible and we found no indication that it is an error. 
 
-Without price, we assumed the row would not be much help for this dataset so we removed all rows with missing prices. This was 505 rows. This is much better than if 10667 rows removed (if we didn't fill in some of the prices). At the beginning, we started with 28795 rows and after cleaning we have 28290 rows. nd bond_data tables ready to compare and analyse them in Deliverable 5.
+Without price, we assumed the row would not be much help for this dataset so we removed all rows with missing prices. This was 505 rows. This is much better than if 10667 rows removed (if we didn't fill in some of the prices). At the beginning, we started with 28795 rows and after cleaning we have 28290 rows. 
 
 We also checked that all prices were valid (not 0 or negative values, checked for consistency of neighbourhood and room type where we found no issues. We also checked the latitude and longitude to make sure all rows were within the correct bounds. Banks Peninsula was outside the initial bounds but this is legitimate and not an error. 
 
