@@ -29,13 +29,27 @@ Keep these fields:
 - MonthYear
 
 Remove these rows:
+- host name
+- neighbourhood group
+- minimum nights
+- number of reviews
+- last review
+- reviews per month
+- calculated_host_listings_count
+- availability_365
+- number_of_reviews_ltm
+- license
 - duplicate rows
 - location_id missing or NA
+
+We removed anything to do with reviews because it doesn't seem relevant for the next deliverable with bond dataset. Removed licence as 
+most/all the values were NA, it also didn't seem too relevant with the bond dataset. 
+  
 
 Only column with missing values was price. We found that 10667 prices were missing. Looking at how many prices were missing per month
 Dec 2025, Jan 2026 and Feb 2026 had a significant amount more missing prices than the other months. Roughly 3000 missing prices vs 100-200 missing prices. This indicates that price is not missing at random for the months Dec 2025, Jan 2026 and Feb 2026 so we filled in the prices with the other months price for that same airbnb by matching the ID. We did this across all months. After filling it in the missing prices was significantly lower with Dec 2025, Jan 2026 and Feb 2026's missing prices ranging from 100-350. 
 
-Another decision that was made was about outliers. This dataset had significant'y large outliers with 4 different houses being $43654 per night in Nov 2025 and then the same 4 houses being $43188 in Oct 2025. These houses all had the same host id and so we concluded that this was an error and not a true value, therefore the price is changed to NA and so will be removed later. 
+Another decision that was made was about outliers. This dataset had significantly large outliers with 4 different houses being $43654 per night in Nov 2025 and then the same 4 houses being $43188 in Oct 2025. These houses all had the same host id and so we concluded that this was an error and not a true value, therefore the price is changed to NA and so will be removed later. 
 
 Another outlier was a single airbnb with a cost of $22971 per night in May 2026. Looking further, this airbnb appears in the dataset multiple other times for much cheaper (around $173 - $491). So this was changed to its previous months (April 2026) price of $491. 
 
