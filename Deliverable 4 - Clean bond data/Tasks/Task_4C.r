@@ -8,7 +8,7 @@ library(tidyverse)
 task_4C <- function() {
   # Read the bond data that Task_4B filtered and saved to disk
   bond_data_Oct25_to_Jun26 <- read_csv(
-    "Deliverable 4 -/Data/bond_data_Oct25_to_Jun26.csv",
+    "Deliverable 4 - Clean bond data/Data/bond_data_Oct25_to_Jun26.csv",
     # Select only the columns we want to keep, and set their types
     col_types = cols_only(
       TimeFrame = col_date(format = "%Y-%m-%d"),
@@ -73,7 +73,7 @@ task_4C <- function() {
   bond_data_Oct25_to_Jun26_cleaned <- bond_data_Oct25_to_Jun26
 
   # Save cleaned table to local Data folder
-  write_csv(bond_data_Oct25_to_Jun26_cleaned, "Deliverable 4 -/Data/bond_data_Oct25_to_Jun26_cleaned.csv")
+  write_csv(bond_data_Oct25_to_Jun26_cleaned, "Deliverable 4 - Clean bond data/Data/bond_data_Oct25_to_Jun26_cleaned.csv")
   message("Task 4C: bond_data_Oct25_to_Jun26_cleaned.csv saved to disk")
   return(bond_data_Oct25_to_Jun26_cleaned)
 }

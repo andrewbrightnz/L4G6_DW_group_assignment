@@ -7,7 +7,7 @@ library(tidyverse)
 task_4B <- function() {
   # Keep location IDs and bedroom categories (including literal NA) as text.
   bond_data <- read_csv(
-    "Deliverable 4 -/Data/bond_data.csv",
+    "Deliverable 4 - Clean bond data/Data/bond_data.csv",
     col_types = cols(
       TimeFrame = col_character(),
       `Location Id` = col_character(),
@@ -51,13 +51,13 @@ task_4B <- function() {
   message("Retained TimeFrame values: ",
           paste(sort(unique(filtered_bonds$TimeFrame)), collapse = ", "))
 
-  write_csv(filtered_bonds, "Deliverable 4 -/Data/bond_data_Oct25_to_Jun26.csv")
+  write_csv(filtered_bonds, "Deliverable 4 - Clean bond data/Data/bond_data_Oct25_to_Jun26.csv")
 
   return(filtered_bonds)
 }
 
 # Run from the repository root:
-# source("Deliverable 4 -/Tasks/Task_4B.r")
+# source("Deliverable 4 - Clean bond data/Tasks/Task_4B.r")
 # bond_data_Oct25_to_Jun26 <- task_4B()
 # Expected raw-file result: 226080 -> 27212 rows; 198868 excluded.
 # Retained quarterly labels: 2025-10-01, 2026-01-01, 2026-04-01.
