@@ -14,7 +14,7 @@ We repeated the deliverable 2 workflow in R
 Deliverable 4: 
 We cleaned the air_bnb and bond_data tables ready to compare and analyse them in Deliverable 5.
 
-The brief didnn't tell us how we would process the datasets in deliverable 5, so we made decisions on which fields to keep/discard based on common sense. We knew that if our decisions here turned out to be unsuitable, we could come back and edit the deliverable 4 code to suit deliverable 5 better.
+The brief didn't tell us how we would process the datasets in deliverable 5, so we made decisions on which fields to keep/discard based on common sense. We knew that if our decisions here turned out to be unsuitable, we could come back and edit the deliverable 4 code to suit deliverable 5 better.
 
 air_bnb_chch_Oct25_to_jun_26_cleaned.csv
 Keep these fields:
@@ -31,6 +31,19 @@ Keep these fields:
 Remove these rows:
 - duplicate rows
 - location_id missing or NA
+
+Only column with missing values was price. We found that 10667 prices were missing. Looking at how many prices were missing per month
+Dec 2025, Jan 2026 and Feb 2026 had a significant amount more missing prices than the other months. Roughly 3000 missing prices vs 100-200 missing prices. This indicates that price is not missing at random for the months Dec 2025, Jan 2026 and Feb 2026 so we filled in the prices with the other months price for that same airbnb by matching the ID. We did this across all months. After filling it in the missing prices was significantly lower with Dec 2025, Jan 2026 and Feb 2026's missing prices ranging from 100-350. 
+
+Another decision that was made was about outliers. This dataset had significant'y large outliers with 4 different houses being $43654 per night in Nov 2025 and then the same 4 houses being $43188 in Oct 2025. These houses all had the same host id and so we concluded that this was an error and not a true value, therefore the price is changed to NA and so will be removed later. 
+
+Another outlier was a single airbnb with a cost of $22971 per night in May 2026. Looking further, this airbnb appears in the dataset multiple other times for much cheaper (around $173 - $491). So this was changed to its previous months (April 2026) price of $491. 
+
+The highest price left in the dataset is $6277 per night. Although, this is still very high, we decided to leave it in as it is plausible and we found no indication that it is an error. 
+
+Without price, we assumed the row would not be much help for this dataset so we removed all rows with missing prices. This was 505 rows. This is much better than if 10667 rows removed (if we didn't fill in some of the prices). At the beginning, we started with 28795 rows and after cleaning we have 28290 rows. nd bond_data tables ready to compare and analyse them in Deliverable 5.
+
+We also checked that all prices were valid (not 0 or negative values, checked for consistency of neighbourhood and room type where we found no issues. We also checked the latitude and longitude to make sure all rows were within the correct bounds. Banks Peninsula was outside the initial bounds but this is legitimate and not an error. 
 
 
 ## Dataset Columns and meaning for RENTAL BOND DATA SET 
