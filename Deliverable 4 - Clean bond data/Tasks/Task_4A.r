@@ -8,7 +8,7 @@ library(tidyverse)
 task_4A <- function() {
 
 # read csv
-airbnb_chch_Oct25_Jun26 <- read_csv("Deliverable 4 -/Data/airbnb_chch_Oct25_to_Jun26.csv")
+airbnb_chch_Oct25_Jun26 <- read_csv("Deliverable 4 - Clean bond data/Data/airbnb_chch_Oct25_to_Jun26.csv")
 
   # selecting the rows we want to keep
   airbnb_chch_Oct25_Jun26 <- airbnb_chch_Oct25_Jun26 |>
@@ -141,11 +141,11 @@ airbnb_chch_Oct25_Jun26 <- read_csv("Deliverable 4 -/Data/airbnb_chch_Oct25_to_J
     n = Inf
   )
 
- write_csv(airbnb_chch_Oct25_Jun26, "Deliverable 4 -/Data/airbnb_chch_Oct25_to_Jun26_cleaned.csv")
+ write_csv(airbnb_chch_Oct25_Jun26, "Deliverable 4 - Clean bond data/Data/airbnb_chch_Oct25_to_Jun26_cleaned.csv")
 
   return(airbnb_chch_Oct25_Jun26)
 }
 
 # Run from the repository root:
-# source("Deliverable 4 -/Tasks/Task_4A.r")
+# source("Deliverable 4 - Clean bond data/Tasks/Task_4A.r")
 # airbnb_chch_Oct25_to_Jun26_cleaned <- task_4A()
