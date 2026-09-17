@@ -1,7 +1,17 @@
 # This file runs all of the Deliverable 5 task files in order
 
-# Load any packages necessary
+# Install packages only if not already installed - add any to the list if you need them
+required_packages <- c("RSQLite", "DBI", "here")
+for (pkg in required_packages) {
+  if (!requireNamespace(pkg, quietly = TRUE)) {
+    install.packages(pkg)
+  }
+}
 
+
+# Load packages
+library(RSQLite)
+library(DBI)
 # Load the data from the database file
 
 # Load each task's function
