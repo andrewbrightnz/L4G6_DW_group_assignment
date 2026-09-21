@@ -9,11 +9,12 @@ library(tidyverse)
 drop_neg99_rows <- function(df, dataset_name) {
   rows_before <- nrow(df)
   # Get dataset status before cleaning
-  n_neg99 <- df |> filter(if_any(everything(), ~ as.character(.x) == "-99")) |> nrow()
+  n_neg99 <- df |> filter(if_any(everything(), ~ as.character(.x) %in% "-99")) |> nrow()
   message("Task 5AA: ", dataset_name, " - ", n_neg99, " rows contain a -99 value.")
 
   # Filter out any rows with -99 values (integers or text strings))
-  df <- df |> filter(!if_any(everything(), ~ as.character(.x) == "-99"))
+  df <- df |> filter(!if_any(everything(), ~ as.character(.x) %in% "-99"))
+  
   
   # Print 'task completed' message
   message("Task 5AA: ", dataset_name, " - ", rows_before, " rows before; ", nrow(df),
@@ -30,11 +31,11 @@ task_5AA <- function() {
 
     # Open the cleaned airbnb and bond datasets from deliverable 4
     airbnb_chch_Oct25_Jun26_drop_neg99s <- read_csv(
-    "/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/Deliverable 4 - Clean bond data/Data/airbnb_chch_Oct25_to_Jun26_cleaned.csv",
+    "Deliverable 4 - Clean bond data/Data/airbnb_chch_Oct25_to_Jun26_cleaned.csv",
     show_col_types = FALSE
     )
     bond_data_Oct25_Jun26_drop_neg99s <- read_csv(
-    "/Users/andrewbright/Desktop/Projects/L4G6_DW_group_assignment/Deliverable 4 - Clean bond data/Data/bond_data_Oct25_to_Jun26_cleaned.csv",
+    "Deliverable 4 - Clean bond data/Data/bond_data_Oct25_to_Jun26_cleaned.csv",
     show_col_types = FALSE
     )
 
@@ -55,4 +56,5 @@ task_5AA <- function() {
     }
 
 # Uncomment the line below to test run the function from this file
-# task_5()
+task_5AA()
+
