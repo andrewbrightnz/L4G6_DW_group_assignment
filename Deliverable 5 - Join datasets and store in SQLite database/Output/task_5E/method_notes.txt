@@ -1,0 +1,15 @@
+Areas observed in the supplied Airbnb data; not all Christchurch SA2 areas.
+Airbnb input: airbnb_chch_Oct25_to_Jun26_cleaned_with_location_id.csv
+Bond input: bond_data_Oct25_to_Jun26.csv
+Repeated listing-month rows collapsed: 0
+Airbnb: distinct listing IDs observed within each area-quarter, not bookings or occupied properties.
+Summary totals count area-listing pairs; a listing that moves areas may contribute to two areas.
+Quarter-start labels are interpreted as calendar quarters, following Task 5B; confirm bond reporting semantics before presentation.
+Long-term rental proxy: Active Bonds from one ALL dwelling / ALL bedroom row per area-quarter; not Total Bonds.
+These are different measures, not an exact census of properties on the same date. Do not sum quarters.
+Missing/suppressed bond counts remain NA. Missing bond rows do not mean zero rentals.
+Airbnb coverage depends on the supplied CSV. D4 price-based cleaning excluded some listings.
+Matching six-digit codes alone does not validate compatible SA2 boundaries. The supplied name lookup is SA2 2025; verify the bond boundary vintage.
+No cross-version geographic reallocation is attempted. Area names are labels only, not a mapping between boundary versions.
+The chart is only the top 20 matched areas in April-June 2026. Full counts are in the CSV.
+Beds are not compared: the supplied Airbnb CSV lacks beds/bedrooms, and beds differ from bedrooms.
