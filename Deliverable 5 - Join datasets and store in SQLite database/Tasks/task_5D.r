@@ -4,7 +4,7 @@ task_5D <- function() {
     # Open the joined airbnb and rental data
     # Find largest variance etc
     # print result?
-}
+
 # Task 5D: Finding the Largest Gap Between Short- & Long-Term Rental Prices
 
 library(tidyverse)
@@ -13,92 +13,25 @@ library(tidyverse)
 # 1. Clean and standardize the AirBnB data
 # ------------------------------------------------------------------------------
 # Kavya: Find median Airbnb price in Christchurch central (see project board for details)
-
-task_5C <- function() {
-    # Open the joined airbnb and rental data
-    # Find median etc
-    # print result?
-}
-# 1. Median Airbnb price in Christchurch Central (326600)
-library(tidyverse)
-
-# 1. Use the loaded airbnb dataset
-airbnb <- read_csv("Deliverable 5 - Join datasets and store in SQLite database/Data/airbnb_chch_Oct25_to_Jun26_cleaned_with_location_id.csv")
-df_raw <- airbnb
-
-# 2. Clean price column & standardize Location Id
-df_clean <- df_raw %>%
+joined_data <- read_csv("Deliverable 5 - Join datasets and store in SQLite database/Data/airbnb_and_rental_data_Oct25_to_Jun26_cleaned_with_location_id.csv",
+                          show_col_types = FALSE) %>%
+filter(!is.na(`Median Rent`)) %>%
   mutate(
-    price_clean = parse_number(as.character(price)),
-    location_id = as.character(`Location Id`)
-  )
-
-# 3. Filter for Christchurch Central (SA2 code: 326600)
-chch_central <- df_clean %>%
-  filter(location_id == "326600")
-
-# 4. Deduplicate Airbnb listings by unique ID
-chch_central_unique <- chch_central %>%
-  distinct(id, .keep_all = TRUE)
-
-# 5. Calculate summary statistics
-median_price <- median(chch_central_unique$price_clean, na.rm = TRUE)
-mean_price   <- mean(chch_central_unique$price_clean, na.rm = TRUE)
-listing_cnt  <- sum(!is.na(chch_central_unique$price_clean))
-
-# 6. Print the result
-cat("\n======================================================\n")
-cat("PART 1 RESULTS: Christchurch Central (Location ID 326600)\n")
-cat("======================================================\n")
-cat(sprintf("Total unique listings:       %d\n", listing_cnt))
-cat(sprintf("Median AirBnB Nightly Price: $%.2f NZD\n", median_price))
-cat(sprintf("Mean AirBnB Nightly Price:   $%.2f NZD\n", mean_price))
-cat("======================================================\n")
-airbnb_clean <- airbnb %>%
-  mutate(
-    airbnb_id         = as.character(id),
-    location_id       = as.character(`Location Id`),
-    airbnb_nightly    = parse_number(as.character(price)),
-    time_key          = as.character(TimeFrame)
-  ) %>%
-  filter(!is.na(airbnb_nightly), !is.na(location_id), !is.na(time_key))
+    airbnb_id = as.character(id),
+    location_id = as.character(`Location Id`),
+    price_gap_per_night = price - `Median Rent` / 7   # weekly rent -> nightly
+    )
+  
 
 # ------------------------------------------------------------------------------
-# 2. Clean and standardize the Rental Bond data
-# ------------------------------------------------------------------------------
-rental <- read_csv("Deliverable 5 - Join datasets and store in SQLite database/Data/rental_chch_Oct25_to_Jun26_cleaned.csv")
-rental_clean <- rental %>%
-  mutate(
-    location_id       = as.character(`Location Id`),
-    long_term_weekly  = parse_number(as.character(`Median Rent`)),
-    long_term_nightly = long_term_weekly / 7,  # Convert weekly bond rent to nightly equivalent
-    time_key          = as.character(TimeFrame)
-  ) %>%
-  filter(!is.na(long_term_nightly), !is.na(location_id), !is.na(time_key))
-
-# ------------------------------------------------------------------------------
-# 3. Join the datasets on Location and TimeFrame
-# ------------------------------------------------------------------------------
-
-joined_data <- inner_join(
-  airbnb_clean,
-  rental_clean,
-  by = c("location_id", "time_key"),
-  relationship = "many-to-many"
-) %>%
-  mutate(
-    price_gap_per_night = airbnb_nightly - long_term_nightly
-  )
-
-# ------------------------------------------------------------------------------
-# 4. Filter for sample reliability & rank areas by median gap
+# 2. Filter for sample reliability & rank areas by median gap
 # ------------------------------------------------------------------------------
 min_listings <- 10
 
 area_summary <- joined_data %>%
   group_by(location_id) %>%
   summarise(
-    listing_count = n(),
+    listing_count = n_distinct(airbnb_id),
     median_gap    = median(price_gap_per_night, na.rm = TRUE),
     mean_gap      = mean(price_gap_per_night, na.rm = TRUE),
     min_gap       = min(price_gap_per_night, na.rm = TRUE),
@@ -143,3 +76,4 @@ p <- ggplot(plot_data, aes(x = location_id, y = price_gap_per_night, fill = loca
   )
 
 print(p)
+}

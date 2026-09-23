@@ -69,9 +69,4 @@ message()
 task_5E()
 message()
 
-message(strrep("-", 100))
-message("Task 5F: Join the airbnb and rental datasets in SQlite database")
-message(strrep("-", 100))
-message()
-dataset_name <- task_5F()
 
