@@ -14,6 +14,8 @@ task_4C <- function() {
       TimeFrame = col_date(format = "%Y-%m-%d"),
       `Location Id` = col_character(),
       `Dwelling Type` = col_character(),
+      `Number Of Beds` = col_character(),
+      `Total Bonds` = col_double(), 
       `Median Rent` = col_double(),
       `Geometric Mean Rent` = col_double(),
       `Upper Quartile Rent` = col_double(),

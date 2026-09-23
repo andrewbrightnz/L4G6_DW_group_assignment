@@ -1,1 +1,0 @@
-# Jinhang: Compare number of airbnb and rental properties in each area (see project board for details)

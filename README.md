@@ -119,6 +119,30 @@ For deliverable 5, we used the dataset [Detailed quarterly report, 2020-2026](ht
 tenancy.govt.nz describes the dataset as "information about the activity level in the housing rental market since January 1993."
 This data is provided under a Creative Commons license, and we credit: [The Ministry of Business, Innovation and Employment](https://www.mbie.govt.nz/)
 
+We also used the [Statistical Area 2 2025](https://koordinates.com/from/datafinder.stats.govt.nz/layer/120978-statistical-area-2-2025/) from Koordinates.com
+
+We can get information from this dataset through an API call.
+EXAMPLE: 
+```
+https://koordinates.com/services/query/v1/raster.json?key=KEY&layer=8678&x=175.60821450000003&y=-40.3523065
+```
+
+We made an API call to get the LocationId/SA2 code associated with the latitude-longitude combination for each row:
+``` 
+    api_key  <- Sys.getenv("KOORDINATES_API_KEY")
+    layer_id <- "120978"
+```
+
+Then:
+```    
+    resp <- request("https://koordinates.com/services/query/v1/vector.json") |>
+    req_url_query(
+        key   = api_key,
+        layer = layer_id,
+        x     = df$longitude[i],   # x = longitude
+        y     = df$latitude[i]     # y = latitude
+    ) |>
+```
 
 ## Dataset Columns
 
@@ -147,34 +171,6 @@ listings.csv
 Further details are available in the [Inside Airbnb Data Dictionary](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit?usp=sharing).
 
 
-## KNIME Workflow
-The KNIME workflow is stored as:
-```text
-listings_assignment_clean.knwf
-```
-
-The workflow performs the following tasks:
-
-1. Reads `listings.csv` from the provided URL (this means each user doesn't need to adjust the filepath when they use the shared file).
-2. Examines the dataset using a Statistics View.
-3. Selects the columns required for the analysis.
-4. Handles invalid text values and converts `last_review` to a Date value.
-5. Calculates the number of days between the dataset date, 19 June 2026, and each listing's most recent review.
-6. Plots the distribution of days since the last review.
-7. Plots the price distribution for all New Zealand listings.
-8. Filters listings to Christchurch City and plots its price distribution.
-9. Selects the top 10% of listings based on `number_of_reviews`.
-10. Counts how many of the top-reviewed listings are located in Christchurch City.
-
-
-## Python Environment
-
-The shared virtual environment is called:
-
-```text
-l4g6_env
-```
-
 Set up the environment using the dependencies listed in `requirements.txt`.
 
 ## AI Use Acknowledgement
@@ -197,6 +193,11 @@ Deliverable 3 (reproduce KNIME workflow and plots using R)
 Deliverable 4 (clean bond data)
 - Used Claude to refactor task_4A/B/C so that the code in each task file becomes a function. Then, get main_4.r to call all of the task files in order, like we did in deliverable 3 so the user only has to run the main file.
 - Used Claude to generate code that drops/keeps columns and assigns a data type 
+
+Deliverable 5: (Insert Location Id/SA2 codes into airbnb dataset)
+- Used Claude to create the API call, run in batches of 5, only on rows where the Location Id is missing. Save file after each batch in case of crash part way through the 2.5 hour run.
+- Minor help from Claude to trigger task_5A from main.r
+- Minor help from Claude tidying up the files
 
 ### Jinhang
 
