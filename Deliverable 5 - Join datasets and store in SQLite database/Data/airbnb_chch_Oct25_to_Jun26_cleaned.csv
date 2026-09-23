@@ -69,10 +69,10 @@ id,name,host_id,neighbourhood,latitude,longitude,room_type,price,MonthYear
 1798383,"3 private rooms up to 6 guests, spacious modern.",9431529,Burwood Ward,-43.46923,172.66459,Private room,111,Dec 2025
 1798383,"3 private rooms up to 6 guests, spacious modern.",9431529,Burwood Ward,-43.46923,172.66459,Private room,111,Jan 2026
 1798383,"3 private rooms up to 6 guests, spacious modern.",9431529,Burwood Ward,-43.46923,172.66459,Private room,111,Feb 2026
-1798383,"3 private rooms up to 6 guests, spacious modern.",9431529,Burwood Ward,-43.46900177001953,172.66433715820313,Private room,166,March 2026
-1798383,"3 private rooms up to 6 guests, spacious modern.",9431529,Burwood Ward,-43.46900177001953,172.66433715820313,Private room,166,April 2026
-1798383,"3 private rooms up to 6 guests, spacious modern.",9431529,Burwood Ward,-43.46900177001953,172.66433715820313,Private room,166,May 2026
-1798383,"3 private rooms up to 6 guests, spacious modern.",9431529,Burwood Ward,-43.46900177001953,172.66433715820313,Private room,166,June 2026
+1798383,"3 private rooms up to 6 guests, spacious modern.",9431529,Burwood Ward,-43.46900177001953,172.66433715820312,Private room,166,March 2026
+1798383,"3 private rooms up to 6 guests, spacious modern.",9431529,Burwood Ward,-43.46900177001953,172.66433715820312,Private room,166,April 2026
+1798383,"3 private rooms up to 6 guests, spacious modern.",9431529,Burwood Ward,-43.46900177001953,172.66433715820312,Private room,166,May 2026
+1798383,"3 private rooms up to 6 guests, spacious modern.",9431529,Burwood Ward,-43.46900177001953,172.66433715820312,Private room,166,June 2026
 1837611,"Close to University, 10 mins from Airport and City",9542449,Fendalton Ward,-43.51332,172.5784,Private room,75,Oct 2025
 1837611,"Close to University, 10 mins from Airport and City",9542449,Fendalton Ward,-43.51332,172.5784,Private room,75,Nov 2025
 1837611,"Close to University, 10 mins from Airport and City",9542449,Fendalton Ward,-43.51332,172.5784,Private room,75,Dec 2025
@@ -374,15 +374,15 @@ id,name,host_id,neighbourhood,latitude,longitude,room_type,price,MonthYear
 5739354,Modern self contained unit,29133056,Banks Peninsula Ward,-43.59799,172.71911,Private room,309,April 2026
 5739354,Modern self contained unit,29133056,Banks Peninsula Ward,-43.59799,172.71911,Private room,309,May 2026
 5739354,Modern self contained unit,29133056,Banks Peninsula Ward,-43.59799,172.71911,Private room,309,June 2026
-5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570313,Entire home/apt,131,Oct 2025
-5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570313,Entire home/apt,109,Nov 2025
-5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570313,Entire home/apt,109,Dec 2025
-5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570313,Entire home/apt,109,Jan 2026
-5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570313,Entire home/apt,109,Feb 2026
-5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570313,Entire home/apt,139,March 2026
-5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570313,Entire home/apt,133,April 2026
-5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570313,Entire home/apt,133,May 2026
-5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570313,Entire home/apt,177,June 2026
+5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570312,Entire home/apt,131,Oct 2025
+5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570312,Entire home/apt,109,Nov 2025
+5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570312,Entire home/apt,109,Dec 2025
+5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570312,Entire home/apt,109,Jan 2026
+5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570312,Entire home/apt,109,Feb 2026
+5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570312,Entire home/apt,139,March 2026
+5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570312,Entire home/apt,133,April 2026
+5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570312,Entire home/apt,133,May 2026
+5752166,Chic Private Studio 6mins from Airport & shops/bus,28774099,Harewood Ward,-43.48641586303711,172.58523559570312,Entire home/apt,177,June 2026
 5787709,The Velvet Suite,21073822,Harewood Ward,-43.47665,172.56715,Entire home/apt,320,Oct 2025
 5787709,The Velvet Suite,21073822,Harewood Ward,-43.47665,172.56715,Entire home/apt,320,Nov 2025
 5787709,The Velvet Suite,21073822,Harewood Ward,-43.47665,172.56715,Entire home/apt,320,Dec 2025
@@ -1529,15 +1529,15 @@ With Parking",56932783,Central Ward,-43.5271,172.64739,Private room,155,June 202
 16654861,"Longterm double, twin or triple in central city",41527093,Central Ward,-43.52779,172.64685,Private room,53,April 2026
 16654861,"Longterm double, twin or triple in central city",41527093,Central Ward,-43.52779,172.64685,Private room,53,May 2026
 16654861,"Longterm double, twin or triple in central city",41527093,Central Ward,-43.52779,172.64685,Private room,53,June 2026
-16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882813,Private room,90,Oct 2025
-16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882813,Private room,90,Nov 2025
-16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882813,Private room,90,Dec 2025
-16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882813,Private room,90,Jan 2026
-16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882813,Private room,90,Feb 2026
-16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882813,Private room,137,March 2026
-16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882813,Private room,137,April 2026
-16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882813,Private room,137,May 2026
-16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882813,Private room,137,June 2026
+16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882812,Private room,90,Oct 2025
+16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882812,Private room,90,Nov 2025
+16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882812,Private room,90,Dec 2025
+16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882812,Private room,90,Jan 2026
+16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882812,Private room,90,Feb 2026
+16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882812,Private room,137,March 2026
+16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882812,Private room,137,April 2026
+16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882812,Private room,137,May 2026
+16665527,"Stylish, charming, stay in our most chic suburb",110222955,Fendalton Ward,-43.51142883300781,172.62551879882812,Private room,137,June 2026
 16798852,Yani Home,111675989,Waimairi Ward,-43.51944,172.56245,Private room,56,Oct 2025
 16798852,Yani Home,111675989,Waimairi Ward,-43.51944,172.56245,Private room,67,Nov 2025
 16798852,Yani Home,111675989,Waimairi Ward,-43.51944,172.56245,Private room,67,Dec 2025

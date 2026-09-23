@@ -9,6 +9,7 @@ task_5C <- function() {
 library(tidyverse)
 
 # 1. Use the loaded airbnb dataset
+airbnb <- read_csv("Deliverable 5 - Join datasets and store in SQLite database/Data/airbnb_chch_Oct25_to_Jun26_cleaned_with_location_id.csv")
 df_raw <- airbnb
 
 # 2. Clean price column & standardize Location Id

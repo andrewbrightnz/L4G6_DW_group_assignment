@@ -46,7 +46,7 @@ task_5B <- function() {
 }
 
 # Uncomment to test from this file, and comment out again before it goes to main
-result <- task_5B()
+# result <- task_5B()
   
   
   
