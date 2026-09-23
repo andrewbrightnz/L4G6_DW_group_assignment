@@ -4,7 +4,7 @@ task_5C <- function() {
     # Open the joined airbnb and rental data
     # Find median etc
     # print result?
-}
+
 # 1. Median Airbnb price in Christchurch Central (326600)
 library(tidyverse)
 
@@ -40,3 +40,4 @@ cat(sprintf("Total unique listings:       %d\n", listing_cnt))
 cat(sprintf("Median AirBnB Nightly Price: $%.2f NZD\n", median_price))
 cat(sprintf("Mean AirBnB Nightly Price:   $%.2f NZD\n", mean_price))
 cat("======================================================\n")
+}
