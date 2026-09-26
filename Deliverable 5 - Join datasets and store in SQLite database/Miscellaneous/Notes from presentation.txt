@@ -1,0 +1,9 @@
+# Use TQDM to create a progress bar for the API process
+# To avoid creating a plot with too many areas, group by area (SA3, or wards)
+# To show difference graph, sort by gap 
+# To show short-term rentals, include airbnb's  under 3 weeks.
+# Distribution of short vs long-term rentals - parse the name for the location Id for the plot
+# Use left join to airbnb to join tables
+
+# assign name to wellington
+city_name = "Wellington"
