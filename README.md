@@ -59,6 +59,12 @@ Without price, we assumed the row would not be much help for this dataset so we 
 
 We also checked that all prices were valid (not 0 or negative values, checked for consistency of neighbourhood and room type where we found no issues. We also checked the latitude and longitude to make sure all rows were within the correct bounds. Banks Peninsula was outside the initial bounds but this is legitimate and not an error. 
 
+## Deliverable 6
+Made a output folder so that both the input data and output data aren't sitting in the same folder. Before we had a data and a tasks folder, now we have Data, Tasks and Output. 
+
+Define parameters so there aren't random numbers floating around. Instead they are defined at the top of the file and then used later in the file. 
+
+Added and deleted code where it made sense. Keeping code accurate. Not putting numbers in the code which would be wrong if a different file is uploaded. 
 
 ## Dataset Columns and meaning for RENTAL BOND DATA SET 
 This project uses the Detailed Quarterly Tenancy rental bond
