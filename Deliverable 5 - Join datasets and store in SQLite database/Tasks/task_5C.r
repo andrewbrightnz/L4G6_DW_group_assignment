@@ -1,19 +1,15 @@
 # Kavya: Find median Airbnb price in Christchurch central (see project board for details)
 
 task_5C <- function() {
-    # Open the joined airbnb and rental data
-    # Find median etc
-    # print result?
-
-# 1. Median Airbnb price in Christchurch Central (326600)
+# Median Airbnb price in Christchurch Central (SA2 code 326600).
 library(tidyverse)
 
 # 1. Use the loaded airbnb dataset
-airbnb <- read_csv("Deliverable 5 - Join datasets and store in SQLite database/Data/airbnb_chch_Oct25_to_Jun26_cleaned_with_location_id.csv")
-df_raw <- airbnb
+airbnb <- read_csv("Deliverable 5 - Join datasets and store in SQLite database/Data/airbnb_chch_Oct25_to_Jun26_cleaned_with_location_id.csv",
+                   show_col_types = FALSE)
 
 # 2. Clean price column & standardize Location Id
-df_clean <- df_raw %>%
+df_clean <- airbnb %>%
   mutate(
     price_clean = parse_number(as.character(price)),
     location_id = as.character(`Location Id`)
@@ -26,6 +22,7 @@ chch_central <- df_clean %>%
 # 4. Deduplicate Airbnb listings by unique ID
 chch_central_unique <- chch_central %>%
   distinct(id, .keep_all = TRUE)
+if (nrow(chch_central_unique) == 0) stop("No Christchurch Central listings found.")
 
 # 5. Calculate summary statistics
 median_price <- median(chch_central_unique$price_clean, na.rm = TRUE)

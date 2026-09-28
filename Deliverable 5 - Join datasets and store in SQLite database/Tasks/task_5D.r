@@ -1,79 +1,43 @@
-# Kavya: Find area with largest variance in rental prices (see project board for details)
-
+# Task 5D: Compare Airbnb nightly prices with median weekly rent / 7.
+# The same Airbnb listing can appear in several months, as in the original analysis.
 task_5D <- function() {
-    # Open the joined airbnb and rental data
-    # Find largest variance etc
-    # print result?
+  library(dplyr)
+  library(ggplot2)
+  library(readr)
 
-# Task 5D: Finding the Largest Gap Between Short- & Long-Term Rental Prices
+  data_path <- "Deliverable 5 - Join datasets and store in SQLite database/Data/airbnb_and_rental_data_Oct25_to_Jun26_cleaned_with_location_id.csv"
+  output_dir <- "Deliverable 5 - Join datasets and store in SQLite database/Output/task_5D"
+  min_listings <- 10
 
-library(tidyverse)
+  joined_data <- read_csv(data_path, show_col_types = FALSE) |>
+    filter(!is.na(`Median Rent`), !is.na(price)) |>
+    mutate(price_gap_per_night = price - `Median Rent` / 7)
 
-# ------------------------------------------------------------------------------
-# 1. Clean and standardize the AirBnB data
-# ------------------------------------------------------------------------------
-# Kavya: Find median Airbnb price in Christchurch central (see project board for details)
-joined_data <- read_csv("Deliverable 5 - Join datasets and store in SQLite database/Data/airbnb_and_rental_data_Oct25_to_Jun26_cleaned_with_location_id.csv",
-                          show_col_types = FALSE) %>%
-filter(!is.na(`Median Rent`)) %>%
-  mutate(
-    airbnb_id = as.character(id),
-    location_id = as.character(`Location Id`),
-    price_gap_per_night = price - `Median Rent` / 7   # weekly rent -> nightly
-    )
-  
+  area_summary <- joined_data |>
+    group_by(`Location Id`) |>
+    summarise(
+      listing_count = n_distinct(id),
+      median_gap = median(price_gap_per_night),
+      .groups = "drop"
+    ) |>
+    filter(listing_count >= min_listings) |>
+    arrange(desc(median_gap))
 
-# ------------------------------------------------------------------------------
-# 2. Filter for sample reliability & rank areas by median gap
-# ------------------------------------------------------------------------------
-min_listings <- 10
+  if (nrow(area_summary) == 0) stop("No areas have enough listings for Task 5D.")
+  top_10 <- head(area_summary, 10)
+  print(top_10)
 
-area_summary <- joined_data %>%
-  group_by(location_id) %>%
-  summarise(
-    listing_count = n_distinct(airbnb_id),
-    median_gap    = median(price_gap_per_night, na.rm = TRUE),
-    mean_gap      = mean(price_gap_per_night, na.rm = TRUE),
-    min_gap       = min(price_gap_per_night, na.rm = TRUE),
-    max_gap       = max(price_gap_per_night, na.rm = TRUE),
-    .groups       = "drop"
-  ) %>%
-  filter(listing_count >= min_listings) %>%
-  arrange(desc(median_gap))
+  plot <- ggplot(top_10, aes(x = reorder(as.character(`Location Id`), median_gap),
+                             y = median_gap)) +
+    geom_col(fill = "#3366A3") +
+    coord_flip() +
+    labs(title = "Largest Airbnb–rental nightly price gaps",
+         subtitle = "Top 10 areas with at least 10 Airbnb listings",
+         x = "SA2 location code", y = "Median nightly gap (NZD)") +
+    theme_minimal()
 
-# Print results to Console
-cat("\n========================================================================\n")
-cat("TOP 10 LOCATIONS WITH THE CRAZIEST (LARGEST) PRICE GAP (Short - Long/7)\n")
-cat("========================================================================\n")
-print(head(area_summary, 10))
-
-# ------------------------------------------------------------------------------
-# 5. Plot the distribution of price gaps per location ID
-# ------------------------------------------------------------------------------
-top_10_locations <- head(area_summary$location_id, 10)
-
-plot_data <- joined_data %>%
-  filter(location_id %in% top_10_locations) %>%
-  mutate(location_id = factor(location_id, levels = top_10_locations))
-
-p <- ggplot(plot_data, aes(x = location_id, y = price_gap_per_night, fill = location_id)) +
-  geom_boxplot(outlier.shape = NA, alpha = 0.75, show.legend = FALSE) +
-  geom_hline(yintercept = 0, linetype = "dashed", color = "red", linewidth = 0.8) +
-  coord_cartesian(ylim = c(
-    quantile(plot_data$price_gap_per_night, 0.05, na.rm = TRUE),
-    quantile(plot_data$price_gap_per_night, 0.95, na.rm = TRUE)
-  )) +
-  theme_minimal(base_size = 12) +
-  labs(
-    title = "Distribution of Short- vs Long-Term Nightly Rental Gap",
-    subtitle = "Top 10 Christchurch Locations by Median Gap (Short-Term - Long-Term/7)",
-    x = "Location ID (Stats NZ SA2)",
-    y = "Price Difference per Night ($NZD)"
-  ) +
-  theme(
-    axis.text.x = element_text(angle = 45, hjust = 1),
-    plot.title = element_text(face = "bold")
-  )
-
-print(p)
+  dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
+  ggsave(file.path(output_dir, "median_price_gap_top_10.png"), plot,
+         width = 9, height = 6, dpi = 150, bg = "white")
+  invisible(top_10)
 }
