@@ -7,17 +7,25 @@ library(tidyverse)
 
 task_4A <- function() {
 
-# read csv
-airbnb_chch_Oct25_Jun26 <- read_csv("Deliverable 4 - Clean bond data/Data/airbnb_chch_Oct25_to_Jun26.csv")
+input_data <- "Deliverable 4 - Clean bond data/Data/airbnb_chch_Oct25_to_Jun26.csv"
+output_data <- "Deliverable 4 - Clean bond data/Output/airbnb_chch_Oct25_to_Jun26_cleaned.csv"
 
-  # selecting the rows we want to keep
+price_max_plausible <- 7000   # prices above this are treated as errors
+price_inspect       <- 2000   # prices above this are printed for inspection
+lat_min  <- -44; lat_max  <- -43 # value for plausible locations
+longitude_min <- 172; longitude_max <- 173 # value for plausible locations
+
+# read csv
+airbnb_chch_Oct25_Jun26 <- read_csv(input_data)
+
+  # selecting the columns we want to keep
   airbnb_chch_Oct25_Jun26 <- airbnb_chch_Oct25_Jun26 |>
     select(id, name, host_id, neighbourhood, latitude, longitude, room_type, price, MonthYear)
   
-  # number of rows = 28795
+  # number of rows
   message("Task 4A: ", nrow(airbnb_chch_Oct25_Jun26), " rows after selecting columns.")
   
-  # sum of how many missing values are in each column (all 0 except price = 10667)
+  # sum of how many missing values are in each column 
   message("Task 4A: missing values per column:")
   print(colSums(is.na(airbnb_chch_Oct25_Jun26)))
   
@@ -72,14 +80,14 @@ airbnb_chch_Oct25_Jun26 <- read_csv("Deliverable 4 - Clean bond data/Data/airbnb
   airbnb_chch_Oct25_Jun26 <- airbnb_chch_Oct25_Jun26 |>
     distinct()
   
-  #check how many exactly duplicated rows there are now = 0
+  #check how many exactly duplicated rows there are now 
   message("Task 4A: ", sum(duplicated(airbnb_chch_Oct25_Jun26)), " exact duplicate rows remain.")
   
   # check to make sure the longitude and latitudes variables are reasonable
   message("Task 4A: rows outside expected lat/long range, by neighbourhood:")
   print(
   airbnb_chch_Oct25_Jun26 |>
-    filter(latitude > -43 | latitude < -44 | longitude < 172 | longitude > 173) |>
+    filter(latitude > lat_max | latitude < lat_min | longitude < longitude_min | longitude > longitude_max) |>
     count(neighbourhood)
   )
   
@@ -92,7 +100,7 @@ airbnb_chch_Oct25_Jun26 <- read_csv("Deliverable 4 - Clean bond data/Data/airbnb
   message("Task 4A: looking at the outliers")
   print(
     airbnb_chch_Oct25_Jun26 |>
-      filter(price > 2000) |>
+      filter(price > price_inspect) |>
       arrange(desc(price)) |>
       select(id, name, price, host_id, MonthYear),
     n = Inf
@@ -101,7 +109,7 @@ airbnb_chch_Oct25_Jun26 <- read_csv("Deliverable 4 - Clean bond data/Data/airbnb
   
   # Flag clearly wrong prices as missing
   airbnb_chch_Oct25_Jun26 <- airbnb_chch_Oct25_Jun26 |>
-    mutate(price = if_else(price > 7000, NA_real_, price))
+    mutate(price = if_else(price > price_max_plausible, NA_real_, price))
   
 
   # Fill from nearby months (either direction) within the same listing
@@ -115,33 +123,33 @@ airbnb_chch_Oct25_Jun26 <- read_csv("Deliverable 4 - Clean bond data/Data/airbnb
   message("Task 4A: price summary after outlier fix:")
   print(summary(airbnb_chch_Oct25_Jun26$price))
   
-  # sum of duplicated ids = 24678
+  # sum of duplicated ids 
   message("Task 4A: ", sum(duplicated(airbnb_chch_Oct25_Jun26$id)), " duplicated ids.")
 
-  # sum of number of rows in price column with NA = 505
+  # sum of number of rows in price column with NA
   message("Task 4A: ", sum(is.na(airbnb_chch_Oct25_Jun26$price)), " rows with missing price.")
   
   #removing rows where price is NA
   airbnb_chch_Oct25_Jun26 <- airbnb_chch_Oct25_Jun26 |>
     filter(!is.na(price))
 
-  # number of rows with NA now = 0
+  # number of rows with NA now 
   message("Task 4A: ", sum(is.na(airbnb_chch_Oct25_Jun26$price)), " rows with missing price remain.")
 
-  # updated number of rows = 28290
+  # updated number of rows
   message("Task 4A: ", nrow(airbnb_chch_Oct25_Jun26), " rows after removing missing price.")
   
   # check to see if outliers have been removed
   message("Task 4A: outliers after cleaning:")
   print(
     airbnb_chch_Oct25_Jun26 |>
-      filter(price > 2000) |>
+      filter(price > price_inspect) |>
       arrange(desc(price)) |>
       select(id, name, price, host_id, MonthYear),
     n = Inf
   )
 
- write_csv(airbnb_chch_Oct25_Jun26, "Deliverable 4 - Clean bond data/Data/airbnb_chch_Oct25_to_Jun26_cleaned.csv")
+ write_csv(airbnb_chch_Oct25_Jun26, output_data)
 
   return(airbnb_chch_Oct25_Jun26)
 }

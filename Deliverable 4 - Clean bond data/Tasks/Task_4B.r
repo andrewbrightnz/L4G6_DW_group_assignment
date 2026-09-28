@@ -4,10 +4,16 @@
 
 library(tidyverse)
 
+input_data_bond <- "Deliverable 4 - Clean bond data/Data/bond_data.csv"
+output_data_bond <- "Deliverable 4 - Clean bond data/Output/bond_data_Oct25_to_Jun26.csv"
+
+start_date <- as.Date("2025-10-01")
+end_date_exclusive <- as.Date("2026-07-01")
+
 task_4B <- function() {
   # Keep location IDs and bedroom categories (including literal NA) as text.
   bond_data <- read_csv(
-    "Deliverable 4 - Clean bond data/Data/bond_data.csv",
+    input_data_bond,
     col_types = cols(
       TimeFrame = col_character(),
       `Location Id` = col_character(),
@@ -34,8 +40,6 @@ task_4B <- function() {
     stop("TimeFrame contains missing or invalid dates; expected YYYY-MM-DD.")
   }
 
-  start_date <- as.Date("2025-10-01")
-  end_date_exclusive <- as.Date("2026-07-01")
   rows_before <- nrow(bond_data)
 
   # Keep every column, including Location Id, for the next team member's task.
@@ -51,7 +55,7 @@ task_4B <- function() {
   message("Retained TimeFrame values: ",
           paste(sort(unique(filtered_bonds$TimeFrame)), collapse = ", "))
 
-  write_csv(filtered_bonds, "Deliverable 4 - Clean bond data/Data/bond_data_Oct25_to_Jun26.csv")
+  write_csv(filtered_bonds, output_data_bond)
 
   return(filtered_bonds)
 }
