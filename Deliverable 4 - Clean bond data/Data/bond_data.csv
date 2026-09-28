@@ -1,4 +1,4 @@
-TimeFrame,Location Id,Dwelling Type,Number Of Beds,Total Bonds,Active Bonds,Closed Bonds,Median Rent,Geometric Mean Rent,Upper Quartile Rent,Lower Quartile Rent,Log Std Dev Weekly Rent
+﻿TimeFrame,Location Id,Dwelling Type,Number Of Beds,Total Bonds,Active Bonds,Closed Bonds,Median Rent,Geometric Mean Rent,Upper Quartile Rent,Lower Quartile Rent,Log Std Dev Weekly Rent
 2026-04-01,NULL,ALL,1,2064,19563,1176,NULL,NULL,NULL,NULL,NULL
 2026-04-01,-99,ALL,1,22014,113820,6969,550,522,660,450,0.4144
 2026-04-01,100100,ALL,1,6,9,0,425,408,475,370,0.2834

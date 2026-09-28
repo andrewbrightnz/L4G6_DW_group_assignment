@@ -11,9 +11,9 @@ start_date <- as.Date("2025-10-01")
 end_date_exclusive <- as.Date("2026-07-01")
 
 task_4B <- function() {
-  # Keep location IDs and bedroom categories (including literal NA) as text.
-  bond_data <- read_csv(
-    input_data_bond,
+  # Keep location IDs and bedroom categories as text.
+  # The source file marks missing values as "", "NULL", or "NA".
+  bond_data <- read_csv(input_data_bond,
     col_types = cols(
       TimeFrame = col_character(),
       `Location Id` = col_character(),
@@ -21,7 +21,7 @@ task_4B <- function() {
       `Number Of Beds` = col_character(),
       .default = col_double()
     ),
-    na = c("", "NULL"),
+    na = c("", "NULL", "NA"),
     show_col_types = FALSE
   )
   if (nrow(problems(bond_data)) > 0) {
