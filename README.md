@@ -4,43 +4,43 @@
 
 This repository contains the work completed by Group L4G6 for the DATA201/422 group assignment. The project focuses on collaborative data wrangling, reproducible analysis, workflow modularity, and version control using Python, GitHub, and KNIME Analytics Platform.
 
-## Notes for each deliverable
-Deliverable 2:
+# Notes for each deliverable
+## Deliverable 2:
 We created a KNIME workflow to explore and analyse Airbnb listings across New Zealand. The workflow includes data selection and cleaning, date conversion, filtering, aggregation, and visualisation.
 
-Deliverable 3:
-We repeated the deliverable 2 workflow in R
+## Deliverable 3:
+We recreated the deliverable 2 workflow in R
 
-Deliverable 4: 
+## Deliverable 4: 
 We cleaned the air_bnb and bond_data tables ready to compare and analyse them in Deliverable 5.
 
 The brief didn't tell us how we would process the datasets in deliverable 5, so we made decisions on which fields to keep/discard based on common sense. We knew that if our decisions here turned out to be unsuitable, we could come back and edit the deliverable 4 code to suit deliverable 5 better.
 
-air_bnb_chch_Oct25_to_jun_26_cleaned.csv
+```air_bnb_chch_Oct25_to_jun_26_cleaned.csv```
 Keep these fields:
-- id
-- name
-- host_id
-- neighbourhood
-- latitude
-- longitude
-- room_type
-- price
-- MonthYear
+- ```id```
+- ```name```
+- ```host_id```
+- ```neighbourhood```
+- ```latitude```
+- ```longitude```
+- ```room_type```
+- ```price```
+- ```MonthYear```
 
 Remove these rows:
-- host name
-- neighbourhood group
-- minimum nights
-- number of reviews
-- last review
-- reviews per month
-- calculated_host_listings_count
-- availability_365
-- number_of_reviews_ltm
-- license
-- duplicate rows
-- location_id missing or NA
+- ```host name```
+- ```neighbourhood group```
+- ```minimum nights```
+- ```number of reviews```
+- ```last review```
+- ```reviews per month```
+- ```calculated_host_listings_count```
+- ```availability_365```
+- ```number_of_reviews_ltm```
+- ```license```
+- ```duplicate rows```
+- ```ocation_id``` missing or ```NA```
 
 We removed anything to do with reviews because it doesn't seem relevant for the next deliverable with bond dataset. Removed licence as 
 most/all the values were NA, it also didn't seem too relevant with the bond dataset. 
@@ -66,10 +66,8 @@ Define parameters so there aren't random numbers floating around. Instead they a
 
 Added and deleted code where it made sense. Keeping code accurate. Not putting numbers in the code which would be wrong if a different file is uploaded. 
 
-## Dataset Columns and meaning for RENTAL BOND DATA SET 
-This project uses the Detailed Quarterly Tenancy rental bond
-dataset published by Tenancy Services, part of the New Zealand
-Ministry of Business, Innovation and Employment (MBIE).
+## Dataset Columns and meaning for ```RENTAL BOND DATA SET```
+This project uses the Detailed Quarterly Tenancy rental bond dataset published by Tenancy Services, part of the New Zealand Ministry of Business, Innovation and Employment (MBIE).
 
 The dataset covers rental bond statistics from Q1 2020 to Q3 2026.
 
@@ -101,26 +99,27 @@ Aggregate categories and missing values should be considered during
 analysis. Geographical identifiers should be interpreted using the
 official Tenancy Services documentation.
 
-Bond_data.csv
+```Bond_data.csv```
 Keep these fields:
-- Timeframe
-- Location id
-- Dwelling type
-- Median Rent	
-- Geometric Mean Rent	
-- Upper Quartile Rent	
-- Lower Quartile Rent
+- ```Timeframe```
+- ```Location id```
+- ```Dwelling type```
+- ```Median Rent```
+- ```Geometric Mean Rent```	
+- ```Upper Quartile Rent```
+- ```Lower Quartile Rent```
 
 Remove these rows:
-- Location_id is missing or NA
+- ```Location_id``` is ```missing``` or ```NA```
+
 ## Datasets
-For deliverable 2 we used the dataset [New Zealand listings.csv – 19 June 2026](https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv)
+For **deliverable 2** we used the dataset [New Zealand listings.csv – 19 June 2026](https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv)
 
 Inside Airbnb describes `listings.csv` as summary information and metrics for listings that are suitable for visualisation.
 This data is provided under an unknown/unspecified license, and we credit: [insideairbnb.com](insideairbnb.com)
 
 
-For deliverable 5, we used the dataset [Detailed quarterly report, 2020-2026](https://www.tenancy.govt.nz/assets/Uploads/Tenancy/Rental-bond-data/Detailed-Quarterly-Tenancy-Q1-2020-Q3-2026.csv?m=5766222a0dc2d94c11545872be77333e32f7c999)
+For **deliverable 5**, we used the dataset [Detailed quarterly report, 2020-2026](https://www.tenancy.govt.nz/assets/Uploads/Tenancy/Rental-bond-data/Detailed-Quarterly-Tenancy-Q1-2020-Q3-2026.csv?m=5766222a0dc2d94c11545872be77333e32f7c999)
 
 tenancy.govt.nz describes the dataset as "information about the activity level in the housing rental market since January 1993."
 This data is provided under a Creative Commons license, and we credit: [The Ministry of Business, Innovation and Employment](https://www.mbie.govt.nz/)
@@ -179,39 +178,49 @@ Further details are available in the [Inside Airbnb Data Dictionary](https://doc
 
 Set up the environment using the dependencies listed in `requirements.txt`.
 
-## AI Use Acknowledgement
 
-### Andrew
-R revision
+
+# AI Use Acknowledgement
+
+## Andrew
+
+### R revision
 - Used Claude to put together a collection of Jupyter notebooks covering material in the R documentation to make revision of these methods easier.
 
-Deliverable 1 (Setup project structure and GitHub):
+### Deliverable 1 (Setup project structure and GitHub):
 - Used ChatGPT to help set up the Python virtual environment and `.gitignore` file.
 
-Deliverable 2 (AirBnb data analysis):
+### Deliverable 2 (AirBnb data analysis using KNIME):
 - Used Claude for advice on which node to chose for a specific outcome and how to modify some plots (variable order etc)
 
-Deliverable 3 (reproduce KNIME workflow and plots using R)
+### Deliverable 3 (reproduce KNIME workflow and plots using R)
 - Used Claude for general repo housekeeping advice (how to load and run task files from main, how to save datasets and plots)
 - Used Claude to tidy Task_4
 - Used too much Claude to create task_5 due to time constraints, but I've commented most lines to show understanding
 
-Deliverable 4 (clean bond data)
+### Deliverable 4 (clean bond data)
 - Used Claude to refactor task_4A/B/C so that the code in each task file becomes a function. Then, get main_4.r to call all of the task files in order, like we did in deliverable 3 so the user only has to run the main file.
 - Used Claude to generate code that drops/keeps columns and assigns a data type 
 
-Deliverable 5: (Insert Location Id/SA2 codes into airbnb dataset)
+### Deliverable 5: (Insert Location Id/SA2 codes into airbnb dataset)
 - Used Claude to create the API call, run in batches of 5, only on rows where the Location Id is missing. Save file after each batch in case of crash part way through the 2.5 hour run.
 - Minor help from Claude to trigger task_5A from main.r
 - Minor help from Claude tidying up the files
 
-### Jinhang
+### Deliverable 6: (Apply best coding practices)
+As specifically instructed in the brief, I used ```Claude Opus 5.5``` to'construct a 'design principles' document for [y]our pipeline, describing:
+1) the inputs to the pipeline
+2) the outputs from the pipeline
+3) the main steps in the pipeline
+4) an overall coding or software strategies adopted in the project.
 
+## Jinhang
+
+### Deliverable 2 (AirBnb data analysis using KNIME):
 - Used OpenAI Codex to help understand the task requirements, provide guidance on using KNIME, and assist with formatting the README. The workflow and analysis were completed by Jinhang with support from other team members.
 
 
-### Ruby
+## Ruby
 
-Deliverable 3 
+### Deliverable 3 (reproduce KNIME workflow and plots using R)
 - Used Claude to show me how to concatenate each months dataset together
-

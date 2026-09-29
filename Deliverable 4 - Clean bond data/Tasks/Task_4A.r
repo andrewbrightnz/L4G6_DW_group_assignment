@@ -158,4 +158,4 @@ airbnb_chch_Oct25_Jun26 <- read_csv(input_data)
 # source("Deliverable 4 - Clean bond data/Tasks/Task_4A.r")
 # airbnb_chch_Oct25_to_Jun26_cleaned <- task_4A()
 
-task_4A()
+# task_4A()
