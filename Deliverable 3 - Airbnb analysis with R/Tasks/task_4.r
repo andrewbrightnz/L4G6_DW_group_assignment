@@ -54,3 +54,15 @@ task_4 <- function(chch_june) {
   # print(p)
   
 }
+
+
+# Sanity check assertion in pipeline
+sanity_check_task_4 <- function(df) {
+  # Check 1: No negative elapsed days
+  stopifnot("Negative days detected in review interval" = all(df$DaysSinceLastReview >= 0, na.rm = TRUE))
+
+  # Check 2: Spot-check boundary row via tail
+  sample_row <- tail(df[!is.na(df$DaysSinceLastReview), c("DataDate", "last_review", "DaysSinceLastReview")], 1)
+  expected_diff <- as.numeric(sample_row$DataDate - sample_row$last_review)
+  stopifnot("Calculated days does not match calendar difference" = sample_row$DaysSinceLastReview == expected_diff)
+}
