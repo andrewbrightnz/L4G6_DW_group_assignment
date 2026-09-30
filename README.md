@@ -224,3 +224,7 @@ As specifically instructed in the brief, I used ```Claude Opus 5.5``` to'constru
 
 ### Deliverable 3 (reproduce KNIME workflow and plots using R)
 - Used Claude to show me how to concatenate each months dataset together
+
+###kavya
+changes made in deliverable 3 code as we have given the code for each month different, i have merged and gave it in a single code chunk
+For sanity check i have made changes to task 4
