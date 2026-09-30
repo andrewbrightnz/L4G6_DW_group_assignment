@@ -1,6 +1,6 @@
 # Pipeline Design Principles
 
-29 September 2026 · Group L4G6
+30 September 2026 · Group L4G6
 
 Our R pipeline turns nine monthly Inside Airbnb snapshots (Oct 2025 to Jun 2026) and the MBIE quarterly rental bond file into an area-by-quarter comparison of short-term and long-term rental prices and supply in Christchurch.
 
@@ -21,7 +21,7 @@ A static lookup, `SA2_2025_codes_and_names.csv`, adds area names. D3's Christchu
 Quirks the code has to handle:
 
 - The bond data marks missing values as `NULL`. A `Location Id` of `-99` is an aggregate or unallocated area.
-- `Location Id` should be read as text; only Tasks 4B, 4C and 5E do this.
+- `Location Id` should be read as text; only Tasks 4B, 4C, 5E and 5F do this.
 - Airbnb `price` is missing for every listing from Dec 2025 to Feb 2026, and for 168–274 listings in each other month (10,667 in total). It is not missing at random.
 - Airbnb months are labels (`"Oct 2025"`); bond periods are quarter-start dates (`2025-10-01`).
 
@@ -33,10 +33,10 @@ Quirks the code has to handle:
 | Console summary | 5C | Median and mean nightly price in Christchurch Central (SA2 326600) |
 | `Output/task_5D/median_price_gap_top_10.png` | 5D | Top 10 areas (≥ 10 listings) by gap between Airbnb nightly price and weekly rent ÷ 7 |
 | `Output/task_5E/` CSVs and chart | 5E | Airbnb listings vs active bonds by area and quarter; 178 areas, 109–120 of them with a bond count |
+| `Output/task_5F/airbnb_and_rental_data_Oct25_to_Jun26_cleaned_with_location_id.db` | 5F | SQLite tables `airbnb`, `rental` and the joined `airbnb_and_rental_data` (same 28,290 and 21,566 as 5B) |
 
 Every step also saves an intermediate CSV; section 3 gives the row counts. Known gaps:
 
-- Task 5F (storing the tables in SQLite) is not built.
 - `property_counts_by_area_quarter.csv` is not in the repository.
 - `method_notes.txt` is written by hand, not by the code, and is out of date.
 
@@ -44,7 +44,7 @@ Every step also saves an intermediate CSV; section 3 gives the row counts. Known
 
 The Airbnb and bond data are cleaned on separate tracks, tagged with a shared SA2 code, then joined by area and quarter. Each deliverable has a `main` script that runs its tasks in order.
 
-![Pipeline flow: 3 inputs, 10 tasks, 1 join; dashed tags mark files written but never read](Plots/pipeline_flow.png)
+![Pipeline flow: 3 inputs, 11 tasks, 1 join run in R and SQLite; dashed tags mark files written but never read](Plots/pipeline_flow.png)
 
 1. **D3 Task 1 – Acquire.** Download the 9 Inside Airbnb files, keep Christchurch and stack them (28,795 rows).
 2. **D4 Task 4A – Clean Airbnb.** Keep 9 columns. Fill missing prices from the same listing's other months, and treat prices over $7,000 as missing and refill them. Drop the 505 rows still unpriced, leaving 28,290.
@@ -54,6 +54,7 @@ The Airbnb and bond data are cleaned on separate tracks, tagged with a shared SA
 6. **D5 Task 5A – Add SA2 codes.** Look up each row's code with the Koordinates API. The lookup can resume after a crash and saves every 5 rows.
 7. **D5 Task 5B – Join.** Convert months to quarters and filter bonds to all dwelling types and all bedroom counts. Left join many-to-one on SA2 and quarter, and stop if the row count changes.
 8. **D5 Tasks 5C–5E – Analyse.** 5C and 5E read the 5A file, not the join. 5E also reads the 4B file for `Active Bonds`, which 4C drops.
+9. **D5 Task 5F – SQLite.** Load the Airbnb and rental CSVs into a database and repeat the 5B join in SQL. Written with Claude Code.
 
 ## 4. Coding strategies and lecture principles
 
@@ -66,25 +67,25 @@ Our core strategy is modular R: each task is a function in its own file, called 
 | P3 Small files, one job each (Wk 7 Tue, Wk 9 Mon) | One task per file, each a function | 4B and 4C pass paths through global variables; `Task_4A.r` runs twice |
 | P4 Visible parameters (Wk 9 Mon) | e.g. `price_max_plausible <- 7000`, `batch_size <- 5`, `min_listings <- 10` | 5C hard-codes SA2 `"326600"` |
 | P5 Self-documenting code (Wk 9 Mon, Wk 7 Mon) | Descriptive names; explicit column types in 4C | Five tasks let `read_csv()` guess the type of `Location Id` |
-| P6 Fail fast and loudly (Wk 9 Mon, Wk 10 Tue) | `stop()` on bad dates (4B), a stale SA2 cache (5A), and duplicate rows or a changed row count (5B) | D3, 4A and 4C never stop; no `warning()` after imputing prices |
-| P7 Sanity checks (Wk 9 Mon) | Row counts logged in D4, 5AA, 5A and 5B. Check for the tutor: the join keeps all 28,290 rows | No automated report |
+| P6 Fail fast and loudly (Wk 9 Mon, Wk 10 Tue) | `stop()` on bad dates (4B), a stale SA2 cache (5A), and duplicate rows or a changed row count (5B, 5F) | D3, 4A and 4C never stop; no `warning()` after imputing prices |
+| P7 Sanity checks (Wk 9 Mon) | Row counts logged in D4, 5AA, 5A, 5B and 5F. Check for the tutor: both joins keep all 28,290 rows | No automated report |
 | P8 Orchestration (Wk 10 Mon) | One `main` script per deliverable | No single script at the root runs D3 → D5 |
 | P9 Configuration file (Wk 10 Tue) | Not adopted | Move the parameters into `config.yaml` |
 | P10 Document judgement calls (Wk 8 Mon) | README records the price fill-in and outlier rules; missing bond counts stay `NA` | Prices are filled with our own method, not an established imputation package |
 | P11 Human-in-the-loop AI (Wk 7 Tue, Wk 9 Tue) | People design and review; the API key is kept in an environment variable | README doesn't record Codex's use in D5 |
 | P12 Continuous integration (Wk 10 Tue) | Not adopted | Add a GitHub Action |
 | P13 Coverage and metadata (Wk 8 Tue) | 5E coverage CSVs; D3 summary statistics | No description of the cleaned data |
-| P14 Databases for bulk steps (Wk 7 Mon/Tue) | Not adopted | Build Task 5F in SQLite |
+| P14 Databases for bulk steps (Wk 7 Mon/Tue) | 5F joins the tables in SQLite | 5C–5E still read CSVs; tables are not normalised |
 
 Other strategies:
 
 - **Resumable API calls.** Task 5A saves after every 5 rows, so the 2.5-hour run survives a crash.
 - **Git.** The history has 18 pull-request merges, but many commits went straight to `main`.
 
-## 5. Accuracy self-check
+## 5. Accuracy check using subagents
 
-Tool: Claude Code (```Claude Opus 5.5```) in VS Code, 29 September 2026. <br>
-Get Claude to run sub-agents with no memory of the previous work. The sub agent checks the accuracy of the ```design_principles.md``` document against the code and lecture slides. The findings are in the collapsible sections below; line numbers refer to earlier, longer versions of the document.
+Tool: Claude Code (```Claude Opus 5.5```) in VS Code, 29 September 2026. <br><br>
+I got Claude to check its own work by creating a subagent (with no memory from the original session) and compare ```design_principles.md``` to the code and lecture slides. The findings are in the collapsible sections below; line numbers refer to earlier, longer versions of the document. Both reviews predate Task 5F.
 
 ### First review of `design_principles.md` (L4G6, DATA201/422): 6.5 / 10
 
@@ -106,8 +107,8 @@ I read all 8 lecture PDFs, all D3/D4/D5 code, README, D5 Miscellaneous files, ev
 
 </details>
 
-### Human results analysis
-The first accuracy review was poor, so I got Claude to alter the ```design_principles.md``` based on the error s found in the first review, and run a second subagent accuracy check
+### Andrew's analysis of review #1
+The first accuracy review was poor, so I got Claude to alter the ```design_principles.md``` based on the errors found in the first review, and run a second subagent accuracy check
 
 ### Second review of design_principles.md (read-only; no files were changed): 8 / 10
 
@@ -274,12 +275,12 @@ I read all 8 lecture PDFs, all the D3–D5 pipeline code, the README, the D5 Mis
 
 </details>
 
-## 6. Human conclusions
+## 6. Andrew's conclusions
 ### Which design principles did we ask Claude to identify?
 I asked Claude to compare our code against the design principles in the lecture slides from term four because I remembered term three being more about general data wrangling principles; perhaps I should have included term three lecture slides as well?
 
 ### Claude's correct analysis
-Claude seems to have done a good job of reading and 'understanding' our code, and it's useful to see the flowchart showing how our pipeline is operating...and where it is operating poorly.
+(As best I can) I've checked the code against what Claude says it does. Claude seems to have done a good job of reading and 'understanding' our code, and it's useful to see the flowchart showing how our pipeline is operating...and where it is operating poorly.
 
 Some of the mistakes evident in Claude's ```design_principles``` document were due to us wanting to keep the code contained within the deliverable - for the sake of tidyness and simplicity. For example: <br>
 - ```airbnb_chch_Oct25_to_Jun26_cleaned.csv``` was produced as an output for deliverable 4, but deliverable 5 opens a copy made by hand to ```deliverable 5/Data``` instead of opening it from ```deliverable 4/output``` 
@@ -304,6 +305,6 @@ Claude has explained that the flowchart wasn't clear enough about what actually 
 
 ### Other improvements we can make from our own analysis of the code
 - Code is often bloated due to use of Gen-AI which tries to 'do everything'
-- Code is often difficult for someone else to critique because of the bloat, and lack of comments
+- Code is sometimes difficult for someone else to critique because of Gen-AI bloat, and lack of comments
 - I suspect we're not acknowledging the use of Gen-AI as often as we should
 
