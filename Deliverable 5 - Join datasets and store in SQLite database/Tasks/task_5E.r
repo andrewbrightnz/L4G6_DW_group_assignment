@@ -6,9 +6,7 @@ task_5E <- function(output_dir = NULL) {
   library(lubridate)
 
   d5 <- "Deliverable 5 - Join datasets and store in SQLite database"
-  if (!dir.exists(d5)) {
-    d5 <- "Deliverable 5 - Join datasets and store in  SQLite database"
-  }
+  if (!dir.exists(d5)) stop("Run this task from the project root directory.")
   if (is.null(output_dir)) output_dir <- file.path(d5, "Output", "task_5E")
 
   airbnb <- read_csv(
@@ -75,7 +73,7 @@ task_5E <- function(output_dir = NULL) {
   top_areas <- comparison |>
     filter(quarter == max(periods), !is.na(active_bonds)) |>
     arrange(desc(airbnb_listings), location_id) |>
-    slice_head(n = 20) |>
+    slice_head(n = 10) |>
     mutate(area_label = paste0(area_name, " (", location_id, ")"))
   plot_data <- top_areas |>
     select(area_label, airbnb_listings, active_bonds) |>
@@ -89,7 +87,7 @@ task_5E <- function(output_dir = NULL) {
                       labels = c(active_bonds = "Reported active rental bonds",
                                  airbnb_listings = "Airbnb listings observed in quarter")) +
     labs(title = "Airbnb listings and active rental bonds by area",
-         subtitle = "April-June 2026: top 20 matched areas by Airbnb listing count",
+         subtitle = "April-June 2026: top 10 matched areas by Airbnb listing count",
          x = NULL, y = "Count", fill = NULL,
          caption = "Active bonds are a rental-property proxy. Missing bond counts are not zero.\nFull CSV covers areas in the Airbnb sample. SA2 boundaries and time definitions still need checking.") +
     theme_minimal() +
@@ -100,7 +98,7 @@ task_5E <- function(output_dir = NULL) {
   write_csv(unmatched, file.path(output_dir, "areas_missing_bond_counts.csv"))
   write_csv(summary, file.path(output_dir, "coverage_by_quarter.csv"))
   ggsave(file.path(output_dir, "property_counts_by_area_quarter.png"), plot,
-         width = 13, height = 9, dpi = 150, bg = "white")
+         width = 10, height = 6, dpi = 150, bg = "white")
 
   print(summary)
   message(nrow(unmatched), " area-quarter comparisons have no bond count; these remain NA.")

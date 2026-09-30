@@ -1,5 +1,4 @@
-# Task 5: Remove any rows with -99 values from the airbnb and rental datasets
-# (We should have done this in deliverable 4)
+# Remove rows containing -99 from the Airbnb and rental datasets.
 
 # Return or save to disk: airbnb_chch_Oct25_to_Jun26_cleaned and bond_data_Oct25_to_Jun26_cleaned
 library(tidyverse)
@@ -8,15 +7,8 @@ library(tidyverse)
 # Checked as text so it catches -99 stored as either a number or a character code (e.g. Location Id).
 drop_neg99_rows <- function(df, dataset_name) {
   rows_before <- nrow(df)
-  # Get dataset status before cleaning
-  n_neg99 <- df |> filter(if_any(everything(), ~ as.character(.x) %in% "-99")) |> nrow()
-  message("Task 5AA: ", dataset_name, " - ", n_neg99, " rows contain a -99 value.")
-
-  # Filter out any rows with -99 values (integers or text strings))
+  # Check as text to catch both numeric and character -99 values.
   df <- df |> filter(!if_any(everything(), ~ as.character(.x) %in% "-99"))
-  
-  
-  # Print 'task completed' message
   message("Task 5AA: ", dataset_name, " - ", rows_before, " rows before; ", nrow(df),
           " rows after; ", rows_before - nrow(df), " rows removed.")
   message()
@@ -55,6 +47,4 @@ task_5AA <- function() {
     ))
     }
 
-# Uncomment the line below to test run the function from this file
-task_5AA()
-
+# Run task_5AA() explicitly; sourcing this file only defines functions.
