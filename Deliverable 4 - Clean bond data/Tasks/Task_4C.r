@@ -5,10 +5,11 @@
 # load tidyverse to process tables
 library(tidyverse)
 
-input_data_bond <- "Deliverable 4 - Clean bond data/Output/bond_data_Oct25_to_Jun26.csv"
-output_data_bond <- "Deliverable 4 - Clean bond data/Output/bond_data_Oct25_to_Jun26_cleaned.csv"
 
 task_4C <- function() {
+  input_data_bond <- "Deliverable 4 - Clean bond data/Output/bond_data_Oct25_to_Jun26.csv"
+  output_data_bond <- "Deliverable 4 - Clean bond data/Output/bond_data_Oct25_to_Jun26_cleaned.csv"
+  
   # Read the bond data that Task_4B filtered and saved to disk
   bond_data_Oct25_to_Jun26 <- read_csv(input_data_bond,
     # Select only the columns we want to keep, and set their types

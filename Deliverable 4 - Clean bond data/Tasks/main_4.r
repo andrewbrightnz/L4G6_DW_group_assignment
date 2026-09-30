@@ -3,11 +3,14 @@
 library(tidyverse)
 
 download.file("https://www.tenancy.govt.nz/assets/Uploads/Tenancy/Rental-bond-data/Detailed-Quarterly-Tenancy-Q1-2020-Q3-2026.csv?m=5766222a0dc2d94c11545872be77333e32f7c999", "Deliverable 4 - Clean bond data/Data/bond_data.csv", mode = "wb")
+task4A_file <- "Deliverable 4 - Clean bond data/Tasks/Task_4A.r"
+task4B_file <- "Deliverable 4 - Clean bond data/Tasks/Task_4B.r"
+task4C_file <- "Deliverable 4 - Clean bond data/Tasks/Task_4C.r"
 
 # Load each task's function
-source("Deliverable 4 - Clean bond data/Tasks/Task_4A.r")
-source("Deliverable 4 - Clean bond data/Tasks/Task_4B.r")
-source("Deliverable 4 - Clean bond data/Tasks/Task_4C.r")
+source(task4A_file)
+source(task4B_file)
+source(task4C_file)
 
 # Run the tasks in order
 cat(rep("\n", 20), sep = "")                     # 20 empty lines for clarity

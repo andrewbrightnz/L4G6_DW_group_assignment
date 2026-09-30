@@ -4,13 +4,15 @@
 
 library(tidyverse)
 
-input_data_bond <- "Deliverable 4 - Clean bond data/Data/bond_data.csv"
-output_data_bond <- "Deliverable 4 - Clean bond data/Output/bond_data_Oct25_to_Jun26.csv"
-
-start_date <- as.Date("2025-10-01")
-end_date_exclusive <- as.Date("2026-07-01")
 
 task_4B <- function() {
+  
+  input_data_bond <- "Deliverable 4 - Clean bond data/Data/bond_data.csv"
+  output_data_bond <- "Deliverable 4 - Clean bond data/Output/bond_data_Oct25_to_Jun26.csv"
+  
+  start_date <- as.Date("2025-10-01")
+  end_date_exclusive <- as.Date("2026-07-01")
+  
   # Keep location IDs and bedroom categories as text.
   # The source file marks missing values as "", "NULL", or "NA".
   bond_data <- read_csv(input_data_bond,
