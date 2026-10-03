@@ -10,7 +10,6 @@ We created a KNIME workflow to explore and analyse Airbnb listings across New Ze
 
 ## Deliverable 3:
 We recreated the deliverable 2 workflow in R
-Added the July 2026 and August 2026 `listings.csv` datasets to Task 1 and updated the analyses and plots.
 
 ## Deliverable 4: 
 We cleaned the air_bnb and bond_data tables ready to compare and analyse them in Deliverable 5.

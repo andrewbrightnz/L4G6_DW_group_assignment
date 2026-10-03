@@ -1,7 +1,7 @@
 # Produce summary statistics for every column and save the results as a CSV.
 
-task_2 <- function(chch_Oct25_to_Aug26) {
-  summary_data <- chch_Oct25_to_Aug26
+task_2 <- function(chch_Oct25_to_Jun26) {
+  summary_data <- chch_Oct25_to_Jun26
   
   character_columns <- sapply(summary_data, is.character)
   
@@ -53,7 +53,7 @@ task_2 <- function(chch_Oct25_to_Aug26) {
   
   write.csv(
     summary_table,
-    "Data/chch_Oct25_to_Aug26_summary_stats.csv",
+    "Data/chch_Oct25_to_Jun26_summary_stats.csv",
     row.names = FALSE,
     na = ""
   )
