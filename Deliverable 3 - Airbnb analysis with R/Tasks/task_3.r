@@ -1,12 +1,13 @@
 # Plot the distribution of price as a histogram for all New Zealand
 # and Christchurch City. Both distributions are shown in the same plot.
 
-task_3 <- function(dataset) {
+task_3 <- function(dataset, nz_dataset) {
+  # Compare both areas for the latest supplied snapshot.
+  latest_date <- max(as.Date(nz_dataset$DataDate), na.rm = TRUE)
+  latest_month <- as.character(nz_dataset$MonthYear[match(latest_date, as.Date(nz_dataset$DataDate))])
 
-  nz_listings <- read_csv(
-    "https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv",
-    show_col_types = FALSE
-  ) |>
+  nz_listings <- nz_dataset |>
+    filter(as.Date(DataDate) == latest_date) |>
     mutate(
       price = parse_number(as.character(price)),
       area = "New Zealand"
@@ -18,7 +19,7 @@ task_3 <- function(dataset) {
 
   chch_listings <- dataset |>
     filter(
-      as.character(MonthYear) == "June 2026"
+      as.Date(DataDate) == latest_date
     ) |>
     mutate(
       price = parse_number(as.character(price)),
@@ -76,7 +77,7 @@ task_3 <- function(dataset) {
     ) +
     labs(
       title = "Distribution of Airbnb Listing Prices",
-      subtitle = "New Zealand compared with Christchurch City, June 2026",
+      subtitle = paste("New Zealand compared with Christchurch City,", latest_month),
       x = "Price per night (NZD)",
       y = "Density",
       fill = NULL,
@@ -102,7 +103,8 @@ task_3 <- function(dataset) {
     plot = p,
     width = 8,
     height = 6,
-    dpi = 300
+    dpi = 300,
+    bg = "white"
   )
   
   invisible(p)
