@@ -22,3 +22,9 @@ l4g6_env/
 .Rhistory
 
 .RData
+# Ignore data and output artifacts
+data/
+output/
+*.csv
+*.db
+.env

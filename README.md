@@ -228,3 +228,47 @@ As specifically instructed in the brief, I used ```Claude Opus 5.5``` to'constru
 ###kavya
 changes made in deliverable 3 code as we have given the code for each month different, i have merged and gave it in a single code chunk
 For sanity check i have made changes to task 4
+
+
+## Deliverable 7: Pipeline Automation & Ingestion of July–August 2026 Data
+
+In Deliverable 7, we converted the multi-step wrangling process into an end-to-end automated data pipeline that runs via a single command. We also integrated the latest Inside Airbnb snapshots for **July 2026** and **August 2026** to update our earlier analyses and rental comparisons.
+
+### 1. Key Additions & Architectural Changes
+- **Configuration Management (`config.yaml`)**:
+  - Centralised all project parameters, directory paths, geographical boundary thresholds, and data snapshot URLs (spanning October 2025 through August 2026) in one configuration file, following lecture best practices.
+- **Root Orchestration (`main.R` & `Makefile`)**:
+  - Implemented a root orchestrator (`main.R`) that sequentially triggers modular processing scripts in `src/` using `source()`.
+  - Added a `Makefile` to enable single-command reproduction (`make all` or `Rscript main.R`).
+- **Resilient API Caching (`src/04_lookup_sa2.R`)**:
+  - To prevent redundant and rate-limited API calls across tens of thousands of listings, the pipeline caches unique coordinate pairs and seeds from previous Deliverable 5 lookups.
+  - Adding July and August 2026 data required querying the Koordinates vector query API for only **151 newly observed coordinate pairs**, dramatically reducing runtime and protecting API quotas.
+- **Fail-Fast Checks & Defensive Programming**:
+  - Replaced ad-hoc manual checks with assertions (`stopifnot`) that validate schema integrity, coordinate boundaries, date parsing, and table join row counts.
+  - Handled missing and imputed values with appropriate warning logs.
+- **Automated Storage & Exports**:
+  - Cleaned data and joins are automatically written to SQLite (`output/database/rental_comparison.db`) and exported as flat CSV files (`data/processed/`).
+
+### 2. Pipeline Execution Steps (`src/`)
+1. `src/01_ingest_airbnb.R`: Ingests and tags all 11 monthly Inside Airbnb snapshots for New Zealand and filters for Christchurch City (35,796 total rows).
+2. `src/02_clean_airbnb.R`: Validates coordinates within Greater Christchurch bounds, handles price outliers (> $7,000 NZD), performs bidirectional imputation for missing listing prices, and drops unresolvable records (35,192 records retained).
+3. `src/03_ingest_clean_bond.R`: Automatically downloads MBIE quarterly bond data, filters for target reporting periods, and removes unallocated areas (`-99`).
+4. `src/04_lookup_sa2.R`: Matches Airbnb coordinates to Stats NZ SA2 2025 boundaries (`layer 120978`) using the cached Koordinates API workflow.
+5. `src/05_join_and_sqlite.R`: Aligns monthly Airbnb observations to quarterly bond reporting periods, performs a verified many-to-one left join on `Location Id` and `TimeFrame`, and persists tables to an SQLite database.
+6. `src/06_generate_analysis_plots.R`: Calculates updated metrics and regenerates the nightly price gap visualization.
+
+### 3. Updated Findings (October 2025 – August 2026)
+- **Christchurch Central (SA2 326600)**: Updated median Airbnb nightly price across unique listings is **$254.00 NZD**.
+- **Updated Analysis Output**: Visual comparisons between short-term Airbnb prices and long-term rental rates are saved to `output/figures/updated_median_price_gap.png`.
+
+### 4. How to Reproduce
+From the project root directory, run:
+```bash
+# Set your Koordinates API key (PowerShell)
+$env:KOORDINATES_API_KEY="your_api_key_here"
+
+# Execute the complete automated pipeline
+make all
+# Alternatively:
+Rscript main.R
+

@@ -1,0 +1,53 @@
+# config.yaml
+airbnb:
+  target_neighbourhood: "Christchurch City"
+  price_max_plausible: 7000
+  price_inspect: 2000
+  lat_range: [-44.3, -43.2]
+  lon_range: [171.5, 173.5]
+  snapshots:
+    - month_year: "Oct 2025"
+      scrape_date: "2025-10-05"
+      url: "https://data.insideairbnb.com/new-zealand/2025-10-05/visualisations/listings.csv"
+    - month_year: "Nov 2025"
+      scrape_date: "2025-11-07"
+      url: "https://data.insideairbnb.com/new-zealand/2025-11-07/visualisations/listings.csv"
+    - month_year: "Dec 2025"
+      scrape_date: "2025-12-11"
+      url: "https://data.insideairbnb.com/new-zealand/2025-12-11/visualisations/listings.csv"
+    - month_year: "Jan 2026"
+      scrape_date: "2026-01-16"
+      url: "https://data.insideairbnb.com/new-zealand/2026-01-16/visualisations/listings.csv"
+    - month_year: "Feb 2026"
+      scrape_date: "2026-02-13"
+      url: "https://data.insideairbnb.com/new-zealand/2026-02-13/visualisations/listings.csv"
+    - month_year: "March 2026"
+      scrape_date: "2026-03-17"
+      url: "https://data.insideairbnb.com/new-zealand/2026-03-17/visualisations/listings.csv"
+    - month_year: "April 2026"
+      scrape_date: "2026-04-16"
+      url: "https://data.insideairbnb.com/new-zealand/2026-04-16/visualisations/listings.csv"
+    - month_year: "May 2026"
+      scrape_date: "2026-05-23"
+      url: "https://data.insideairbnb.com/new-zealand/2026-05-23/visualisations/listings.csv"
+    - month_year: "June 2026"
+      scrape_date: "2026-06-19"
+      url: "https://data.insideairbnb.com/new-zealand/2026-06-19/visualisations/listings.csv"
+    - month_year: "July 2026"
+      scrape_date: "2026-07-12"  
+      url: "https://data.insideairbnb.com/new-zealand/2026-07-12/visualisations/listings.csv"
+    - month_year: "August 2026"
+      scrape_date: "2026-08-13"
+      url: "https://data.insideairbnb.com/new-zealand/2026-08-13/visualisations/listings.csv"
+
+bond:
+  url: "https://www.tenancy.govt.nz/assets/Uploads/Tenancy/Rental-bond-data/Detailed-Quarterly-Tenancy-Q1-2020-Q3-2026.csv?m=5766222a0dc2d94c11545872be77333e32f7c999"
+  start_date: "2025-10-01"
+  end_date_exclusive: "2026-10-01"
+
+koordinates:
+  layer_id: "120978"
+  batch_size: 20
+  base_url: "https://koordinates.com/services/query/v1/vector.json"
+  
+  
