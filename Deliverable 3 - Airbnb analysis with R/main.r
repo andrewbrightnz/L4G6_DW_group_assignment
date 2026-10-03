@@ -1,45 +1,35 @@
-# This file runs all of the different task files in order
+# From the repository root:
+# Rscript "Deliverable 3 - Airbnb analysis with R/main.r"
 
-# Install and load all the packages we use
-install.packages("tidyverse")
-library("tidyverse")
+# Resolve paths relative to this script when invoked from the command line.
+script_argument <- grep("^--file=", commandArgs(trailingOnly = FALSE), value = TRUE)
+if (length(script_argument) > 0) {
+  script_path <- sub("^--file=", "", script_argument[[1]])
+  script_path <- gsub("~+~", " ", script_path, fixed = TRUE)
+  setwd(dirname(normalizePath(script_path, mustWork = TRUE)))
+}
 
-# Load tasks from Tasks folder
+library(readr)
+library(dplyr)
+library(ggplot2)
+
 source("Tasks/task_1.R")
-source("Tasks/task_2.R")
-source("Tasks/task_3.R")
-source("Tasks/task_4.R")
-source("Tasks/task_5.R")
+source("Tasks/task_2.r")
+source("Tasks/task_3.r")
+source("Tasks/task_4.r")
+source("Tasks/task_5.r")
 
 process_data <- function() {
-  # Load the saved data to a variable for other tasks to use
-  chch_Oct25_to_Jun26 <- read_csv("Data/chch_Oct25_to_Jun26.csv")   
-  nz_Oct25_to_Jun26 <- read_csv("Data/nz_Oct25_to_Jun26.csv")   
+  # Rebuild combined data from the monthly cache, including newly added months.
+  ingest_datasets()
+  chch_data <- read_csv(output_chch_path, show_col_types = FALSE)
+  nz_data <- read_csv(output_nz_path, show_col_types = FALSE)
+  dir.create("Plots", recursive = TRUE, showWarnings = FALSE)
 
-  task_2(chch_Oct25_to_Jun26) # Produce summary stats
-  task_3(chch_Oct25_to_Jun26) # Plot distribution of prices for NZ
-  task_4(chch_Oct25_to_Jun26) # Plot days since last review
-  task_5(nz_Oct25_to_Jun26)   # Plot highest number of reviews from top 10%
+  task_2(chch_data)
+  task_3(chch_data, nz_data)
+  task_4(chch_data)
+  task_5(nz_data)
 }
 
-# Run tasks in order
-# Check if the data files exists before downloading data from the insideairbnb.com and processing it
-if (file.exists("Data/chch_june.csv")) {
-  print("chch_june.csv exists")
-  if (file.exists("Data/chch_Oct25_to_Jun26.csv")) {
-    print("chch_Oct25_to_Jun26.csv exists")
-    if (file.exists("Data/nz_Oct25_to_Jun26.csv")) {
-      print("nz_Oct25_to_Jun26.csv exists")
-      print("All required data files have been created and don't need to be downloaded\nBeginning processing and plotting tasks....")
-    } else {
-      task_1()   # Downloads the monthly data from insideairbnb.com and saves it to csv files in the Data folder
-    }
-  } else {
-    task_1()
-  }
-} else {
-  task_1()
-}
-
-# Now that the files are guaranteed to exist (freshly downloaded or pre-existing), load and process them
 process_data()
