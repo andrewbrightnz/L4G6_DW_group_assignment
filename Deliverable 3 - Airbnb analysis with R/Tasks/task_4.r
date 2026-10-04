@@ -6,19 +6,18 @@ task_4 <- function(chch_june) {
   chch_june <- chch_june |>
     mutate(
       last_review = as.Date(last_review),
-      DataDate = case_when( 
-        as.character(MonthYear) == "Oct 2025" ~ as.Date("2025-10-05"),
-        as.character(MonthYear) == "Nov 2025" ~ as.Date("2025-11-07"), 
-        as.character(MonthYear) == "Dec 2025" ~ as.Date("2025-12-11"), 
-        as.character(MonthYear) == "Jan 2026" ~ as.Date("2026-01-16"), 
-        as.character(MonthYear) == "Feb 2026" ~ as.Date("2026-02-13"), 
-        as.character(MonthYear) == "March 2026" ~ as.Date("2026-03-17"),
-        as.character(MonthYear) == "April 2026" ~ as.Date("2026-04-16"),
-        as.character(MonthYear) == "May 2026" ~ as.Date("2026-05-23"),
-        as.character(MonthYear) == "June 2026" ~ as.Date("2026-06-19")
-      ),
+      DataDate = as.Date(DataDate),
       DaysSinceLastReview = as.numeric(DataDate - last_review)
     )
+
+  # Keep raw data intact, but exclude impossible intervals from this plot.
+  negative_count <- sum(chch_june$DaysSinceLastReview < 0, na.rm = TRUE)
+  if (negative_count > 0) {
+    warning(negative_count, " rows have last_review after DataDate; excluded from the review plot.")
+  }
+  chch_june <- chch_june |>
+    filter(!is.na(DaysSinceLastReview), DaysSinceLastReview >= 0)
+  sanity_check_task_4(chch_june)
 
   # 1. Assign the plot to a variable (p)
   p <- chch_june |>
