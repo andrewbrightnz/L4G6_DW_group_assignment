@@ -273,3 +273,18 @@ make all
 # Alternatively:
 Rscript main.R
 
+## Repository Polish & Final Clean-Up (08 October 2026)
+
+In preparation for final project submission, a comprehensive repository audit and clean-up were conducted to ensure the repository remains minimal, self-contained, and free of unnecessary clutter or intermediate artifacts:
+
+- **Removal of Legacy & Unneeded Coursework**:
+  - Removed deprecated draft folders (`Old files`), tutorial practice notebooks (`R_Tutorial_Notebooks_Grouped`), and course lecture slides (`Lecture slides`).
+  - Removed accidental stray files in the project root (`test_rentals.db`, `airbnb_with_sa2.csv`, `test.r`, and accidental `git` files).
+  - Resolved directory redundancy by pruning an accidental duplicate Deliverable 5 folder caused by whitespace formatting.
+- **Cache & IDE Metadata Sanitization**:
+  - Purged local IDE state directories and session caches (`.metadata/`, `.Rproj.user/`, `.RDataTmp*`).
+  - Strengthened `.gitignore` rules to permanently block raw/intermediate data directories (`data/`), output artifacts (`output/`), SQLite database files (`*.db`, `*.sqlite*`), CSV files (`*.csv`), R temporary caches (`.RDataTmp*`), and environment variable files (`.env`).
+- **End-to-End Pipeline Verification**:
+  - Verified from a clean working tree that the automated pipeline executes flawlessly end-to-end via `Rscript main.R` (and `make all`).
+  - Confirmed that all 6 modular scripts in `src/` cleanly ingest, validate, geocode (using cached Stats NZ SA2 lookups), join, and persist outputs into `output/database/` and `output/figures/`.
+  
